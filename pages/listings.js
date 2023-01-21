@@ -15,6 +15,7 @@ function listings() {
     process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS,
     "marketplace"
   );
+  console.log(contract?.getAll())
   const { data: listings, isLoading: loadingListings } = useActiveListings(contract);
   const buyAsset=async(id)=>{
     await contract.buyoutListing(id,1);
