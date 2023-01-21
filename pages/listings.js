@@ -1,31 +1,78 @@
-import { useAddress, useContract, useMarketplace } from '@thirdweb-dev/react'
-import React,{useEffect, useState} from 'react'
+import {
+  useContract,
+  useActiveListings,
+  MediaRenderer,
+  useAddress,
+  useMetamask 
+} from "@thirdweb-dev/react";
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function listings() {
-    const [listings,setListings]=useState([])
-    const [loading,setLoading]=useState(true)
-    const address=useAddress();
-    const marketplace=useContract(process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS);
-    
-    useEffect(()=>{
-        getListings()
-    },[])
-    const getListings=async()=>{
-        try {
-            if(!address) return;
-            const list=await marketplace.getActiveListings()
-            console.log(list)
-            setListings(list)
-            setLoading(false)
-        } catch (error) {
-            console.log(error)
-            alert('Error fetching the listings!')
-        }
-    }
+    const connectWithMetamask=useMetamask();  
+  const { contract } = useContract(
+    process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS,
+    "marketplace"
+  );
+  const { data: listings, isLoading: loadingListings } = useActiveListings(contract);
+  const buyAsset=async(id)=>{
+    await contract.buyoutListing(id,1);
+    alert('Asset purchased successfully!');
+    window.location.reload()
+}
+  const address=useAddress()
+
+  if(!address){
+    return <div>
+        <button onClick={connectWithMetamask}>Connect your wallet to see the items</button>
+    </div>
+  }
 
   return (
-    <div>listings</div>
-  )
+    <div>
+      <Header/>
+      <h2 className="section-header">Listings from Various Artists</h2>
+      <hr />
+      {
+        // If the listings are loading, show a loading message
+        loadingListings ? (
+          <div>Loading listings...</div>
+        ) : (
+          // Otherwise, show the listings
+          <div className="shop-items">
+            {listings?.map((listing) => (
+              <div
+                key={listing.id}
+              >
+                <div className="shop-item">
+                  <span className="shop-item-title">{listing.asset.name}</span>
+                  <MediaRenderer
+                    className="shop-item-image"
+                    src={listing.asset.image}
+                  />
+                  <div className="shop-item-details">
+                    <p className="shop-item-price">
+                      <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
+                      {listing.buyoutCurrencyValuePerToken.symbol}
+                    </p>
+                    <button
+                      className="btn btn-primary shop-item-button"
+                      type="button"
+                      onClick={()=>buyAsset(listing.id)}
+                    >
+                      ADD TO CART
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )
+      }
+      <Footer/>
+    </div>
+  );
 }
 
-export default listings
+export default listings;

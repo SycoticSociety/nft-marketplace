@@ -16,7 +16,6 @@ function Header() {
         </li>
       </ul>
     </nav>
-    <h3 className="band-name band-name-large">💢</h3>
   </header>
   )
 }

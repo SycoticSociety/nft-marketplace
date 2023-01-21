@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { useRouter } from "next/router";
+import listings from "./listings";
 import { useEffect } from "react";
 import {useMetamask,useAddress} from '@thirdweb-dev/react'
 
@@ -22,8 +23,6 @@ export default function Home() {
         <Header/>
          <section className="container content-section">
           <h1 className="section-header"></h1>
-          <h2 className="section-header">Featured Artist: Betty Blockchain</h2>
-          <hr />
 
           <div className="shop-items">
             <div className="shop-item">
@@ -216,15 +215,6 @@ export default function Home() {
           </div>
         </section>
         <section className="container content-section">
-          <hr />
-          <iframe
-            src="https://gateway.ipfscdn.io/ipfs/QmbqEq5EQLx1aPurZFreM246fsKeawfpKDT8uzguAHAikr/marketplace.html?contract=0x7266BA8cA064fbFC96DAE22B5C29a468D178C253&chainId=137&listingId=0&theme=dark"
-            width="500px"
-            height="500px"
-            style={{maxWidth:'100%'}}
-            frameborder="0"
-          ></iframe>
-          <hr />
           <h2 className="section-header">SHOPPING CART</h2>
           <div className="cart-row">
             <span className="cart-item cart-header cart-column">ITEM</span>
