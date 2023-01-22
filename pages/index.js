@@ -15,7 +15,6 @@ export default function Home() {
     process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS,
     "marketplace"
   );
-  console.log(contract?.getAll());
   const { data: listings, isLoading: loadingListings } =
     useActiveListings(contract);
   const buyAsset = async (id) => {
