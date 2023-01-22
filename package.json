@@ -2,11 +2,13 @@
   "name": "nft-marketplace",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "npm run build && npx thirdweb@latest upload build"
   },
   "dependencies": {
     "@thirdweb-dev/react": "^3.6.10",
