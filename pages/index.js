@@ -23,29 +23,6 @@ export default function Home() {
     window.location.reload();
   };
   const address = useAddress();
-
-  if (!address) {
-    return (
-      <div>
-        <Header />
-        <h2 className="section-header">Listings from Various Artists</h2>
-        <hr />
-        <div
-          style={{
-            display:'flex',
-            justifyContent:'center',
-            alignItems: "center",
-            margin: "auto",
-          }}
-        >
-          <button onClick={connectWithMetamask}>
-            Connect your wallet to see the items
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div>
       <Header />
@@ -57,6 +34,7 @@ export default function Home() {
           <div>Loading listings...</div>
         ) : (
           // Otherwise, show the listings
+          <>
           <div className="shop-items">
             {listings?.map((listing) => (
               <div key={listing.id}>
@@ -75,6 +53,7 @@ export default function Home() {
                       className="btn btn-primary shop-item-button"
                       type="button"
                       onClick={() => buyAsset(listing.id)}
+                      disabled={!address ? true : false}
                     >
                       ADD TO CART
                     </button>
@@ -83,6 +62,10 @@ export default function Home() {
               </div>
             ))}
           </div>
+            {!address && <button  className="btn btn-primary shop-item-button" onClick={connectWithMetamask}>
+            Connect your wallet to see the items
+          </button>}
+          </>
         )
       }
       <Footer />
