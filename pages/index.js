@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   const connectWithMetamask = useMetamask();
   const { contract } = useContract(
-    process.env.NEXT_PUBLIC_MARKETPLACE_CONTRACT_ADDRESS,
+    '0x7266BA8cA064fbFC96DAE22B5C29a468D178C253',
     "marketplace"
   );
   const { data: listings, isLoading: loadingListings } =
