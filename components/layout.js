@@ -1,4 +1,4 @@
-import Footer from "./footer";
+import Footer from "./Footer";
 import Wallet_modal from "./modal/wallet_modal";
 import BidsModal from "./modal/bidsModal";
 import BuyModal from "./modal/buyModal";
