@@ -20,7 +20,7 @@ const FilterCategoryItem = () => {
   );
   const { data: listings, isLoading: loadingListings } = useActiveListings(contract);
   const address = useAddress();
-  if(!listings) return <p>Loading Assets</p>
+  if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
     <div>
       {/* <!-- Filter --> */}

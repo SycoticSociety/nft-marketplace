@@ -63,8 +63,7 @@ const CoverflowCarousel = () => {
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-900">
                     <figure className="relative">
-                      <Link href={"/item/" + itemLink}>
-                        <a>
+                        <a href="#cards">
                           <Image
                             src={img}
                             alt={title}
@@ -73,7 +72,6 @@ const CoverflowCarousel = () => {
                             width="379"
                           />
                         </a>
-                      </Link>
                     </figure>
                     <div className="p-6">
                       <div className="flex">

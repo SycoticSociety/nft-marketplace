@@ -153,7 +153,7 @@ const Recently_added_dropdown = ({ data, dropdownFor }) => {
 		return (
 			<div>
 				{/* dropdown */}
-				<div className="dropdown relative my-1 cursor-pointer">
+				<div className="dropdown relative my-1 cursor-pointer ">
 					<Tippy
 						animation="fade"
 						arrow={false}
@@ -243,7 +243,7 @@ const Recently_added_dropdown = ({ data, dropdownFor }) => {
 		return (
 			<div className="my-1 mr-2.5 relative">
 				<button
-					className="group dropdown-toggle blockchainDropdown dark:border-jacarta-600 dark:bg-jacarta-700 group dark:hover:bg-accent hover:bg-accent border-jacarta-100 font-display text-jacarta-700 flex h-9 items-center rounded-lg border bg-white px-4 text-sm font-semibold transition-colors hover:border-transparent hover:text-white dark:text-white"
+					className="group dropdown-toggle blockchainDropdown dark:border-jacarta-600 dark:bg-accent group dark:hover:bg-accent hover:bg-accent border-jacarta-100 font-display text-jacarta-700 flex h-9 items-center rounded-lg border bg-white px-4 text-sm font-semibold transition-colors hover:border-transparent hover:text-white dark:text-white"
 					onClick={handleBlockChainDropdown}
 				>
 					<svg

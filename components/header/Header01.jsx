@@ -100,89 +100,89 @@ export default function Header01() {
     id: 2,
     name: "Pages",
     pages: [
-      {
-        id: uuidv4(),
-        name: "Case Studies",
-        condition: true,
-        path: "/case-studies",
-      },
-      {
-        id: uuidv4(),
-        name: "Single Case Study",
-        condition: true,
-        path: "/case-studies/case_study_1",
-      },
-      {
-        id: uuidv4(),
-        name: "Careers",
-        condition: true,
-        path: "/careers",
-      },
-      {
-        id: uuidv4(),
-        name: "Item Details",
-        path: "/item/item_20",
-      },
-      {
-        id: uuidv4(),
-        name: "Explore Collections",
-        path: "/collection/explore_collection",
-      },
-      {
-        id: uuidv4(),
-        name: "Collection",
-        path: "/collection/avatar_1",
-      },
-      {
-        id: uuidv4(),
-        name: "Activity",
-        path: "/activity",
-      },
-      {
-        id: uuidv4(),
-        name: "Rankings",
-        path: "/rankings",
-      },
-      {
-        id: uuidv4(),
-        name: "User",
-        path: "/user/avatar_6",
-      },
-      {
-        id: uuidv4(),
-        name: "Edit Profile",
-        path: "/profile/user_avatar",
-      },
-      {
-        id: uuidv4(),
-        name: "About",
-        path: "/about",
-      },
-      {
-        id: uuidv4(),
-        name: "Contact",
-        path: "/contact",
-      },
-      {
-        id: uuidv4(),
-        name: "Wallet",
-        path: "/wallet",
-      },
-      {
-        id: uuidv4(),
-        name: "Login",
-        path: "/login",
-      },
-      {
-        id: uuidv4(),
-        name: "Page 404",
-        path: "/404",
-      },
-      {
-        id: uuidv4(),
-        name: "Terms of Service",
-        path: "/tarms",
-      },
+      // {
+      //   id: uuidv4(),
+      //   name: "Case Studies",
+      //   condition: true,
+      //   path: "/case-studies",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Single Case Study",
+      //   condition: true,
+      //   path: "/case-studies/case_study_1",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Careers",
+      //   condition: true,
+      //   path: "/careers",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Item Details",
+      //   path: "/item/item_20",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Explore Collections",
+      //   path: "/collection/explore_collection",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Collection",
+      //   path: "/collection/avatar_1",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Activity",
+      //   path: "/activity",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Rankings",
+      //   path: "/rankings",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "User",
+      //   path: "/user/avatar_6",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Edit Profile",
+      //   path: "/profile/user_avatar",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "About",
+      //   path: "/about",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Contact",
+      //   path: "/contact",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Wallet",
+      //   path: "/wallet",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Login",
+      //   path: "/login",
+      // },
+      // // {
+      // //   id: uuidv4(),
+      // //   name: "Page 404",
+      // //   path: "/404",
+      // // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Terms of Service",
+      //   path: "/tarms",
+      // },
     ],
   };
 
@@ -292,23 +292,23 @@ export default function Header01() {
           </svg>
         ),
       },
-      {
-        id: uuidv4(),
-        name: "Domain Names",
-        path: "/domain-names",
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width={24}
-            height={24}
-            className="h-4 w-4 fill-[#8358FF]"
-          >
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M5 15v4h4v2H3v-6h2zm16 0v6h-6v-2h4v-4h2zm-8.001-9l4.4 11h-2.155l-1.201-3h-4.09l-1.199 3H6.6l4.399-11h2zm-1 2.885L10.752 12h2.492l-1.245-3.115zM9 3v2H5v4H3V3h6zm12 0v6h-2V5h-4V3h6z" />
-          </svg>
-        ),
-      },
+      // {
+      //   id: uuidv4(),
+      //   name: "Domain Names",
+      //   path: "/domain-names",
+      //   icon: (
+      //     <svg
+      //       xmlns="http://www.w3.org/2000/svg"
+      //       viewBox="0 0 24 24"
+      //       width={24}
+      //       height={24}
+      //       className="h-4 w-4 fill-[#8358FF]"
+      //     >
+      //       <path fill="none" d="M0 0h24v24H0z" />
+      //       <path d="M5 15v4h4v2H3v-6h2zm16 0v6h-6v-2h4v-4h2zm-8.001-9l4.4 11h-2.155l-1.201-3h-4.09l-1.199 3H6.6l4.399-11h2zm-1 2.885L10.752 12h2.492l-1.245-3.115zM9 3v2H5v4H3V3h6zm12 0v6h-2V5h-4V3h6z" />
+      //     </svg>
+      //   ),
+      // },
       {
         id: uuidv4(),
         name: "Utility",
@@ -326,23 +326,23 @@ export default function Header01() {
           </svg>
         ),
       },
-      {
-        id: uuidv4(),
-        name: "Virtual Worlds",
-        path: "/virtual-worlds",
-        icon: (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width={24}
-            height={24}
-            className="h-4 w-4 fill-[#46C7E3]"
-          >
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z" />
-          </svg>
-        ),
-      },
+      // {
+      //   id: uuidv4(),
+      //   name: "Virtual Worlds",
+      //   path: "/virtual-worlds",
+      //   icon: (
+      //     <svg
+      //       xmlns="http://www.w3.org/2000/svg"
+      //       viewBox="0 0 24 24"
+      //       width={24}
+      //       height={24}
+      //       className="h-4 w-4 fill-[#46C7E3]"
+      //     >
+      //       <path fill="none" d="M0 0h24v24H0z" />
+      //       <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z" />
+      //     </svg>
+      //   ),
+      // },
     ],
   };
 
@@ -372,14 +372,39 @@ export default function Header01() {
       },
       {
         id: uuidv4(),
-        name: "Single Post",
-        path: "/single_post/post_1",
+        name: "Edit Profile",
+        path: "/profile/user_avatar",
       },
       {
         id: uuidv4(),
-        name: "Newsletter",
-        path: "/newsletter",
+        name: "About",
+        path: "/about",
       },
+      {
+        id: uuidv4(),
+        name: "Contact",
+        path: "/contact",
+      },
+      {
+        id: uuidv4(),
+        name: "Wallet",
+        path: "/wallet",
+      },
+      {
+        id: uuidv4(),
+        name: "Login",
+        path: "/login",
+      },
+      // {
+      //   id: uuidv4(),
+      //   name: "Single Post",
+      //   path: "/single_post/post_1",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   name: "Newsletter",
+      //   path: "/newsletter",
+      // },
     ],
   };
 
@@ -418,7 +443,7 @@ export default function Header01() {
           </Link>
           {/* End  logo */}
 
-          <form
+          {/* <form
             action="search"
             className="relative ml-12 mr-8 hidden basis-3/12 lg:block xl:ml-[8%]"
           >
@@ -439,14 +464,14 @@ export default function Header01() {
                 <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z" />
               </svg>
             </span>
-          </form>
+          </form> */}
           {/* End Desktop search form */}
 
           <div className="js-mobile-menu dark:bg-jacarta-800 invisible fixed inset-0 z-10 ml-auto items-center bg-white opacity-0 lg:visible lg:relative lg:inset-auto lg:flex lg:bg-transparent lg:opacity-100 dark:lg:bg-transparent">
             <nav className="navbar w-full">
               <ul className="flex flex-col lg:flex-row">
                 <li className="js-nav-dropdown group relative">
-                  <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
+                  <a href='/' className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                     <span
                       className={
                         isParentPageActive(home.pages, route.asPath)
@@ -468,7 +493,8 @@ export default function Header01() {
                         <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
                       </svg>
                     </i>
-                  </button>
+
+                  </a>
                   {/* <ul className="dropdown-menu dark:bg-jacarta-800 left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2 relative">
                     {home?.pages?.map((page) => (
                       <li key={page.id}>
@@ -496,7 +522,7 @@ export default function Header01() {
                 </li>
 
                 {/* page */}
-                <li className="js-nav-dropdown group relative">
+                {/* <li className="js-nav-dropdown group relative">
                   <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                     <span
                       className={
@@ -524,7 +550,7 @@ export default function Header01() {
                     {page?.pages?.map((page) => (
                       <li key={page.id}>
                         <Link href={page.path}>
-                          <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors justify-between">
+                          <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors">
                             <span
                               className={`font-display ${
                                 isChildrenPageActive(page.path, route.asPath)
@@ -544,10 +570,10 @@ export default function Header01() {
                       </li>
                     ))}
                   </ul>
-                </li>
+                </li> */}
 
                 {/* explore */}
-                <li className="js-nav-dropdown nav-item dropdown group relative">
+                {/* <li className="js-nav-dropdown nav-item dropdown group relative">
                   <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                     <span
                       className={
@@ -590,7 +616,7 @@ export default function Header01() {
                       </li>
                     ))}
                   </ul>
-                </li>
+                </li> */}
 
                 {/* resource */}
                 <li className="js-nav-dropdown group relative">
@@ -920,7 +946,7 @@ export default function Header01() {
                 >
                   {home.name}
                 </span>
-                <i className="lg:hidden">
+                {/* <i className="lg:hidden">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -931,10 +957,10 @@ export default function Header01() {
                     <path fill="none" d="M0 0h24v24H0z" />
                     <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
                   </svg>
-                </i>
+                </i> */}
               </button>
 
-              <ul
+              {/* <ul
                 className={`dropdown-menu dark:bg-jacarta-800 left-0 top-[85%] z-10 min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2 relative ${
                   isCollapse === home.id ? "block" : "hidden"
                 }`}
@@ -961,9 +987,9 @@ export default function Header01() {
                     </Link>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </li>
-            <li className="js-nav-dropdown group relative">
+            {/* <li className="js-nav-dropdown group relative">
               <button
                 onClick={() => mobileCollapse(page.id)}
                 className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
@@ -1018,8 +1044,8 @@ export default function Header01() {
                   </li>
                 ))}
               </ul>
-            </li>
-            <li className="js-nav-dropdown nav-item dropdown group relative">
+            </li> */}
+            {/* <li className="js-nav-dropdown nav-item dropdown group relative">
               <button
                 onClick={() => mobileCollapse(explore.id)}
                 className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
@@ -1067,7 +1093,7 @@ export default function Header01() {
                   </li>
                 ))}
               </ul>
-            </li>
+            </li> */}
             <li className="js-nav-dropdown group relative">
               <button
                 onClick={() => mobileCollapse(resource.id)}
@@ -1142,9 +1168,9 @@ export default function Header01() {
         {/* End navbar mobile menu  */}
 
         <div className="mt-10 w-full lg:hidden">
-          <div className="js-wallet bg-accent shadow-accent-volume hover:bg-accent-dark block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+          {/* <div className="js-wallet bg-accent shadow-accent-volume hover:bg-accent-dark block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
             MetaMask not available :
-          </div>
+          </div> */}
           <hr className="dark:bg-jacarta-600 bg-jacarta-100 my-5 h-px border-0" />
           <div className="flex items-center justify-center space-x-5">
             <a className="group">

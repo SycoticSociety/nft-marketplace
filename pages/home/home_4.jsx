@@ -20,7 +20,7 @@ const Home_4 = () => {
       <CoverflowCarousel />
       {/* <Top_collection /> */}
       {/* <Auctions_categories /> */}
-      <section className="py-24">
+      <section id="cards" className="py-24">
         <div className="container">
           <HeadLine
             image="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/26a1.png"
@@ -30,7 +30,7 @@ const Home_4 = () => {
           <FilterCategoryItem />
         </div>
       </section>
-      <NewseLatter bgWhite={true} />
+      {/* <NewseLatter bgWhite={true} /> */}
       {/* <Feature_collections />
 			<Partners /> */}
     </>

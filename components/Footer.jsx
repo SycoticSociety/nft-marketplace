@@ -8,7 +8,7 @@ const Footer = () => {
 
       <footer className="dark:bg-jacarta-900 page-footer bg-white">
         <div className="container">
-          <div className="grid grid-cols-6 gap-x-7 gap-y-14 pt-24 pb-12 md:grid-cols-12">
+          <div className="grid  grid-cols-6 gap-x-7 gap-y-14 pt-24 pb-12 md:grid-cols-12">
             <div className="col-span-3 md:col-span-4">
               {/* <!-- Logo --> */}
               <Link href="#">

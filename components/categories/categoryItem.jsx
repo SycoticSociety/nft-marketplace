@@ -3,15 +3,19 @@ import "tippy.js/dist/tippy.css";
 import Auctions_dropdown from "../dropdown/Auctions_dropdown";
 import { useDispatch, useSelector } from "react-redux";
 import { buyModalShow } from "../../redux/counterSlice";
+import { useMetamask } from "@thirdweb-dev/react";
 
 const CategoryItem = ({ listings,contract,address}) => {
+  const connectWithMetamask=useMetamask()
   const { sortedtrendingCategoryItemData } = useSelector(
     (state) => state.counter
   );
   const dispatch = useDispatch();
   const buyAsset = async (id,address,contract) => {
     if(!address){
-      alert('Connect your wallet to purchase NFTs.')
+      return <div class="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3" role="alert">
+      A simple danger alert - check it out!
+    </div>
     }else{
       await contract.buyoutListing(id, 1);
       console.log(contract.buyoutListing(id,1))

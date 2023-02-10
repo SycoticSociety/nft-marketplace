@@ -67,8 +67,12 @@ const Create = () => {
           />
         </picture>
         <div className="container">
-          <h1 className="font-display text-jacarta-700 py-16 text-center text-4xl font-medium dark:text-white">
+          <h1 className="font-display text-jacarta-700 py-8 text-center text-4xl font-medium dark:text-white">
             Create
+          </h1>
+          
+          <h1 className="font-display text-jacarta-700 pb-4 text-center text-4xl font-medium dark:text-white">
+            Coming Soon!
           </h1>
 
           <div className="mx-auto max-w-[48.125rem]">

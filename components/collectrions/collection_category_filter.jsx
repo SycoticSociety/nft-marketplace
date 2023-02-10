@@ -103,118 +103,115 @@ const Collection_category_filter = () => {
 		},
 	];
 
-	const propertiesText = [
-		{
-			parentId: 1,
-			titleText: 'Background',
-			properties: [
-				{
-					id: 1,
-					color: 'red',
-					point: '14',
-				},
-				{
-					id: 2,
-					color: 'green',
-					point: '56',
-				},
-				{
-					id: 3,
-					color: 'blue',
-					point: '11',
-				},
-				{
-					id: 4,
-					color: 'white',
-					point: '25',
-				},
-			],
-		},
-		{
-			parentId: 2,
-			titleText: 'Eyes',
-			properties: [
-				{
-					id: 1,
-					color: 'red',
-					point: '14',
-				},
-				{
-					id: 2,
-					color: 'green',
-					point: '56',
-				},
-				{
-					id: 3,
-					color: 'blue',
-					point: '11',
-				},
-				{
-					id: 4,
-					color: 'white',
-					point: '25',
-				},
-			],
-		},
-		{
-			parentId: 3,
-			titleText: 'face',
-			properties: [
-				{
-					id: 1,
-					color: 'red',
-					point: '14',
-				},
-				{
-					id: 2,
-					color: 'green',
-					point: '56',
-				},
-				{
-					id: 3,
-					color: 'blue',
-					point: '11',
-				},
-				{
-					id: 4,
-					color: 'white',
-					point: '25',
-				},
-			],
-		},
-	];
+	// const propertiesText = [
+	// 	{
+	// 		parentId: 1,
+	// 		titleText: 'Background',
+	// 		properties: [
+	// 			{
+	// 				id: 1,
+	// 				color: 'red',
+	// 				point: '14',
+	// 			},
+	// 			{
+	// 				id: 2,
+	// 				color: 'green',
+	// 				point: '56',
+	// 			},
+	// 			{
+	// 				id: 3,
+	// 				color: 'blue',
+	// 				point: '11',
+	// 			},
+	// 			{
+	// 				id: 4,
+	// 				color: 'white',
+	// 				point: '25',
+	// 			},
+	// 		],
+	// 	},
+	// 	{
+	// 		parentId: 2,
+	// 		titleText: 'Eyes',
+	// 		properties: [
+	// 			{
+	// 				id: 1,
+	// 				color: 'red',
+	// 				point: '14',
+	// 			},
+	// 			{
+	// 				id: 2,
+	// 				color: 'green',
+	// 				point: '56',
+	// 			},
+	// 			{
+	// 				id: 3,
+	// 				color: 'blue',
+	// 				point: '11',
+	// 			},
+	// 			{
+	// 				id: 4,
+	// 				color: 'white',
+	// 				point: '25',
+	// 			},
+	// 		],
+	// 	},
+	// 	{
+	// 		parentId: 3,
+	// 		titleText: 'face',
+	// 		properties: [
+	// 			{
+	// 				id: 1,
+	// 				color: 'red',
+	// 				point: '14',
+	// 			},
+	// 			{
+	// 				id: 2,
+	// 				color: 'green',
+	// 				point: '56',
+	// 			},
+	// 			{
+	// 				id: 3,
+	// 				color: 'blue',
+	// 				point: '11',
+	// 			},
+	// 			{
+	// 				id: 4,
+	// 				color: 'white',
+	// 				point: '25',
+	// 			},
+	// 		],
+	// 	},
+	// ];
 
 	return (
 		<>
 			{/* <!-- Filter --> */}
 			<div className="mb-8 flex flex-wrap items-center justify-between">
 				<div className="flex flex-wrap items-center">
-					{/* <!-- Blockchain --> */}
-					<Recently_added_dropdown data={blockchainText} dropdownFor="blockchain" />
-
 					{/* <!-- Category --> */}
 					<Recently_added_dropdown data={categoryText} dropdownFor="category" />
-
+					{/* <!-- Price Range --> */}
+					<Recently_added_dropdown data={saleTypeText} dropdownFor="price-range" />
+                
 					{/* <!-- Properties --> */}
-					<div className="my-1 mr-2.5">
-						<button
+						{/* <button
 							className="group dropdown-toggle dark:border-jacarta-600 dark:bg-jacarta-700 group dark:hover:bg-accent hover:bg-accent border-jacarta-100 font-display text-jacarta-700 flex h-9 items-center rounded-lg border bg-white px-4 text-sm font-semibold transition-colors hover:border-transparent hover:text-white dark:text-white"
 							onClick={() => setPropertiesModal(true)}
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								viewBox="0 0 24 24"
-								width="24"
-								height="24"
-								className="fill-jacarta-700 dark:fill-jacarta-100 mr-1 h-4 w-4 transition-colors group-hover:fill-white"
 							>
-								<path fill="none" d="M0 0h24v24H0z"></path>
-								<path d="M6.17 18a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2v-2h4.17zm6-7a3.001 3.001 0 0 1 5.66 0H22v2h-4.17a3.001 3.001 0 0 1-5.66 0H2v-2h10.17zm-6-7a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2V4h4.17z"></path>
+							<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							className="fill-jacarta-700 dark:fill-jacarta-100 mr-1 h-4 w-4 transition-colors group-hover:fill-white"
+							>
+							<path fill="none" d="M0 0h24v24H0z"></path>
+							<path d="M6.17 18a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2v-2h4.17zm6-7a3.001 3.001 0 0 1 5.66 0H22v2h-4.17a3.001 3.001 0 0 1-5.66 0H2v-2h10.17zm-6-7a3.001 3.001 0 0 1 5.66 0H22v2H11.83a3.001 3.001 0 0 1-5.66 0H2V4h4.17z"></path>
 							</svg>
 							<span>Properties</span>
-						</button>
+						</button> */}
 
-						{/* <!-- Properties Modal --> */}
 						<div
 							className={propertiesModal ? 'modal fade show block' : 'modal fade'}
 							id="propertiesModal"
@@ -243,58 +240,58 @@ const Collection_category_filter = () => {
 										</button>
 									</div>
 
-									{/* <!-- Body --> */}
+
 									<div className="modal-body">
 										<div className="accordion" id="accordionProps">
 											<div className="accordion-item dark:border-jacarta-600 border-jacarta-100 border-b">
-												<Accordion>
+											 {/* <Accordion>
 													{propertiesText.map((item) => {
 														const { parentId, titleText, properties } = item;
 														return (
 															<AccordionItem key={parentId}>
-																<AccordionItemHeading>
-																	<AccordionItemButton>
-																		<h2 className="accordion-header" id="prop-heading-1">
-																			<button className="accordion-button collapsed dark:bg-jacarta-700 font-display text-jacarta-700 relative flex w-full items-center justify-between bg-white px-6 py-5 dark:text-white">
-																				<span>{titleText}</span>
-																				<svg
-																					xmlns="http://www.w3.org/2000/svg"
-																					viewBox="0 0 24 24"
-																					width="24"
-																					height="24"
-																					className="accordion-arrow fill-jacarta-700 h-4 w-4 transition-transform dark:fill-white"
-																				>
-																					<path fill="none" d="M0 0h24v24H0z"></path>
-																					<path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path>
-																				</svg>
-																			</button>
-																		</h2>
-																	</AccordionItemButton>
-																</AccordionItemHeading>
-																<AccordionItemPanel>
-																	<div id="prop-background" className="accordion-collapse">
+															<AccordionItemHeading>
+															<AccordionItemButton>
+															<h2 className="accordion-header" id="prop-heading-1">
+															<button className="accordion-button collapsed dark:bg-jacarta-700 font-display text-jacarta-700 relative flex w-full items-center justify-between bg-white px-6 py-5 dark:text-white">
+															<span>{titleText}</span>
+															<svg
+															xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 24 24"
+															width="24"
+															height="24"
+															className="accordion-arrow fill-jacarta-700 h-4 w-4 transition-transform dark:fill-white"
+															>
+															<path fill="none" d="M0 0h24v24H0z"></path>
+															<path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path>
+															</svg>
+															</button>
+															</h2>
+															</AccordionItemButton>
+															</AccordionItemHeading>
+															<AccordionItemPanel>
+															<div id="prop-background" className="accordion-collapse">
 																		{properties.map((proparty) => {
 																			const { id, color, point } = proparty;
 																			return (
 																				<div className="accordion-body px-2 pb-4" key={id}>
-																					<div className="flex flex-col">
-																						<button className="dark:hover:bg-jacarta-600 dark:text-jacarta-200 hover:bg-jacarta-50 flex items-center justify-between rounded-xl px-4 py-2">
-																							<span>{color}</span>
-																							<span>{point}</span>
-																						</button>
-																					</div>
+																				<div className="flex flex-col">
+																				<button className="dark:hover:bg-jacarta-600 dark:text-jacarta-200 hover:bg-jacarta-50 flex items-center justify-between rounded-xl px-4 py-2">
+																				<span>{color}</span>
+																				<span>{point}</span>
+																				</button>
 																				</div>
-																			);
-																		})}
-																	</div>
-																</AccordionItemPanel>
+																				</div>
+																				);
+																			})}
+																			</div>
+																			</AccordionItemPanel>
 															</AccordionItem>
-														);
-													})}
-												</Accordion>
-											</div>
+															);
+														})}
+													</Accordion>  */}
 										</div>
 									</div>
+													
 									{/* <!-- end body --> */}
 
 									<div className="modal-footer">
@@ -396,8 +393,10 @@ const Collection_category_filter = () => {
 					{/* <!-- Sale Type --> */}
 					<Recently_added_dropdown data={saleTypeText} dropdownFor="sale-type" />
 
-					{/* <!-- Price Range --> */}
-					<Recently_added_dropdown data={saleTypeText} dropdownFor="price-range" />
+					
+
+					{/* <!-- Blockchain --> */}
+					<Recently_added_dropdown data={blockchainText} dropdownFor="blockchain" />
 				</div>
 
 				{/* <!-- Sort --> */}

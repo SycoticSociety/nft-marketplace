@@ -19,21 +19,21 @@ const footerMenuList = [
         href: "#",
         text: "music",
       },
-      {
-        id: 4,
-        href: "#",
-        text: "domain names",
-      },
+      // {
+      //   id: 4,
+      //   href: "#",
+      //   text: "domain names",
+      // },
       {
         id: 5,
         href: "#",
         text: "collections",
       },
-      {
-        id: 6,
-        href: "#",
-        text: "virtual world",
-      },
+      // {
+      //   id: 6,
+      //   href: "#",
+      //   text: "virtual world",
+      // },
     ],
   },
   {
@@ -41,11 +41,11 @@ const footerMenuList = [
     title: "Company",
     diffClass: "",
     list: [
-      {
-        id: 1,
-        href: "#",
-        text: "Explore",
-      },
+      // {
+      //   id: 1,
+      //   href: "#",
+      //   text: "Explore",
+      // },
       {
         id: 2,
         href: "#",
@@ -105,12 +105,12 @@ const socialIcons = [
   },
   {
     id: 2,
-    href: "https://www.twitter.com",
+    href: "https://twitter.com/SycoticSociety",
     text: "twitter",
   },
   {
     id: 3,
-    href: "https://www.discord.com",
+    href: "https://discord.gg/",
     text: "discord",
   },
   {
