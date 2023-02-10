@@ -13,9 +13,7 @@ const CategoryItem = ({ listings,contract,address}) => {
   const dispatch = useDispatch();
   const buyAsset = async (id,address,contract) => {
     if(!address){
-      return <div class="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-red-700 mb-3" role="alert">
-      A simple danger alert - check it out!
-    </div>
+      connectWithMetamask()
     }else{
       await contract.buyoutListing(id, 1);
       console.log(contract.buyoutListing(id,1))
