@@ -471,7 +471,8 @@ export default function Header01() {
             <nav className="navbar w-full">
               <ul className="flex flex-col lg:flex-row">
                 <li className="js-nav-dropdown group relative">
-                  <a href='/' className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
+                  <Link href='/'>
+                  <a  className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                     <span
                       className={
                         isParentPageActive(home.pages, route.asPath)
@@ -493,8 +494,8 @@ export default function Header01() {
                         <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
                       </svg>
                     </i>
-
                   </a>
+                  </Link>
                   {/* <ul className="dropdown-menu dark:bg-jacarta-800 left-0 top-[85%] z-10 hidden min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2 relative">
                     {home?.pages?.map((page) => (
                       <li key={page.id}>
