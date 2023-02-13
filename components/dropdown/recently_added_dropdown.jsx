@@ -26,13 +26,15 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 	const [dropdownSale, setDropdownSale] = useState(false);
 	const [currencyDropdown, setCurrencyDropdown] = useState(false);
 
-	{setSelectedChain && useEffect(()=>{
-		if(sortActive==1){
-			setSelectedChain(String(ChainId.Polygon))
-		}else{
-			setSelectedChain(String(ChainId.Avalanche))
+	useEffect(()=>{
+		if(setSelectedChain){
+			if(sortActive==1){
+				setSelectedChain(String(ChainId.Polygon))
+			}else{
+				setSelectedChain(String(ChainId.Avalanche))
+			}
 		}
-	},[sortActive])}
+	},[sortActive])
     
 	const handleRenkingCategoriesDropdown = () => {
 		window.addEventListener('click', (w) => {
