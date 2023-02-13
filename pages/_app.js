@@ -7,8 +7,10 @@ import { useRouter } from "next/router";
 import Meta from "../components/Meta";
 import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 import UserContext from "../components/UserContext";
-import { useEffect, useRef } from "react";
+import ChainContext from "../components/chainContext";
+import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
+
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -16,21 +18,16 @@ function MyApp({ Component, pageProps }) {
   const scrollRef = useRef({
     scrollPos: 0,
   });
+  const [selectedChain,setSelectedChain]=useState(ChainId.Polygon)
 
-  useEffect(() => {
-    // if (pid === '/home/home_8') {
-    // 	const html = document.querySelector('html');
-    // 	html.classList.remove('light');
-    // 	html.classList.add('dark');
-    // }
-  }, []);
 
   return (
     <>
       <Meta title="Sycotic Society | NFT Marketplace" />
       <Provider store={store}>
         <ThemeProvider enableSystem={true} attribute="class">
-          <ThirdwebProvider desiredChainId={ChainId.Polygon}>
+          <ChainContext.Provider value={{selectedChain,setSelectedChain}}>
+          <ThirdwebProvider desiredChainId={selectedChain}>
             <MetaMaskProvider>   
             <UserContext.Provider value={{ scrollRef: scrollRef }}>
               {pid === "/login" ? (
@@ -43,6 +40,7 @@ function MyApp({ Component, pageProps }) {
             </UserContext.Provider>
             </MetaMaskProvider>
           </ThirdwebProvider>
+          </ChainContext.Provider>
         </ThemeProvider>
       </Provider>
     </>

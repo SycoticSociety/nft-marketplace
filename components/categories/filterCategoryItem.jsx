@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect,useContext } from "react";
 import { trendingCategoryData } from "../../data/categories_data";
 import Collection_category_filter from "../collectrions/collection_category_filter";
 import CategoryItem from "./categoryItem";
@@ -9,13 +9,19 @@ import {
   useActiveListings,
   useAddress
 } from "@thirdweb-dev/react";
-
+import { ChainId } from "@thirdweb-dev/react";
+import ChainContext from "../chainContext";
 
 
 const FilterCategoryItem = () => {
-  const dispatch = useDispatch();
+  const {selectedChain,setSelectedChain}=useContext(ChainContext)
+  const addresses={
+    [String(ChainId.Polygon)]: "0x7266BA8cA064fbFC96DAE22B5C29a468D178C253",
+    [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2",
+  }
+  console.log(addresses[String(selectedChain)])
   const { contract } = useContract(
-    '0x7266BA8cA064fbFC96DAE22B5C29a468D178C253',
+    addresses[String(selectedChain)],
     "marketplace"
   );
   const { data: listings, isLoading: loadingListings } = useActiveListings(contract);

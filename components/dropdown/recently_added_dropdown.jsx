@@ -10,8 +10,10 @@ import {
 	updateRenkingDataByBlockchain,
 	updateRenkingDataByPostdate,
 } from '../../redux/counterSlice';
+import { ChainId } from '@thirdweb-dev/sdk';
 
-const Recently_added_dropdown = ({ data, dropdownFor }) => {
+
+const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 	const dispatch = useDispatch();
 	const [currencyValFrom, setCurrencyValFrom] = useState('');
 	const [currencyValTo, setCurrencyValTo] = useState('');
@@ -24,6 +26,14 @@ const Recently_added_dropdown = ({ data, dropdownFor }) => {
 	const [dropdownSale, setDropdownSale] = useState(false);
 	const [currencyDropdown, setCurrencyDropdown] = useState(false);
 
+	{setSelectedChain && useEffect(()=>{
+		if(sortActive==1){
+			setSelectedChain(String(ChainId.Polygon))
+		}else{
+			setSelectedChain(String(ChainId.Avalanche))
+		}
+	},[sortActive])}
+    
 	const handleRenkingCategoriesDropdown = () => {
 		window.addEventListener('click', (w) => {
 			if (w.target.closest('.rankingCategoriesDropdown')) {
