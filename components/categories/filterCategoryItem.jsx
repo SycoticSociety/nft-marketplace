@@ -1,9 +1,7 @@
 import React, { useEffect,useContext } from "react";
-import { trendingCategoryData } from "../../data/categories_data";
 import Collection_category_filter from "../collectrions/collection_category_filter";
 import CategoryItem from "./categoryItem";
-import { useDispatch } from "react-redux";
-import { updateTrendingCategoryItemData } from "../../redux/counterSlice";
+
 import {
   useContract,
   useActiveListings,
@@ -16,8 +14,9 @@ import ChainContext from "../chainContext";
 const FilterCategoryItem = () => {
   const {selectedChain,setSelectedChain}=useContext(ChainContext)
   const addresses={
+    [String(ChainId.Fantom)]:"0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171",
     [String(ChainId.Polygon)]: "0x7266BA8cA064fbFC96DAE22B5C29a468D178C253",
-    [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2",
+    [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2"
   }
   console.log(addresses[String(selectedChain)])
   const { contract } = useContract(
