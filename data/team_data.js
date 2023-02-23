@@ -5,12 +5,7 @@ const team_data = [
 		title: 'Lead Developer, & Founder',
 		name: 'Edgar Angelo VanDerZee',
 	},
-	{
-		id: '1Entrepreneur & Author',
-		image: '/images/team/team_2.jpg',
-		title: 'Chief Marketing officer & Developer',
-		name: 'George Keeney',
-	},
+	
 	{
 		id: '2Developer & Investor',
 		image: '/images/team/team_3.jpg',
