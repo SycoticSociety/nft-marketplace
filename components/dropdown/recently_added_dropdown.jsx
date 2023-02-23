@@ -30,8 +30,10 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 		if(setSelectedChain){
 			if(sortActive==1){
 				setSelectedChain(String(ChainId.Polygon))
-			}else{
+			}else if(sortActive==2){
 				setSelectedChain(String(ChainId.Avalanche))
+			}else{
+				setSelectedChain(String(ChainId.Fantom))
 			}
 		}
 	},[sortActive])

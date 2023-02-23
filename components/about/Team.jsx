@@ -12,12 +12,12 @@ const Team = () => {
             text="Meet Our Amazing Team"
             classes="font-display text-jacarta-700 mb-12 text-center text-3xl dark:text-white"
           />
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-[1.875rem] lg:grid-cols-5">
+          <div className="flex flex-col justify-around sm:flex-row">
             {team_data.map((item) => {
               const { id, image, title, name } = item;
               return (
                 <div
-                  className="dark:bg-jacarta-700 rounded-2lg dark:border-jacarta-600 border-jacarta-100 border bg-white p-8 text-center transition-shadow hover:shadow-lg"
+                  className="dark:bg-jacarta-700 rounded-2lg dark:border-jacarta-600 border-jacarta-100 border bg-white p-8 text-center transition-shadow hover:shadow-lg m-2"
                   key={id}
                 >
                   <img
@@ -70,13 +70,13 @@ const Team = () => {
               );
             })}
 
-            <Link href="#">
+            {/* <Link href="#">
               <a className="dark:bg-jacarta-700 rounded-2lg dark:border-jacarta-600 border-jacarta-100 flex items-center justify-center border bg-white p-8 text-center transition-shadow hover:shadow-lg">
                 <span className="font-display text-jacarta-700 text-md dark:text-white">
                   Join us!
                 </span>
               </a>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

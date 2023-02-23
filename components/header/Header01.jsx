@@ -408,6 +408,11 @@ export default function Header01() {
     ],
   };
 
+  const Marketplace={
+    id:5,
+    name:'Marketplace'
+  }
+
   const mobileCollapse = (id) => {
     if (isCollapse === id) {
       return setCollapse(null);
@@ -521,7 +526,28 @@ export default function Header01() {
                     ))}
                   </ul> */}
                 </li>
-
+                <li className="js-nav-dropdown group relative">
+                  <Link href='/marketplace'>
+                  <a  className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
+                    <span
+                    >
+                      Marketplace
+                    </span>
+                    <i className="lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width={24}
+                        height={24}
+                        className="h-4 w-4 dark:fill-white"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+                      </svg>
+                    </i>
+                  </a>
+                  </Link>
+                </li>
                 {/* page */}
                 {/* <li className="js-nav-dropdown group relative">
                   <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
@@ -722,7 +748,7 @@ export default function Header01() {
                   </svg>
                 </button>
                 <div className="dropdown-menu dark:bg-jacarta-800 group-dropdown-hover:opacity-100 group-dropdown-hover:visible !-right-4 !top-[85%] !left-auto z-10 min-w-[14rem] whitespace-nowrap rounded-xl bg-white transition-all will-change-transform before:absolute before:-top-3 before:h-3 before:w-full lg:absolute lg:grid lg:!translate-y-4 lg:py-4 lg:px-2 lg:shadow-2xl hidden lg:invisible lg:opacity-0">
-                  <div>
+                  {/* <div>
                     <button className="js-copy-clipboard font-display text-jacarta-700 my-4 flex select-none items-center whitespace-nowrap px-5 leading-none dark:text-white">
                       <span>0x7a86c0b06417100...</span>
                       <svg
@@ -736,8 +762,8 @@ export default function Header01() {
                         <path d="M7 7V3a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-4v3.993c0 .556-.449 1.007-1.007 1.007H3.007A1.006 1.006 0 0 1 2 20.993l.003-12.986C2.003 7.451 2.452 7 3.01 7H7zm2 0h6.993C16.549 7 17 7.449 17 8.007V15h3V4H9v3zM4.003 9L4 20h11V9H4.003z" />
                       </svg>
                     </button>
-                  </div>
-                  <div className="dark:border-jacarta-600 border-jacarta-100 mx-5 mb-6 rounded-lg border p-4">
+                  </div> */}
+                  {/* <div className="dark:border-jacarta-600 border-jacarta-100 mx-5 mb-6 rounded-lg border p-4">
                     <span className="dark:text-jacarta-200 text-sm font-medium tracking-tight">
                       Balance
                     </span>
@@ -748,9 +774,9 @@ export default function Header01() {
                       <span className="text-green text-lg font-bold">
                         10 ETH
                       </span>
-                    </div>
-                  </div>
-                  <Link href="/user/avatar_6">
+                    </div> */}
+                  {/* </div> */}
+                  {/* <Link href="/user/avatar_6">
                     <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -766,7 +792,7 @@ export default function Header01() {
                         My Profile
                       </span>
                     </a>
-                  </Link>
+                  </Link> */}
                   <Link href="/profile/user_avatar">
                     <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center space-x-2 rounded-xl px-5 py-2 transition-colors">
                       <svg
@@ -780,7 +806,7 @@ export default function Header01() {
                         <path d="M9.954 2.21a9.99 9.99 0 0 1 4.091-.002A3.993 3.993 0 0 0 16 5.07a3.993 3.993 0 0 0 3.457.261A9.99 9.99 0 0 1 21.5 8.876 3.993 3.993 0 0 0 20 12c0 1.264.586 2.391 1.502 3.124a10.043 10.043 0 0 1-2.046 3.543 3.993 3.993 0 0 0-3.456.261 3.993 3.993 0 0 0-1.954 2.86 9.99 9.99 0 0 1-4.091.004A3.993 3.993 0 0 0 8 18.927a3.993 3.993 0 0 0-3.457-.26A9.99 9.99 0 0 1 2.5 15.121 3.993 3.993 0 0 0 4 11.999a3.993 3.993 0 0 0-1.502-3.124 10.043 10.043 0 0 1 2.046-3.543A3.993 3.993 0 0 0 8 5.071a3.993 3.993 0 0 0 1.954-2.86zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
                       <span className="font-display text-jacarta-700 mt-1 text-sm dark:text-white">
-                        Edit Profile
+                        Create / Edit Profile
                       </span>
                     </a>
                   </Link>

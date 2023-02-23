@@ -39,21 +39,18 @@ const Hero_3 = () => {
             const { image, id, title, name, titleLink, userLink } = item;
             return (
               <SwiperSlide key={id}>
-                <div className="swiper-slide after:bg-jacarta-900/60 after:absolute after:inset-0">
+                <div className="swiper-slide  after:absolute after:inset-0">
                   <div className="container relative z-10 h-full pt-40">
-                    <h2 className="font-display text-2xl font-semibold text-white">
+                    <h2 className="font-display text-2xl font-semibold text-white text-center">
                       <Link href={titleLink}>
                         <a>{title}</a>
                       </Link>
                     </h2>
-                    <Link href={userLink}>
-                      <a className="text-2xs font-medium text-white">{name}</a>
-                    </Link>
                   </div>
 
                   <Image
                     src={image}
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="absolute inset-0 h-full w-full object-fit"
                     alt={title}
                     layout="fill"
                   />

@@ -24,7 +24,7 @@ const About = () => {
           {/* <!-- Page Title --> */}
           <div className="mx-auto max-w-2xl py-16 text-center">
             <h1 className="font-display text-jacarta-700 mb-8 text-4xl font-medium dark:text-white">
-              About Xhibiter
+              About Sycotic Society
             </h1>
             <p className="dark:text-jacarta-300 text-lg leading-normal">
               Every digital creation available through MakersPlace is an
@@ -41,7 +41,7 @@ const About = () => {
           {/* <!-- Video Lightbox --> */}
           <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-16 overflow-hidden rounded-3xl before:absolute before:inset-0 lg:-mt-96">
             <img
-              src="/images/about/video_cover.jpg"
+              src="/images/carousel/videoBanner.jpg"
               className="w-full"
               alt="video"
             />
@@ -63,7 +63,7 @@ const About = () => {
           </figure>
 
           {/* <!-- Statistics --> */}
-          <div className="pt-24">
+          {/* <div className="pt-24">
             <h2 className="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">
               Numbers Speak
             </h2>
@@ -98,7 +98,7 @@ const About = () => {
                 <span className="dark:text-jacarta-300 block">Total users</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -149,7 +149,7 @@ const About = () => {
                       style={{ backgroundColor: "#000" }}
                     >
                       <iframe
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        src="https://www.youtube.com/embed/Zq0Ss7Ga_wc"
                         title="YouTube video player"
                         // frameborder="0"
                         allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture"
@@ -165,12 +165,10 @@ const About = () => {
       </div>
 
       {/* <!-- end intro / statistics --> */}
-      {/* <!-- Story --> */}
-      <Story compFor="about" />
       {/* <!-- end story --> */}
       <Team />
-      <Partners />
-      <About_news />
+      {/* <Partners /> */}
+      {/* <About_news /> */}
     </>
   );
 };

@@ -40,7 +40,10 @@ const Collection_category_filter = () => {
       id: 2,
       text: "Avax",
     },
-
+    {
+      id:3,
+      text:"Fantom"
+    }
   ];
   const categoryText = [
     {

@@ -22,26 +22,7 @@ const Contact = () => {
               className="h-full w-full"
             />
           </picture>
-          <div className="container">
-            <div className="lg:flex">
-              {/* <!-- Contact Form --> */}
-              <div className="mb-12 lg:mb-0 lg:w-2/3 lg:pr-12">
-                <h2 className="font-display text-jacarta-700 mb-4 text-xl dark:text-white">
-                  Contact Us
-                </h2>
-                <p className="dark:text-jacarta-300 mb-16 text-lg leading-normal">
-                  {
-                    " Have a question? Need help? Don't hesitate, drop us a line"
-                  }
-                </p>
-
-                <ContactForm />
-              </div>
-
-              {/* <!-- Info --> */}
-              <Address />
-            </div>
-          </div>
+          <Address />
         </section>
         {/* <!-- end contact --> */}
       </div>
