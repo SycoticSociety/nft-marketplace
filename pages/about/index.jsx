@@ -27,9 +27,8 @@ const About = () => {
               About Sycotic Society
             </h1>
             <p className="dark:text-jacarta-300 text-lg leading-normal">
-              Every digital creation available through MakersPlace is an
-              authentic and truly unique digital creation, signed and issued by
-              the creator — made possible by blockchain technology.
+              Every digital creation available through Sycotic Society is a
+              truly unique digital creation, that will live forever on the Blockchain.
             </p>
           </div>
         </div>
