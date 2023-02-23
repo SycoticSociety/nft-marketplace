@@ -36,15 +36,10 @@ const Story = ({ compFor }) => {
                   Get Experience. Were A Results Driven Team.
                 </h2>
                 <p className="dark:text-jacarta-300 mb-8 text-lg leading-normal">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam
                 </p>
                 <p className="dark:text-jacarta-300 mb-10">
-                  Every digital creation available through MakersPlace is an
-                  authentic and truly unique digital creation, signed and issued
-                  by the creator — made possible by blockchain technology. Even
-                  if the digital creation is copied, it wont be the authentic
-                  and originally signed version.
+                  Every digital creation available through Sycotic Society is a
+                  truly unique digital creation, that will live forever on the blockchain.
                 </p>
                 <div className="flex space-x-4 sm:space-x-10">
                   <div className="flex space-x-4">
