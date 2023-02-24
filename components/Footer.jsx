@@ -36,7 +36,7 @@ const Footer = () => {
               </p> */}
 
               {/* <!-- Socials --> */}
-              <div className="flex space-x-5">
+              <div className="flex justify-center space-x-5">
                 {socialIcons.map((item) => {
                   const { id, href, text } = item;
                   return (
