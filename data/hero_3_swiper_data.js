@@ -1,11 +1,11 @@
 const hero_3_swiper_data = [
 	{
 		id: '0Palettes of Aotearoa - The Place of greenstone #01',
-		image: '/images/carousel/chainlist.jpg',
-		title: 'Chainnets',
+		image: '/images/carousel/marketplace.jpg',
+		title: 'Marketplace',
 		name: 'LeeCookNZ',
-		color:'purple',
-		titleLink: 'https://chainlist.org/',
+		color:'red',
+		titleLink: '/marketplace',
 		userLink: '#',
 	},
 	{
@@ -39,8 +39,8 @@ const hero_3_swiper_data = [
 
 const hero_3_swiper_thumbs_data = [
 	{
-		id: '0/images/carousel/chainlistSmall.jpg',
-		image: '/images/carousel/chainlistSmall.jpg',
+		id: '0/images/carousel/marketplaceSmall.jpg',
+		image: '/images/carousel/marketplaceSmall.jpg',
 	},
 	{
 		id: '1/images/carousel/roadmapSmall.png',
