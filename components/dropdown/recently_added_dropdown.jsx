@@ -276,8 +276,8 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 				<div
 					className={
 						blockChaindropdownShow
-							? 'dropdown-menu dark:bg-jacarta-800 z-10 min-w-[220px] whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl show absolute top-full right-0'
-							: 'dropdown-menu dark:bg-jacarta-800 z-10 min-w-[220px] whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl hidden absolute top-full right-0'
+							? 'dropdown-menu dark:bg-jacarta-800 z-10 min-w-[220px] whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl show absolute top-full right-0 left-28'
+							: 'dropdown-menu dark:bg-jacarta-800 z-10 min-w-[220px] whitespace-nowrap rounded-xl bg-white py-4 px-2 text-left shadow-xl hidden absolute top-full right-0 left-20'
 					}
 				>
 					<ul className="flex flex-col flex-wrap">
