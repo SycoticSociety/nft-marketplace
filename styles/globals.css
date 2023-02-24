@@ -13,7 +13,11 @@ html {
 		background: #fff !important;
 		color: #000;
 	}
-
+    
+	.dark body{
+		background: #000 !important;
+		color: #fff;
+	}
 	.text-black {
 		color: rgba(0, 0, 0, 0.6);
 	}
@@ -2581,7 +2585,10 @@ html {
 		--tw-bg-opacity: 1;
 		background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 	}
-
+    .bg-black{
+		--tw-bg-opacity: 1;
+		background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+	}
 	.bg-light-base {
 		--tw-bg-opacity: 1;
 		background-color: rgba(245, 248, 250, var(--tw-bg-opacity));
@@ -4194,12 +4201,12 @@ html {
 	}
 
 	.after\:bg-jacarta-900\/60:after {
-		background-color: rgba(13, 16, 45, 0.6);
+		background-color: rgba(0, 0, 0, 0.6);
 		content: var(--tw-content);
 	}
 
 	.after\:bg-jacarta-900\/20:after {
-		background-color: rgba(13, 16, 45, 0.2);
+		background-color: rgba(0, 0, 0, 0.2);
 		content: var(--tw-content);
 	}
 

@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       {/* <!-- Footer --> */}
 
-      <footer className="dark:bg-jacarta-900 page-footer bg-white">
+      <footer  className="dark:bg-black page-footer bg-white">
         <div className="container">
           <div className="flex justify-center pt-24 pb-12">
             <div className="col-span-3 md:col-span-4">
