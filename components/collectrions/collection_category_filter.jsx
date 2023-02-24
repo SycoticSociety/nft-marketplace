@@ -34,7 +34,7 @@ const Collection_category_filter = () => {
   const blockchainText = [
     {
       id: 1,
-      text: "Polygon",
+      text: "Fantom",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const Collection_category_filter = () => {
     },
     {
       id:3,
-      text:"Fantom"
+      text:"Polygon"
     }
   ];
   const categoryText = [

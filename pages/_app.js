@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
   const scrollRef = useRef({
     scrollPos: 0,
   });
-  const [selectedChain,setSelectedChain]=useState(ChainId.Polygon)
+  const [selectedChain,setSelectedChain]=useState(ChainId.Fantom)
 
 
   return (
