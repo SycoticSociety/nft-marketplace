@@ -41,7 +41,7 @@ const Hero_3 = () => {
               <SwiperSlide key={id}>
                 <div className="swiper-slide after:absolute after:inset-0 sm:mt-0 sm:mb-0">
                   <div className="container relative z-10 h-full pt-40 mb-10">
-                    <p className={`font-display text-md font-semibold text-white text-center block mx-auto w-fit bg-${color} p-2 rounded-md`}>
+                    <p className={`font-display text-md font-semibold text-white text-center block mx-auto w-fit bg-${color} p-2 rounded-md`} style={{backgroundColor:`${color}`}}>
                       <Link href={titleLink}>
                         <a>{title}</a>
                       </Link>
