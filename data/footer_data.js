@@ -99,18 +99,13 @@ const footerMenuList = [
 
 const socialIcons = [
   {
-    id: 1,
-    href: "https://www.facebook.com",
-    text: "facebook",
-  },
-  {
     id: 2,
     href: "https://twitter.com/SycoticSociety",
     text: "twitter",
   },
   {
     id: 3,
-    href: "https://discord.gg/",
+    href: "https://discord.com/invite/HZH35GhyRV",
     text: "discord",
   },
   {
