@@ -1,10 +1,5 @@
 import React from "react";
 import {
-  Auctions_categories,
-  Feature_collections,
-  NewseLatter,
-  Partners,
-  Top_collection,
   HeadLine
 } from "../../components/component";
 import Meta from "../../components/Meta";
