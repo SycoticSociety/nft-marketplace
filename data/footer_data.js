@@ -117,12 +117,7 @@ const socialIcons = [
     id: 4,
     href: "https://www.instagram.com",
     text: "instagram",
-  },
-  {
-    id: 5,
-    href: "https://www.tiktok.com",
-    text: "tiktok",
-  },
+  }
 ];
 
 export { footerMenuList, socialIcons };

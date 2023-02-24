@@ -2704,6 +2704,11 @@ html {
 		--tw-bg-opacity: 1;
 		background-color: rgba(254, 178, 64, var(--tw-bg-opacity));
 	}
+	
+	.bg-purple{
+		--tw-bg-opacity: 1;
+		background-color:rgba(148, 0, 211, var(--tw-bg-opacity));
+	}
 
 	.bg-\[\#46C7E3\] {
 		--tw-bg-opacity: 1;

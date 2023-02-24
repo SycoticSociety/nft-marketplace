@@ -548,6 +548,50 @@ export default function Header01() {
                   </a>
                   </Link>
                 </li>
+                <li className="js-nav-dropdown group relative">
+                  <Link href='/about/'>
+                  <a  className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
+                    <span
+                    >
+                      About
+                    </span>
+                    <i className="lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width={24}
+                        height={24}
+                        className="h-4 w-4 dark:fill-white"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+                      </svg>
+                    </i>
+                  </a>
+                  </Link>
+                </li>
+                <li className="js-nav-dropdown group relative">
+                  <Link href='mailto:sycoticx@sycoticsociety.com'>
+                  <a  className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
+                    <span
+                    >
+                      Contact
+                    </span>
+                    <i className="lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width={24}
+                        height={24}
+                        className="h-4 w-4 dark:fill-white"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+                      </svg>
+                    </i>
+                  </a>
+                  </Link>
+                </li>
                 {/* page */}
                 {/* <li className="js-nav-dropdown group relative">
                   <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
@@ -646,7 +690,7 @@ export default function Header01() {
                 </li> */}
 
                 {/* resource */}
-                <li className="js-nav-dropdown group relative">
+                {/* <li className="js-nav-dropdown group relative">
                   <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                     <span
                       className={
@@ -692,10 +736,10 @@ export default function Header01() {
                       </li>
                     ))}
                   </ul>
-                </li>
+                </li> */}
 
                 {/* create */}
-                <li className="group">
+                {/* <li className="group">
                   <Link href="/create">
                     <a>
                       <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
@@ -711,7 +755,7 @@ export default function Header01() {
                       </button>
                     </a>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
             {/* End menu for desktop */}
@@ -936,85 +980,80 @@ export default function Header01() {
         </div>
         {/* mobile menu top header content */}
 
-        <form action="search" className="relative mt-24 mb-8 w-full lg:hidden">
-          <input
-            type="search"
-            className="text-jacarta-700 placeholder-jacarta-500 focus:ring-accent border-jacarta-100 w-full rounded-2xl border py-3 px-4 pl-10 dark:border-transparent dark:bg-white/[.15] dark:text-white dark:placeholder-white"
-            placeholder="Search"
-          />
-          <span className="absolute left-0 top-0 flex h-full w-12 items-center justify-center rounded-2xl">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width={24}
-              height={24}
-              className="fill-jacarta-500 h-4 w-4 dark:fill-white"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z" />
-            </svg>
-          </span>
+        <form action="search" className="relative mt-16 mb-8 w-full lg:hidden">
         </form>
         {/* End search form mobile menu  */}
 
         <nav className="navbar w-full">
           <ul className="flex flex-col lg:flex-row">
-            <li className="js-nav-dropdown group relative">
-              <button
-                onClick={() => mobileCollapse(home.id)}
-                className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
-              >
-                <span
-                  className={
-                    isParentPageActive(home.pages, route.asPath)
-                      ? "text-accent dark:text-accent"
-                      : ""
-                  }
-                >
-                  {home.name}
-                </span>
-                {/* <i className="lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width={24}
-                    height={24}
-                    className="h-4 w-4 dark:fill-white"
-                  >
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
-                  </svg>
-                </i> */}
-              </button>
-
-              {/* <ul
-                className={`dropdown-menu dark:bg-jacarta-800 left-0 top-[85%] z-10 min-w-[200px] gap-x-4 whitespace-nowrap rounded-xl bg-white transition-all will-change-transform group-hover:visible group-hover:opacity-100 lg:invisible lg:absolute lg:grid lg:translate-y-4 lg:py-4 lg:px-2 lg:opacity-0 lg:shadow-2xl lg:group-hover:translate-y-2 relative ${
-                  isCollapse === home.id ? "block" : "hidden"
-                }`}
-              >
-                {home?.pages?.map((page) => (
-                  <li key={page.id} onClick={() => setToggle(false)}>
-                    <Link href={page.path}>
-                      <a className="dark:hover:bg-jacarta-600 hover:text-accent focus:text-accent hover:bg-jacarta-50 flex items-center rounded-xl px-5 py-2 transition-colors justify-between">
-                        <span
-                          className={`font-display ${
-                            isChildrenPageActive(route.asPath, page.path)
-                              ? "text-accent dark:text-accent"
-                              : "text-jacarta-700"
-                          } text-sm dark:text-white`}
-                        >
-                          {page.name}
-                        </span>
-                        {page.condition ? (
-                          <span className="rounded bg-green py-1 px-2 text-tiny font-bold uppercase leading-none text-white ml-4">
-                            new
-                          </span>
-                        ) : undefined}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul> */}
+            
+          <li className="group" onClick={() => setToggle(false)}>
+              <Link href="/">
+                <a>
+                  <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
+                    <span
+                      className={
+                        isChildrenPageActive("/", route.asPath)
+                          ? "text-accent dark:text-accent"
+                          : ""
+                      }
+                    >
+                      Home
+                    </span>
+                  </button>
+                </a>
+              </Link>
+            </li>
+            <li className="group" onClick={() => setToggle(false)}>
+              <Link href="/marketplace">
+                <a>
+                  <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
+                    <span
+                      className={
+                        isChildrenPageActive("/marketplace", route.asPath)
+                          ? "text-accent dark:text-accent"
+                          : ""
+                      }
+                    >
+                      Marketplace
+                    </span>
+                  </button>
+                </a>
+              </Link>
+            </li>
+            <li className="group" onClick={() => setToggle(false)}>
+              <Link href="/about/">
+                <a>
+                  <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
+                    <span
+                      className={
+                        isChildrenPageActive("/about/", route.asPath)
+                          ? "text-accent dark:text-accent"
+                          : ""
+                      }
+                    >
+                      About
+                    </span>
+                  </button>
+                </a>
+              </Link>
+            </li>
+            <li className="group" onClick={() => setToggle(false)}>
+              <Link href="mailto:.com">
+                <a>
+                  <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
+                    <span
+                      className={
+                        isChildrenPageActive("/contact", route.asPath)
+                          ? "text-accent dark:text-accent"
+                          : ""
+                      }
+                    >
+                      Contact
+                    </span>
+                  </button>
+                </a>
+              </Link>
             </li>
             {/* <li className="js-nav-dropdown group relative">
               <button
@@ -1121,7 +1160,7 @@ export default function Header01() {
                 ))}
               </ul>
             </li> */}
-            <li className="js-nav-dropdown group relative">
+            {/* <li className="js-nav-dropdown group relative">
               <button
                 onClick={() => mobileCollapse(resource.id)}
                 className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full"
@@ -1172,8 +1211,8 @@ export default function Header01() {
                   </li>
                 ))}
               </ul>
-            </li>
-            <li className="group" onClick={() => setToggle(false)}>
+            </li> */}
+            {/* <li className="group" onClick={() => setToggle(false)}>
               <Link href="/create">
                 <a>
                   <button className="text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5">
@@ -1189,15 +1228,12 @@ export default function Header01() {
                   </button>
                 </a>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         {/* End navbar mobile menu  */}
 
         <div className="mt-10 w-full lg:hidden">
-          {/* <div className="js-wallet bg-accent shadow-accent-volume hover:bg-accent-dark block w-full rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-            MetaMask not available :
-          </div> */}
           <hr className="dark:bg-jacarta-600 bg-jacarta-100 my-5 h-px border-0" />
           <div className="flex items-center justify-center space-x-5">
             <a className="group">

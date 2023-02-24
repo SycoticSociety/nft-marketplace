@@ -20,7 +20,7 @@ const Hero_3 = () => {
   return (
     <>
       {/* <!-- Hero Slider --> */}
-      <section className="relative h-screen">
+      <section className="relative sm:h-screen h-[500px]">
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
           loop={true}
@@ -33,27 +33,30 @@ const Hero_3 = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          className="full-slider h-screen"
+          className="full-slider my-36 h-2/3 sm:h-screen sm:my-0"
         >
           {hero_3_swiper_data.map((item) => {
-            const { image, id, title, name, titleLink, userLink } = item;
+            const { image, id, title, name, color, titleLink, userLink } = item;
             return (
               <SwiperSlide key={id}>
-                <div className="swiper-slide  after:absolute after:inset-0">
-                  <div className="container relative z-10 h-full pt-40">
-                    <h2 className="font-display text-2xl font-semibold text-white text-center">
+                <div className="swiper-slide after:absolute after:inset-0 sm:mt-0 sm:mb-0">
+                  <div className="container relative z-10 h-full pt-40 mb-10">
+                    <p className={`font-display text-md font-semibold text-white text-center block mx-auto w-fit bg-${color} p-2 rounded-md`}>
                       <Link href={titleLink}>
                         <a>{title}</a>
                       </Link>
-                    </h2>
+                    </p>
                   </div>
-
+                  <Link href={titleLink}>
                   <Image
                     src={image}
-                    className="absolute inset-0 h-full w-full object-fit"
+                    className="inset-0 w-full h-full"
                     alt={title}
+                    width={1920}
+                    height={1080}
                     layout="fill"
                   />
+                  </Link>
                 </div>
               </SwiperSlide>
             );
@@ -84,7 +87,7 @@ const Hero_3 = () => {
                 const { image, id } = item;
                 return (
                   <SwiperSlide
-                    className="swiper-slide cursor-pointer rounded p-5 swiper-slide-duplicate swiper-slide-duplicate-next "
+                    className="swiper-slide cursor-pointer rounded p-5 md:p-10 lg:p-12 swiper-slide-duplicate swiper-slide-duplicate-next "
                     key={id}
                   >
                     <img

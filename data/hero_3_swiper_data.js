@@ -2,9 +2,10 @@ const hero_3_swiper_data = [
 	{
 		id: '0Palettes of Aotearoa - The Place of greenstone #01',
 		image: '/images/carousel/chainlist.jpg',
-		title: 'Chainlists we support',
+		title: 'Chainnets',
 		name: 'LeeCookNZ',
-		titleLink: '#',
+		color:'purple',
+		titleLink: 'https://chainlist.org/',
 		userLink: '#',
 	},
 	{
@@ -12,7 +13,8 @@ const hero_3_swiper_data = [
 		image: '/images/carousel/roadmap.png',
 		title: 'Our Roadmap',
 		name: 'By 051_Hart',
-		titleLink: '#',
+		color:'red',
+		titleLink: '/roadmap',
 		userLink: '#',
 	},
 	{
@@ -20,15 +22,17 @@ const hero_3_swiper_data = [
 		image: '/images/carousel/tokenomics.jpg',
 		title: 'Tokenomics',
 		name: 'By THE OVERSEERS',
+		color:'blue',
 		titleLink: '#',
 		userLink: '#',
 	},
 	{
 		id: '3Shiba #368',
 		image: '/images/carousel/crodexAsset.jpg',
-		title: 'Sycotic Society: A Crodex Asset',
+		title: 'Swap now',
 		name: 'Generous Shiba Club',
-		titleLink: '#',
+		color: 'orange',
+		titleLink: 'https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59',
 		userLink: '#',
 	},
 ];

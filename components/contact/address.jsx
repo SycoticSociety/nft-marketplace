@@ -24,10 +24,10 @@ const Address = () => {
               Email
             </span>
             <a
-              href="mailto:office@xhibiter.com"
+              href="mailto:sycoticx@sycoticsociety.com"
               className="hover:text-accent dark:text-jacarta-300 text-sm not-italic"
             >
-              office@xhibiter.com
+              sycoticx@sycoticsociety.com
             </a>
           </div>
         </div>
@@ -49,12 +49,12 @@ const Address = () => {
             <span className="font-display text-jacarta-700 block text-base dark:text-white">
               Email
             </span>
-            <a
-              href="mailto:office@xhibiter.com"
+            <ao
+              href="mailto:sycoticx@sycoticsociety.com"
               className="hover:text-accent dark:text-jacarta-300 text-sm not-italic"
             >
               @sycoticSociety
-            </a>
+            </ao>
           </div>
         </div>
       </div>
