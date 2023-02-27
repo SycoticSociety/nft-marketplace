@@ -23,7 +23,7 @@ const hero_3_swiper_data = [
 		title: 'Tokenomics',
 		name: 'By THE OVERSEERS',
 		color:'blue',
-		titleLink: '#',
+		titleLink: '/tokenomics',
 		userLink: '#',
 	},
 	{
