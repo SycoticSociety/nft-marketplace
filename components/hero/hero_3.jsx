@@ -18,9 +18,23 @@ const Hero_3 = () => {
   const [activeThumb, setActiveThumb] = useState(null);
 
   return (
-    <>
+    <div>
       {/* <!-- Hero Slider --> */}
-      <section className="relative sm:h-screen h-[500px]">
+      <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
+          <img
+            className="h-full w-full"
+            src="/images/gradient.jpg"
+            alt="gradient"
+          />
+      </picture> 
+         <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block">
+          <img
+            className="h-full w-full"
+            src="/images/gradient_dark.jpg"
+            alt="gradient dark"
+          />
+      </picture> 
+      <section className="relative sm:h-screen h-[500px] mt-[25vh]">
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
           loop={true}
@@ -105,7 +119,7 @@ const Hero_3 = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
