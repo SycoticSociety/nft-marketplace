@@ -110,7 +110,7 @@ const socialIcons = [
   },
   {
     id: 4,
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/sycoticsociety/?hl=en",
     text: "instagram",
   }
 ];
