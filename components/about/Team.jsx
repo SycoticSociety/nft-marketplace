@@ -14,7 +14,7 @@ const Team = () => {
           />
           <div className="flex flex-col justify-around sm:flex-row">
             {team_data.map((item) => {
-              const { id, image, title, name } = item;
+              const { id, image, title, name, linkedin, twitter} = item;
               return (
                 <div
                   className="dark:bg-jacarta-700 rounded-2lg dark:border-jacarta-600 border-jacarta-100 border bg-white p-8 text-center transition-shadow hover:shadow-lg m-2"
@@ -33,7 +33,7 @@ const Team = () => {
                   </span>
 
                   <div className="mt-3 flex justify-center space-x-5">
-                    <Link href="#">
+                    <Link href={linkedin}>
                       <a className="group">
                         <svg
                           aria-hidden="true"
@@ -49,7 +49,7 @@ const Team = () => {
                         </svg>
                       </a>
                     </Link>
-                    <Link href="#">
+                    <Link href={twitter}>
                       <a className="group">
                         <svg
                           aria-hidden="true"
