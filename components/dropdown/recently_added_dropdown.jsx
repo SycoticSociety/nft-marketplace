@@ -216,7 +216,7 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 									);
 								})}
 
-								<span className="font-display text-jacarta-300 block px-5 py-2 text-sm font-semibold">
+								{/* <span className="font-display text-jacarta-300 block px-5 py-2 text-sm font-semibold">
 									Options
 								</span>
 								{inputData.map(({ id, text }) => {
@@ -236,7 +236,7 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 											</span>
 										</div>
 									);
-								})}
+								})} */}
 							</div>
 						}
 					>

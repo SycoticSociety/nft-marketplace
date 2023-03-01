@@ -21,19 +21,19 @@ const Hero_3 = () => {
     <div>
       {/* <!-- Hero Slider --> */}
       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
-          <img
-            className="h-full w-full"
-            src="/images/gradient.jpg"
-            alt="gradient"
-          />
-      </picture> 
-         <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block">
-          <img
-            className="h-full w-full"
-            src="/images/gradient_dark.jpg"
-            alt="gradient dark"
-          />
-      </picture> 
+        <img
+          className="h-full w-full"
+          src="/images/gradient.jpg"
+          alt="gradient"
+        />
+      </picture>
+      <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block">
+        <img
+          className="h-full w-full"
+          src="/images/gradient_dark.jpg"
+          alt="gradient dark"
+        />
+      </picture>
       <section className="relative sm:h-screen h-[500px] mt-[25vh]">
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
@@ -55,21 +55,23 @@ const Hero_3 = () => {
               <SwiperSlide key={id}>
                 <div className="swiper-slide after:absolute after:inset-0 sm:mt-0 sm:mb-0">
                   <div className="container relative z-10 h-full pt-40 mb-10">
-                    <p className={`font-display text-md font-semibold text-white text-center block mx-auto w-fit bg-${color} p-2 rounded-md`} style={{backgroundColor:`${color}`}}>
+                    <div
+                      className={`text-md font-semibold text-white mx-auto w-fit p-2 border-b-4 rounded-lg ${color} border-slate-400`}
+                    >
                       <Link href={titleLink}>
                         <a>{title}</a>
                       </Link>
-                    </p>
+                    </div>
                   </div>
                   <Link href={titleLink}>
-                  <Image
-                    src={image}
-                    className="inset-0 w-full h-full"
-                    alt={title}
-                    width={1920}
-                    height={1080}
-                    layout="fill"
-                  />
+                    <Image
+                      src={image}
+                      className="inset-0 w-full h-full"
+                      alt={title}
+                      width={1920}
+                      height={1080}
+                      layout="fill"
+                    />
                   </Link>
                 </div>
               </SwiperSlide>

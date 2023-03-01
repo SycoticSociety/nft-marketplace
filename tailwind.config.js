@@ -4,6 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist:['bg-orange','bg-purple','bg-violet-500','bg-violet-600','bg-purple','bg-blue-500','bg-blue-700'],
   darkMode: "class",
   theme: {
     screens: {
@@ -35,6 +36,8 @@ module.exports = {
       red: "#EF4444",
       purple:"#9400D3",
       blue: "#428AF8",
+      gray:'#94A354',
+      violet500:'#8b5cf6',
       jacarta: {
         base: "#5A5D79",
         50: "#f9fafb",
