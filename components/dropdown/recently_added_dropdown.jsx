@@ -13,7 +13,7 @@ import {
 import { ChainId } from '@thirdweb-dev/sdk';
 
 
-const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
+const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilter}) => {
 	const dispatch = useDispatch();
 	const [currencyValFrom, setCurrencyValFrom] = useState('');
 	const [currencyValTo, setCurrencyValTo] = useState('');
@@ -26,6 +26,8 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 	const [dropdownSale, setDropdownSale] = useState(false);
 	const [currencyDropdown, setCurrencyDropdown] = useState(false);
 	const [blockChainText,setBlockChainText]=useState('Fantom')
+	const [filterText,setFilterText]=useState('Recently_Added')
+    const [filterActive,setFilterActive]=useState(1)
 
 	useEffect(()=>{
 		if(setSelectedChain){
@@ -40,7 +42,22 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 				setBlockChainText('Polygon')
 			}
 		}
-	},[sortActive])
+	},[sortActive,setSelectedChain])
+
+	useEffect(()=>{
+      if(setFilter){
+		if(filterActive==1){
+			setFilter('Recently_Added')
+			setFilterText('Recently_Added')
+		}else if(filterActive==2){
+			setFilter('Low_To_High')
+			setFilterText('Low_To_High')
+		}else if (filterActive==3){
+		    setFilter('High_To_Low')
+			setFilterText('High_To_Low')
+		}
+	  }
+	},[filterActive,setFilter])
     
 	const handleRenkingCategoriesDropdown = () => {
 		window.addEventListener('click', (w) => {
@@ -194,13 +211,12 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 											key={id}
 											className="dropdown-item font-display text-jacarta-700 dark:hover:bg-jacarta-600 hover:bg-jacarta-50 flex w-full items-center justify-between rounded-xl px-5 py-2 text-left text-sm transition-colors dark:text-white"
 											onClick={() => {
-												setsortActive(id);
-
+												setFilterActive(id);
 												setSortFilterText(text);
 											}}
 										>
 											{text}
-											{sortActive === id && (
+											{filterActive === id && (
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
 													viewBox="0 0 24 24"
@@ -241,7 +257,7 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain}) => {
 						}
 					>
 						<div className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 inline-flex w-48 items-center justify-between rounded-lg border bg-white py-2 px-3 text-sm dark:text-white">
-							<span className="font-display">Trending</span>
+							<span className="font-display">{filterText}</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"

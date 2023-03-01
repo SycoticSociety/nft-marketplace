@@ -4,7 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  safelist:['bg-orange','bg-purple','bg-violet-500','bg-violet-600','bg-purple','bg-blue-500','bg-blue-700'],
+  safelist:['bg-orange','bg-violet-500'],
   darkMode: "class",
   theme: {
     screens: {

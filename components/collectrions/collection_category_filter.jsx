@@ -2,7 +2,7 @@ import React, { useState , useContext } from "react";
 import Recently_added_dropdown from "../dropdown/recently_added_dropdown";
 import ChainContext from '../chainContext';
 
-const Collection_category_filter = () => {
+const Collection_category_filter = ({filter,setFilter}) => {
   const [propertiesModal, setPropertiesModal] = useState(false);
   const [propetiesAccordionValue, setPropetiesAccordionValue] = useState(null);
   const {selectedChain,setSelectedChain}=useContext(ChainContext)
@@ -25,11 +25,7 @@ const Collection_category_filter = () => {
     {
       id: 3,
       text: "Price: high to low",
-    },
-    {
-      id: 4,
-      text: "Auction Ending Soon",
-    },
+    }
   ];
   const blockchainText = [
     {
@@ -396,12 +392,12 @@ const Collection_category_filter = () => {
 
             data={blockchainText}
             dropdownFor="blockchain"
-			setSelectedChain={setSelectedChain}
+			      setSelectedChain={setSelectedChain}
           />
         </div>
 
         {/* <!-- Sort --> */}
-        <Recently_added_dropdown data={sortText} dropdownFor="recently_added" />
+        <Recently_added_dropdown data={sortText} dropdownFor="recently_added" setFilter={setFilter} filter={filter}/>
       </div>
     </>
   );
