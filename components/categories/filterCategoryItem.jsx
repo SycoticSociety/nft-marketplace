@@ -8,7 +8,6 @@ import {
 } from "@thirdweb-dev/react";
 import { ChainId } from "@thirdweb-dev/react";
 import ChainContext from "../chainContext";
-import _ from 'lodash';
 
 
 const FilterCategoryItem = () => {
@@ -27,25 +26,27 @@ const FilterCategoryItem = () => {
   const address = useAddress();
   const [filter,setFilter]=useState('Recently_Added')
   const itemsRef=useRef(listings)
-  
+  console.log(filter)
   useEffect(()=>{
-    if(listings && itemsRef){
-      if(filter=='Recently_Added'){
-        itemsRef.current=_.orderBy(listings,item=>item.asset.id,["desc"])
-      }else if(filter=='High_To_Low'){
-        itemsRef.current=_.orderBy(listings,item=>item.buyoutCurrencyValuePerToken.displayValue,['desc'])
-      }else if (filter=='Low_To_High'){
-        itemsRef.current=_.orderBy(listings,item=>item.buyoutCurrencyValuePerToken.displayValue,['asc'])
+    const arrangeListings=()=>{
+      if(listings && itemsRef){
+        if(filter==='Recently_Added'){
+          itemsRef.current=listings.sort((a,b)=>Number(b.id)-Number(a.id))
+        }else if(filter==='High_To_Low'){
+          itemsRef.current=listings.sort((a,b)=>Number(b.buyoutCurrencyValuePerToken.displayValue)-Number(a.buyoutCurrencyValuePerToken.displayValue))
+        }else if (filter==='Low_To_High'){
+          itemsRef.current=listings.sort((a,b)=>Number(a.buyoutCurrencyValuePerToken.displayValue)-Number(b.buyoutCurrencyValuePerToken.displayValue))
+        }
       }
     }
+    arrangeListings()
   },[filter,listings,itemsRef])
-
   if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
     <div>
       {/* <!-- Filter --> */}
       <Collection_category_filter filter={filter} setFilter={setFilter}/>
-      <CategoryItem listings={itemsRef?.current?.slice(0,loadMore)} contract={contract} address={address}/>
+      <CategoryItem listings={itemsRef?.current} contract={contract} address={address}/>
       <div className="mt-10 text-center">
         <button
           onClick={()=>setLoadMore(loadMore=>loadMore+8)}

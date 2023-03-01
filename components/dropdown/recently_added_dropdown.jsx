@@ -13,7 +13,7 @@ import {
 import { ChainId } from '@thirdweb-dev/sdk';
 
 
-const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilter}) => {
+const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilter,filter}) => {
 	const dispatch = useDispatch();
 	const [currencyValFrom, setCurrencyValFrom] = useState('');
 	const [currencyValTo, setCurrencyValTo] = useState('');
@@ -26,7 +26,6 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilt
 	const [dropdownSale, setDropdownSale] = useState(false);
 	const [currencyDropdown, setCurrencyDropdown] = useState(false);
 	const [blockChainText,setBlockChainText]=useState('Fantom')
-	const [filterText,setFilterText]=useState('Recently_Added')
     const [filterActive,setFilterActive]=useState(1)
 
 	useEffect(()=>{
@@ -48,13 +47,10 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilt
       if(setFilter){
 		if(filterActive==1){
 			setFilter('Recently_Added')
-			setFilterText('Recently_Added')
 		}else if(filterActive==2){
 			setFilter('Low_To_High')
-			setFilterText('Low_To_High')
 		}else if (filterActive==3){
 		    setFilter('High_To_Low')
-			setFilterText('High_To_Low')
 		}
 	  }
 	},[filterActive,setFilter])
@@ -257,7 +253,7 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilt
 						}
 					>
 						<div className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 inline-flex w-48 items-center justify-between rounded-lg border bg-white py-2 px-3 text-sm dark:text-white">
-							<span className="font-display">{filterText}</span>
+							<span className="font-display">{filter}</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								viewBox="0 0 24 24"
