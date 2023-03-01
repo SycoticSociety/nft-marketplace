@@ -429,7 +429,8 @@ html {
 		-webkit-animation: gradient 6s linear infinite;
 		animation: gradient 6s linear infinite;
 	}
-
+    
+	
 	/*! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com*/
 	*,
 	:after,
@@ -2691,7 +2692,7 @@ html {
 
 	.bg-blue {
 		--tw-bg-opacity: 1;
-		background-color: rgba(66, 138, 248, var(--tw-bg-opacity));
+		background-color: rgba(7, 89, 133, var(--tw-bg-opacity));
 	}
 
 	.bg-\[\#FFD0D0\] {
@@ -2701,12 +2702,12 @@ html {
 
     .bg-orange {
 		--tw-bg-opacity: 1;
-		background: rgba(254, 178, 64, var(--tw-bg-opacity));
+		background: rgba(194, 65, 12, var(--tw-bg-opacity));
 	}
 	
 	.bg-purple{
 		--tw-bg-opacity: 1;
-		background-color:rgba(148, 0, 211, var(--tw-bg-opacity));
+		background-color:rgba(88, 28, 135, var(--tw-bg-opacity));
 	}
     
 	.bg-violet-500{
