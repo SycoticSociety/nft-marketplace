@@ -25,7 +25,6 @@ const FilterCategoryItem = () => {
   const [loadMore,setLoadMore]=useState(8)
   const address = useAddress();
   const [filter,setFilter]=useState('Recently_Added')
-  const itemsRef=useRef(listings)
   const arrangeListings=useMemo(()=>{
       if(listings && itemsRef){
         if(filter==='Recently_Added'){
@@ -36,7 +35,7 @@ const FilterCategoryItem = () => {
           return listings.sort((a,b)=>Number(a.buyoutCurrencyValuePerToken.displayValue)-Number(b.buyoutCurrencyValuePerToken.displayValue))
         }
       }
-    },[filter,listings,itemsRef])
+    },[filter,listings])
   if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
     <div>
