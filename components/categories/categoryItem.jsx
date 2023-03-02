@@ -1,16 +1,10 @@
 import React from "react";
 import "tippy.js/dist/tippy.css";
 import Auctions_dropdown from "../dropdown/Auctions_dropdown";
-import { useDispatch, useSelector } from "react-redux";
-import { buyModalShow } from "../../redux/counterSlice";
 import { useMetamask } from "@thirdweb-dev/react";
 
 const CategoryItem = ({ listings,contract,address}) => {
   const connectWithMetamask=useMetamask()
-  const { sortedtrendingCategoryItemData } = useSelector(
-    (state) => state.counter
-  );
-  const dispatch = useDispatch();
   const buyAsset = async (id,address,contract) => {
     if(!address){
       connectWithMetamask()
@@ -31,20 +25,9 @@ const CategoryItem = ({ listings,contract,address}) => {
             asset,
             buyoutCurrencyValuePerToken,
             id
-            // bidLimit,
-            // bidCount,
-            // // likes,
-            // creator,
-            // owner,
           } = item;
-          // const itemLink = image
-          //   .split("/")
-          //   .slice(-1)
-          //   .toString()
-          //   .replace(".jpg", "")
-          //   .replace(".gif", "");
           
-          return (
+         return (
             <article key={asset.id}>
               <div className="dark:bg-jacarta-900 dark:border-jacarta-700 border-jacarta-100 rounded-2.5xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg">
                 <figure className="relative">
@@ -93,7 +76,7 @@ const CategoryItem = ({ listings,contract,address}) => {
                 </div>
                 <div className="mt-2 text-sm">
                   <span className="dark:text-jacarta-200 text-jacarta-700 mr-1">
-                    {buyoutCurrencyValuePerToken.displayValue}
+                    {buyoutCurrencyValuePerToken?.displayValue}
                   </span>
                   {/* <span className="dark:text-jacarta-300 text-jacarta-500">
                     {bidCount}/{bidLimit}

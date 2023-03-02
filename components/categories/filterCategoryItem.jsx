@@ -1,4 +1,4 @@
-import React, { useEffect,useContext, useState,useRef} from "react";
+import React, { useMemo ,useContext, useState,useRef} from "react";
 import Collection_category_filter from "../collectrions/collection_category_filter";
 import CategoryItem from "./categoryItem";
 import {
@@ -26,27 +26,23 @@ const FilterCategoryItem = () => {
   const address = useAddress();
   const [filter,setFilter]=useState('Recently_Added')
   const itemsRef=useRef(listings)
-  console.log(filter)
-  useEffect(()=>{
-    const arrangeListings=()=>{
+  const arrangeListings=useMemo(()=>{
       if(listings && itemsRef){
         if(filter==='Recently_Added'){
-          itemsRef.current=listings.sort((a,b)=>Number(b.id)-Number(a.id))
+          return itemsRef.current.sort((a,b)=>Number(b.id)-Number(a.id))
         }else if(filter==='High_To_Low'){
-          itemsRef.current=listings.sort((a,b)=>Number(b.buyoutCurrencyValuePerToken.displayValue)-Number(a.buyoutCurrencyValuePerToken.displayValue))
+          return itemsRef.current.sort((a,b)=>Number(b.buyoutCurrencyValuePerToken.displayValue)-Number(a.buyoutCurrencyValuePerToken.displayValue))
         }else if (filter==='Low_To_High'){
-          itemsRef.current=listings.sort((a,b)=>Number(a.buyoutCurrencyValuePerToken.displayValue)-Number(b.buyoutCurrencyValuePerToken.displayValue))
+          return itemsRef.current.sort((a,b)=>Number(a.buyoutCurrencyValuePerToken.displayValue)-Number(b.buyoutCurrencyValuePerToken.displayValue))
         }
       }
-    }
-    arrangeListings()
-  },[filter,listings,itemsRef])
+    },[filter,listings,itemsRef])
   if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
     <div>
       {/* <!-- Filter --> */}
       <Collection_category_filter filter={filter} setFilter={setFilter}/>
-      <CategoryItem listings={itemsRef?.current} contract={contract} address={address}/>
+      <CategoryItem listings={arrangeListings} contract={contract} address={address}/>
       <div className="mt-10 text-center">
         <button
           onClick={()=>setLoadMore(loadMore=>loadMore+8)}
