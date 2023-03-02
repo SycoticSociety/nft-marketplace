@@ -26,7 +26,7 @@ const FilterCategoryItem = () => {
   const address = useAddress();
   const [filter,setFilter]=useState('Recently_Added')
   const arrangeListings=useMemo(()=>{
-      if(listings && itemsRef){
+      if(listings){
         if(filter==='Recently_Added'){
           return listings.sort((a,b)=>Number(b.id)-Number(a.id))
         }else if(filter==='High_To_Low'){
