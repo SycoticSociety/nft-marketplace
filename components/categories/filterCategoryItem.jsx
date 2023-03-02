@@ -29,11 +29,11 @@ const FilterCategoryItem = () => {
   const arrangeListings=useMemo(()=>{
       if(listings && itemsRef){
         if(filter==='Recently_Added'){
-          return itemsRef.current.sort((a,b)=>Number(b.id)-Number(a.id))
+          return listings.sort((a,b)=>Number(b.id)-Number(a.id))
         }else if(filter==='High_To_Low'){
-          return itemsRef.current.sort((a,b)=>Number(b.buyoutCurrencyValuePerToken.displayValue)-Number(a.buyoutCurrencyValuePerToken.displayValue))
+          return listings.sort((a,b)=>Number(b.buyoutCurrencyValuePerToken.displayValue)-Number(a.buyoutCurrencyValuePerToken.displayValue))
         }else if (filter==='Low_To_High'){
-          return itemsRef.current.sort((a,b)=>Number(a.buyoutCurrencyValuePerToken.displayValue)-Number(b.buyoutCurrencyValuePerToken.displayValue))
+          return listings.sort((a,b)=>Number(a.buyoutCurrencyValuePerToken.displayValue)-Number(b.buyoutCurrencyValuePerToken.displayValue))
         }
       }
     },[filter,listings,itemsRef])
