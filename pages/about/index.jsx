@@ -36,12 +36,12 @@ const About = () => {
       {/* <!-- Intro / Statistics --> */}
 
       <section className="pb-24">
-        <div className="container flex flex-col sm:flex-row">
+        <div className="container flex flex-col sm:flex-row sm:justify-around">
           {/* <!-- Video Lightbox --> */}
           <figure className="before:bg-jacarta-900/25 rounded-xl relative m-4
            overflow-hidden rounded-3xl">
             <img
-              src="/images/carousel/crodexAsset.jpg"
+              src="/images/carousel/darkestHour.jpg"
               className="w-full"
               alt="video"
             />
