@@ -2702,7 +2702,7 @@ html {
 
     .bg-orange {
 		--tw-bg-opacity: 1;
-		background: rgba(255,140,0, var(--tw-bg-opacity));
+		background: rgb(255,140,0, var(--tw-bg-opacity));
 	}
 	
 	.bg-purple{
