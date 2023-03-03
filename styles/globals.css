@@ -2732,7 +2732,7 @@ html {
 
 	.bg-red {
 		--tw-bg-opacity: 1;
-		background-color: rgba(139,0,0, var(--tw-bg-opacity));
+		background-color: red var(--tw-bg-opacity));
 	}
 
 	.bg-aqua{
