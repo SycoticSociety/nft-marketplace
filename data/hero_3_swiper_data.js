@@ -35,6 +35,15 @@ const hero_3_swiper_data = [
 		titleLink: 'https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59',
 		userLink: '#',
 	},
+	{
+		id: '3Shiba #368',
+		image: '/images/carousel/darkestHour.jpg',
+		title: 'NFT Collection',
+		name: 'Generous Shiba Club',
+		color: 'bg-aqua',
+		titleLink: 'https://launchmynft.io/collections/0xEbB84Ee07DE4Ed810506f5290F5c0a43917f4Cb1/nwTR8FWdNIqUJm143bXd',
+		userLink: '#',
+	},
 ];
 
 const hero_3_swiper_thumbs_data = [
@@ -53,6 +62,10 @@ const hero_3_swiper_thumbs_data = [
 	{
 		id: '3/images/carousel/crodexAssetSmall.jpg',
 		image: '/images/carousel/crodexAssetSmall.jpg',
+	},
+    {
+		id: '3/images/carousel/darkestHourSmall.jpg',
+		image: '/images/carousel/darkestHourSmall.jpg',
 	},
 
 ];

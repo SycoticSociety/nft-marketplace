@@ -2735,6 +2735,11 @@ html {
 		background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
 	}
 
+	.bg-aqua{
+		--tw-bg-opacity: 1;
+		background-color: rgba(0, 255, 255, var(--tw-bg-opacity));
+	}
+
 	.bg-white\/\[\.15\] {
 		background-color: hsla(0, 0%, 100%, 0.15);
 	}

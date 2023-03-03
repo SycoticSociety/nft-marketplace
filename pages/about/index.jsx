@@ -7,12 +7,12 @@ import Head from "next/head";
 import Meta from "../../components/Meta";
 
 const About = () => {
-  const [video, setVideo] = useState(false);
+  const [video, setVideo] = useState(null);
   return (
     <>
       <Meta title="About || Xhibiter | NFT Marketplace Next.js Template" />
       {/* <!-- Page title --> */}
-      <section className="relative pt-24 lg:pb-96">
+      <section className="relative pt-24">
         <picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">
           <img
             src="/images/gradient_light.jpg"
@@ -36,17 +36,18 @@ const About = () => {
       {/* <!-- Intro / Statistics --> */}
 
       <section className="pb-24">
-        <div className="container">
+        <div className="container flex flex-col sm:flex-row">
           {/* <!-- Video Lightbox --> */}
-          <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-16 overflow-hidden rounded-3xl before:absolute before:inset-0 lg:-mt-96">
+          <figure className="before:bg-jacarta-900/25 rounded-xl relative m-4
+           overflow-hidden rounded-3xl">
             <img
-              src="/images/carousel/videoBanner.jpg"
+              src="/images/carousel/crodexAsset.jpg"
               className="w-full"
               alt="video"
             />
             <button
               className="absolute top-1/2 left-1/2 flex h-24 w-24 -translate-y-1/2 -translate-x-1/2 items-center justify-center rounded-full border-2 border-white transition-transform will-change-transform hover:scale-90"
-              onClick={() => setVideo(true)}
+              onClick={() => setVideo('https://www.youtube.com/embed/Zq0Ss7Ga_wc')}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,44 +61,28 @@ const About = () => {
               </svg>
             </button>
           </figure>
-
-          {/* <!-- Statistics --> */}
-          {/* <div className="pt-24">
-            <h2 className="font-display text-jacarta-700 mb-16 text-center text-3xl dark:text-white">
-              Numbers Speak
-            </h2>
-
-            <div className="grid grid-cols-2 md:grid-cols-4">
-              <div className="mb-10 text-center">
-                <span className="font-display text-jacarta-700 block text-5xl dark:text-white">
-                  2019
-                </span>
-                <span className="dark:text-jacarta-300 block">Founded</span>
-              </div>
-              <div className="mb-10 text-center">
-                <span className="font-display text-jacarta-700 block text-5xl dark:text-white">
-                  $178M
-                </span>
-                <span className="dark:text-jacarta-300 block">
-                  Trading volume
-                </span>
-              </div>
-              <div className="mb-10 text-center">
-                <span className="font-display text-jacarta-700 block text-5xl dark:text-white">
-                  305K
-                </span>
-                <span className="dark:text-jacarta-300 block">
-                  NFTs created
-                </span>
-              </div>
-              <div className="mb-10 text-center">
-                <span className="font-display text-jacarta-700 block text-5xl dark:text-white">
-                  1.6M
-                </span>
-                <span className="dark:text-jacarta-300 block">Total users</span>
-              </div>
-            </div>
-          </div> */}
+          <figure className="before:bg-jacarta-900/25 rounded-xl relative m-4 overflow-hidden rounded-3xl">
+            <img
+              src="/images/carousel/darkestHour.jpg"
+              className="w-full"
+              alt="video"
+            />
+            <button
+              className="absolute top-1/2 left-1/2 flex h-24 w-24 -translate-y-1/2 -translate-x-1/2 items-center justify-center rounded-full border-2 border-white transition-transform will-change-transform hover:scale-90"
+              onClick={() => setVideo('https://www.youtube.com/embed/NiARatEGGME')}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                className="h-8 w-8 fill-white"
+              >
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path d="M19.376 12.416L8.777 19.482A.5.5 0 0 1 8 19.066V4.934a.5.5 0 0 1 .777-.416l10.599 7.066a.5.5 0 0 1 0 .832z" />
+              </svg>
+            </button>
+          </figure>
         </div>
       </section>
 
@@ -115,7 +100,7 @@ const About = () => {
                 data-bs-dismiss="modal"
                 aria-label="Close"
                 style={{ zIndex: "2", background: "none" }}
-                onClick={() => setVideo(false)}
+                onClick={() => setVideo(undefined)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +133,7 @@ const About = () => {
                       style={{ backgroundColor: "#000" }}
                     >
                       <iframe
-                        src="https://www.youtube.com/embed/Zq0Ss7Ga_wc"
+                        src={video}
                         title="YouTube video player"
                         // frameborder="0"
                         allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture"

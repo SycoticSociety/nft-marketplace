@@ -50,7 +50,7 @@ const Hero_3 = () => {
           className="full-slider my-36 h-2/3 sm:h-screen sm:my-0"
         >
           {hero_3_swiper_data.map((item) => {
-            const { image, id, title, name, color, titleLink, userLink } = item;
+            const { image, id, title, color, titleLink } = item;
             return (
               <SwiperSlide key={id}>
                 <div className="swiper-slide after:absolute after:inset-0 sm:mt-0 sm:mb-0">
