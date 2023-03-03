@@ -2,7 +2,7 @@ const hero_3_swiper_data = [
 	{
 		id: '0Palettes of Aotearoa - The Place of greenstone #01',
 		image: '/images/carousel/marketplace.jpg',
-		title: 'Marketplace',
+		title: 'Nft Store',
 		name: 'LeeCookNZ',
 		color:'bg-violet-500',
 		titleLink: '/marketplace',
@@ -11,7 +11,7 @@ const hero_3_swiper_data = [
 	{
 		id: '1Portrait Gallery',
 		image: '/images/carousel/roadmap.png',
-		title: 'Our Roadmap',
+		title: 'Roadmap',
 		name: 'By 051_Hart',
 		color:'bg-red',
 		titleLink: '/roadmap',
@@ -20,7 +20,7 @@ const hero_3_swiper_data = [
 	{
 		id: '2Oceania \\\\ OVERSEER 017',
 		image: '/images/carousel/tokenomics.jpg',
-		title: 'Tokenomics',
+		title: 'Taxnomics',
 		name: 'By THE OVERSEERS',
 		color:'bg-blue',
 		titleLink: '/tokenomics',
@@ -38,7 +38,7 @@ const hero_3_swiper_data = [
 	{
 		id: '3Shiba #368',
 		image: '/images/carousel/darkestHour.jpg',
-		title: 'NFT Collection',
+		title: 'Mint Now',
 		name: 'Generous Shiba Club',
 		color: 'bg-aqua',
 		titleLink: 'https://launchmynft.io/collections/0xEbB84Ee07DE4Ed810506f5290F5c0a43917f4Cb1/nwTR8FWdNIqUJm143bXd',

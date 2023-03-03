@@ -4,7 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  safelist:['bg-orange','bg-violet-500','bg-aqua'],
+  safelist:['bg-orange','bg-violet-500','bg-aqua','bg-red','bg-blue'],
   darkMode: "class",
   theme: {
     screens: {
@@ -32,10 +32,10 @@ module.exports = {
       "accent-lighter": "#fca5a5",
       "light-base": "#F5F8FA",
       green: "#10b981",
-      orange: "#FEB240",
-      red: "#EF4444",
+      orange: "#FF8C00",
+      red: "#FF0000",
       purple:"#9400D3",
-      blue: "#428AF8",
+      blue: "#0000FF",
       gray:'#94A354',
       violet500:'#8b5cf6',
       jacarta: {
