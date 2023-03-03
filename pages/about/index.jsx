@@ -24,7 +24,6 @@ const About = () => {
           {/* <!-- Page Title --> */}
           <div className="mx-auto max-w-2xl py-16 text-center">
             <h1 className="font-display text-jacarta-700 mb-8 text-4xl font-medium dark:text-white">
-              About Sycotic Society
             </h1>
             <p className="dark:text-jacarta-300 text-lg leading-normal">
               Every digital creation available through Sycotic Society is a
