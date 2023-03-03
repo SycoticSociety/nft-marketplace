@@ -2702,7 +2702,7 @@ html {
 
     .bg-orange {
 		--tw-bg-opacity: 1;
-		background: rgba(194, 65, 12, var(--tw-bg-opacity));
+		background: rgba(255,140,0, var(--tw-bg-opacity));
 	}
 	
 	.bg-purple{
@@ -2722,7 +2722,7 @@ html {
     
 	.bg-blue-500{
 		--tw-bg-opacity: 1;
-        background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+        background-color: rgba(0,0,205, var(--tw-bg-opacity));
 	}
     
 	.bg-blue-700{
