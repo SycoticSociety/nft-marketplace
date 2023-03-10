@@ -56,7 +56,7 @@ const Hero_3 = () => {
                 <div className="swiper-slide after:absolute after:inset-0 sm:mt-0 sm:mb-0">
                   <div className="container relative z-10 h-full pt-40 mb-10">
                     <div
-                      className={`text-md font-semibold text-white mx-auto w-fit p-2 border-b-4 rounded-lg ${color} hover:bg-opacity-80 border-slate-400`}
+                      className={`text-md font-semibold text-white mx-auto mt-9 w-fit p-2 border-b-4 rounded-lg ${color} hover:bg-opacity-80 border-slate-400`}
                     >
                       <Link href={titleLink}>
                         <a>{title}</a>
