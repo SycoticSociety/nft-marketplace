@@ -34,7 +34,7 @@ const Hero_3 = () => {
           alt="gradient dark"
         />
       </picture>
-      <section className="relative sm:h-screen h-[500px] mt-[25vh]">
+      <section className="relative sm:h-[700px] lg:h-screen h-[500px] mt-[25vh]">
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
           loop={true}
