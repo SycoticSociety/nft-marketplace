@@ -34,7 +34,7 @@ const Hero_3 = () => {
           alt="gradient dark"
         />
       </picture>
-      <section className="relative sm:h-[700px] lg:h-screen h-[500px] mt-[25vh]">
+      <section className="relative sm:h-[700px] lg:h-[900px] xl:h-screen h-[500px] mt-[25vh]">
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
           loop={true}
@@ -47,7 +47,7 @@ const Hero_3 = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          className="full-slider my-36 h-2/3 sm:h-screen sm:my-0"
+          className="full-slider h-2/3 lg:h-4/5 xl:h-screen"
         >
           {hero_3_swiper_data.map((item) => {
             const { image, id, title, color, titleLink } = item;
