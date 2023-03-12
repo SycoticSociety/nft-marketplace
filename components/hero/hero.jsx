@@ -26,8 +26,8 @@ const hero = () => {
              <span className="animate-gradient"> Creative NFTs</span>
             </h1>
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-              The worlds largest digital marketplace for crypto collectibles and
-              non-fungible tokens
+              Sycotic Society's digital marketplace for crypto collectibles and
+              non-fungible tokens.
             </p>
             <div className="flex space-x-4">
               <Link href="/create">
