@@ -10,7 +10,7 @@ const About = () => {
   const [video, setVideo] = useState(null);
   return (
     <>
-      <Meta title="About || Xhibiter | NFT Marketplace Next.js Template" />
+      <Meta title="About || Sycotic Society| NFT Marketplace Next.js Template" />
       {/* <!-- Page title --> */}
       <section className="relative pt-24">
         <picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">
@@ -24,7 +24,6 @@ const About = () => {
           {/* <!-- Page Title --> */}
           <div className="mx-auto max-w-2xl py-16 text-center">
             <h1 className="font-display text-jacarta-700 mb-8 text-4xl font-medium dark:text-white">
-              About Sycotic Society
             </h1>
             <p className="dark:text-jacarta-300 text-lg leading-normal">
               Every digital creation available through Sycotic Society is a
