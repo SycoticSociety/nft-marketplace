@@ -3,14 +3,14 @@ const Browse_category_data = [
 		id: '0Virtual Worlds',
 		image: '/images/categories/category_4.png',
 		title: 'Darkest Hour',
-		href: '#',
+		href: 'https://www.launchmynft.io/collections/0xEbB84Ee07DE4Ed810506f5290F5c0a43917f4Cb1/nwTR8FWdNIqUJm143bXd',
 		bgColor: 'rgb(70 199 227)',
 	},
 	{
 		id: '1Sport',
 		image: '/images/categories/category_5.png',
 		title: 'Swap Sycotic',
-		href: '#',
+		href: 'https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59',
 		bgColor: 'rgb(115 126 242)',
 	},
 	{
@@ -52,14 +52,14 @@ const Browse_category_data = [
 		id: '7Virtual Worlds',
 		image: '/images/categories/category_4.png',
 		title: 'SS YouTube',
-		href: '#',
+		href: 'https://youtube.com/@SycoticSociety',
 		bgColor: 'rgb(70 199 227)',
 	},
 	{
 		id: '8Sport',
 		image: '/images/categories/category_5.png',
 		title: 'SS Twitter',
-		href: '#',
+		href: 'https://twitter.com/SycoticSociety?t=YDRoiVd3CeVIdTwbIdDisQ&s=09',
 		bgColor: '#737EF2',
 	},
 	
