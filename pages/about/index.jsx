@@ -63,7 +63,7 @@ const About = () => {
           </figure>
           <figure className="before:bg-jacarta-900/25 rounded-xl relative m-4 overflow-hidden rounded-3xl">
             <img
-              src="/images/carousel/darkestHour.jpg"
+              src="/images/newDarkestHour.png"
               className="w-full"
               alt="video"
             />
