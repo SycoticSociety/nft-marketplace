@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import {
+  Bids,
   Hero_3,
 } from "../../components/component";
 import Meta from "../../components/Meta";
@@ -10,6 +11,7 @@ const Home_3 = () => {
     <>
       <Meta title="SycoticSociety | NFT Marketplace" />
       <Hero_3 />
+      <Bids/>
     </>
   );
 };
