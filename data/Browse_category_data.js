@@ -49,13 +49,6 @@ const Browse_category_data = [
 		bgColor: 'rgb(131 88 255)',
 	},
 	{
-		id: '7Virtual Worlds',
-		image: '/images/categories/category_4.png',
-		title: 'SS YouTube',
-		href: 'https://youtube.com/@SycoticSociety',
-		bgColor: 'rgb(70 199 227)',
-	},
-	{
 		id: '8Sport',
 		image: '/images/categories/category_5.png',
 		title: 'SS Twitter',
