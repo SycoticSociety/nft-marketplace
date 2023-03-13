@@ -17,14 +17,14 @@ const Browse_category_data = [
 		id: '2Photography',
 		image: '/images/categories/category_6.png',
 		title: 'Tokenomics',
-		href: '#',
+		href: 'https://www.sycoticsociety.com/tokenomics',
 		bgColor: 'rgb(66 138 248)',
 	},
 	{
 		id: '3Music',
 		image: '/images/categories/category_7.png',
 		title: 'Roadmap',
-		href: '#',
+		href: 'https://www.sycoticsociety.com/roadmap',
 		bgColor: 'rgb(243 91 199)',
 	},
 	{
