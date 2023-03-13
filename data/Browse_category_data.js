@@ -31,14 +31,14 @@ const Browse_category_data = [
 		id: '4Art',
 		image: '/images/categories/category_1.png',
 		title: 'Contract',
-		href: '#',
+		href: 'https://cronoscan.com/token/0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59',
 		bgColor: 'rgb(16 185 129)',
 	},
 	{
 		id: '5Collectibles',
 		image: '/images/categories/category_2.png',
 		title: 'Chain List',
-		href: '#',
+		href: 'https://chainlist.org/',
 		bgColor: 'rgb(254 178 64)',
 	},
 	{
