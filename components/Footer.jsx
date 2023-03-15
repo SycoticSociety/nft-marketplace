@@ -13,21 +13,13 @@ const Footer = () => {
               {/* <!-- Logo --> */}
               <Link href="#">
                 <a className="mb-6 inline-block">
-                  <img
-                    src="/images/sycoLogo.svg"
-                    className="max-h-7 dark:hidden"
-                    alt="Sycotic Society | NFT Marketplace"
-                  />
+                 
                 </a>
               </Link>
 
               <Link href="#">
                 <a className=" mb-6 inline-block">
-                  <img
-                    src="/images/sycoLogoWhite.svg"
-                    className="hidden max-h-7 dark:block mb-6"
-                    alt="Sycotic Society | NFT Marketplace"
-                  />
+                
                 </a>
               </Link>
               {/* <p className="dark:text-jacarta-300 mb-12">
@@ -88,7 +80,7 @@ const Footer = () => {
               <Link href="https://themeforest.net/user/ib-themes">
                 <a className="hover:text-accent dark:hover:text-white">
                   {" "}
-                  Sahil Maheshwari
+                  Sahil Maheshwari and Sycotic Society
                 </a>
               </Link>
             </span>
