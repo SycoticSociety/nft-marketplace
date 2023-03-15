@@ -16,32 +16,32 @@ const Browse_category_carousel = () => {
 				breakpoints={{
 					// when window width is >= 640px
 					100: {
-						slidesPerView: 3,
+						slidesPerView: 2,
 						spaceBetween: 20,
 					},
 					// when window width is >= 768px
 					700: {
 						slidesPerView: 4,
-						spaceBetween: 20,
+						spaceBetween: 15,
 					},
 					900: {
 						slidesPerView: 5,
-						spaceBetween: 20,
+						spaceBetween: 15,
 					},
 					1200: {
 						slidesPerView: 7,
-						spaceBetween: 30,
+						spaceBetween: 15,
 					},
 				}}
 				className=" card-slider-4-columns !py-5"
 				style={{ transform: 'scaleX(1.2)' }}
 			>
 				{Browse_category_data.map((item) => {
-					const { id, image, title, bgColor } = item;
+					const { id, image, title, bgColor , href } = item;
 					return (
 						<SwiperSlide key={id}>
 							<article>
-								<Link href="/collection/explore_collection">
+								<Link href={href}>
 									<a className="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 rounded-2xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg">
 										<figure
 											style={{ backgroundColor: bgColor }}

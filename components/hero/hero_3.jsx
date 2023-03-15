@@ -34,7 +34,7 @@ const Hero_3 = () => {
           alt="gradient dark"
         />
       </picture>
-      <section className="relative sm:h-[700px] lg:h-[900px] xl:h-screen h-[500px] mt-[25vh]">
+      <section className="relative sm:h-[700px] lg:h-[900px] xl:h-screen h-[500px] w-[75%] mx-auto">
         <Swiper
           modules={[FreeMode, Navigation, Thumbs, Autoplay]}
           loop={true}
@@ -47,14 +47,14 @@ const Hero_3 = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
-          className="full-slider h-2/3 lg:h-4/5 xl:h-screen"
+          className="full-slider h-4/5"
         >
           {hero_3_swiper_data.map((item) => {
             const { image, id, title, color, titleLink } = item;
             return (
               <SwiperSlide key={id}>
-                <div className="swiper-slide after:absolute after:inset-0 sm:mt-0 sm:mb-0">
-                  <div className="container relative z-10 h-full pt-40 mb-10">
+                <div className="swiper-slide after:absolute after:inset-0">
+                  <div className="container relative z-10 h-full pt-40">
                     <div
                       className={`text-md font-semibold text-white mx-auto mt-9 w-fit p-2 border-b-4 rounded-lg ${color} hover:bg-opacity-80 border-slate-400`}
                     >
@@ -96,6 +96,9 @@ const Hero_3 = () => {
                 768: {
                   slidesPerView: 3,
                 },
+                1020:{
+                  slidesPerView: 4,
+                }
               }}
               className=" full-slider-thumbs swiper-initialized swiper-horizontal swiper-pointer-events swiper-thumbs"
             >
@@ -103,7 +106,7 @@ const Hero_3 = () => {
                 const { image, id } = item;
                 return (
                   <SwiperSlide
-                    className="swiper-slide cursor-pointer rounded p-5 md:p-10 lg:p-12 swiper-slide-duplicate swiper-slide-duplicate-next "
+                    className="swiper-slide cursor-pointer rounded p-5 swiper-slide-duplicate swiper-slide-duplicate-next "
                     key={id}
                   >
                     <img

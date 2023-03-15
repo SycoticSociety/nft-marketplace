@@ -77,7 +77,7 @@ const Create = () => {
 
           <div className="mx-auto max-w-[48.125rem]">
             {/* <!-- File Upload --> */}
-            <div className="mb-6">
+            <div id="#nfts" className="mb-6">
               <label className="font-display text-jacarta-700 mb-2 block dark:text-white">
                 Image, Video, Audio, or 3D Model
                 <span className="text-red">*</span>

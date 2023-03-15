@@ -27,9 +27,10 @@ const NewseLatter = () => {
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {newseLatterData.map((item) => {
-            const { id, icon, title, text } = item;
+            const { id, icon, title, text , link } = item;
             return (
-              <div className="text-center newseLatter-item" key={id}>
+              <a href={link} key={id}>
+              <div className="text-center newseLatter-item" >
                 <div
                   className={`mb-6 inline-flex rounded-full p-3`}
                   style={{ backgroundColor: icon.parentBg }}
@@ -48,13 +49,13 @@ const NewseLatter = () => {
                 </h3>
                 <p className="dark:text-jacarta-300">{text}</p>
               </div>
+              </a>
             );
           })}
         </div>
 
         <p className="text-jacarta-700 mx-auto mt-20 max-w-2xl text-center text-lg dark:text-white">
-          Join our mailing list to stay in the loop with our newest feature
-          releases, NFT drops, and tips and tricks for navigating Xhibiter
+          Join our mailing list to stay in the loop with Sycotic Society updates.
         </p>
 
         <div className="mx-auto mt-7 max-w-md text-center">

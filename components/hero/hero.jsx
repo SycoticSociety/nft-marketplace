@@ -22,7 +22,7 @@ const hero = () => {
         <div className="grid h-full items-center gap-4 md:grid-cols-12">
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
-              Welcome to,
+              Welcome to {"  "}
              <span className="animate-gradient">Sycotic Society</span>
             </h1>
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
