@@ -50,7 +50,7 @@ const Browse_category_data = [
 	},
 	{
 		id: '8Sport',
-		image: '/images/categories/category_5.png',
+		image: '/images/categories/category_8.png',
 		title: 'SS Twitter',
 		href: 'https://twitter.com/SycoticSociety?t=YDRoiVd3CeVIdTwbIdDisQ&s=09',
 		bgColor: '#737EF2',
