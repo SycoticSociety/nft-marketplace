@@ -14,7 +14,6 @@ const Home_1 = () => {
 			<Hero />
 			<Hero_3 />
 			<Browse_category/>
-			<Browse_category/>
 			<NewseLatter />
 		</main>
 	);
