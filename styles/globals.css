@@ -4513,7 +4513,7 @@ html {
 	}
 
 	.dark .dark\:divide-jacarta-600 > :not([hidden]) ~ :not([hidden]) {
-		--tw-divide-opacity: 1;
+		--tw-divide-opacity: 0.4;
 		border-color: rgba(54, 58, 93, var(--tw-divide-opacity));
 	}
 
@@ -4522,22 +4522,22 @@ html {
 	}
 
 	.dark .dark\:border-jacarta-600 {
-		--tw-border-opacity: 1;
+		--tw-border-opacity: 0.4;
 		border-color: rgba(54, 58, 93, var(--tw-border-opacity));
 	}
 
 	.dark .dark\:border-jacarta-500 {
-		--tw-border-opacity: 1;
+		--tw-border-opacity: 0.4;
 		border-color: rgba(90, 93, 121, var(--tw-border-opacity));
 	}
 
 	.dark .dark\:border-jacarta-700 {
-		--tw-border-opacity: 1;
+		--tw-border-opacity: 0.4;
 		border-color: rgba(19, 23, 64, var(--tw-border-opacity));
 	}
 
 	.dark .dark\:bg-jacarta-900 {
-		--tw-bg-opacity: 1;
+		--tw-bg-opacity: 0.4;
 		background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 	}
 

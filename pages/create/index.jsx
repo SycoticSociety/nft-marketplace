@@ -93,7 +93,7 @@ const Create = () => {
                 </p>
               )}
 
-              <div className="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 group relative flex max-w-md flex-col items-center justify-center rounded-lg border-2 border-dashed bg-white py-20 px-5 text-center">
+              <div className="dark:bg-jacarta-700 dark:border-jacarta-600 border-jacarta-100 !border-opacity-40 group relative flex max-w-md flex-col items-center justify-center rounded-lg border-2 border-dashed bg-white py-20 px-5 text-center">
                 <div className="relative z-10 cursor-pointer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ const Create = () => {
                     size: 100 MB
                   </p>
                 </div>
-                <div className="dark:bg-jacarta-600 bg-jacarta-50 absolute inset-4 cursor-pointer rounded opacity-0 group-hover:opacity-100 ">
+                <div className="dark:bg-accent !border-opacity-40 bg-jacarta-50 absolute inset-4 cursor-pointer rounded opacity-0 group-hover:opacity-100 ">
                   <FileUploader
                     handleChange={handleChange}
                     name="file"
@@ -134,7 +134,7 @@ const Create = () => {
               <input
                 type="text"
                 id="item-name"
-                className="dark:bg-jacarta-700 border-jacarta-100 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
+                className="dark:bg-jacarta-700 border-jacarta-100 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 !border-opacity-40 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 placeholder="Item name"
                 required
               />
@@ -156,7 +156,7 @@ const Create = () => {
               <input
                 type="url"
                 id="item-external-link"
-                className="dark:bg-jacarta-700 border-jacarta-100 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
+                className="dark:bg-jacarta-700 border-jacarta-100 !border-opacity-40 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 placeholder="https://yoursite.io/item/123"
               />
             </div>
@@ -175,7 +175,7 @@ const Create = () => {
               </p>
               <textarea
                 id="item-description"
-                className="dark:bg-jacarta-700 border-jacarta-100 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
+                className="dark:bg-jacarta-700 border-jacarta-100 !border-opacity-40 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 rows="4"
                 required
                 placeholder="Provide a detailed description of your item."
@@ -231,7 +231,7 @@ const Create = () => {
               return (
                 <div
                   key={id}
-                  className="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6"
+                  className="dark:border-jacarta-600 border-jacarta-100 !border-opacity-40 relative border-b py-6"
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex">
@@ -271,7 +271,7 @@ const Create = () => {
             {/* <!-- Properties --> */}
 
             {/* <!-- Unlockable Content --> */}
-            <div className="dark:border-jacarta-600 border-jacarta-100 relative border-b py-6">
+            <div className="dark:border-jacarta-600 border-jacarta-100 !border-opacity-40 relative border-b py-6">
               <div className="flex items-center justify-between">
                 <div className="flex">
                   <svg
@@ -402,7 +402,7 @@ const Create = () => {
               <input
                 type="text"
                 id="item-supply"
-                className="dark:bg-jacarta-700 border-jacarta-100 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
+                className="dark:bg-jacarta-700 border-jacarta-100 !border-opacity-40 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 placeholder="1"
               />
             </div>
@@ -467,7 +467,7 @@ const Create = () => {
                 type="text"
                 disabled
                 id="item-freeze-metadata"
-                className="dark:bg-jacarta-700 bg-jacarta-50 border-jacarta-100 dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 dark:text-white"
+                className="dark:bg-jacarta-700 bg-jacarta-50 border-jacarta-100 dark:border-jacarta-600 !border-opacity-40 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 dark:text-white"
                 placeholder="To freeze your metadata, you must create your item first."
               />
             </div>

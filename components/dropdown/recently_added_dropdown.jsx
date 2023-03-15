@@ -252,7 +252,7 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilt
 							</div>
 						}
 					>
-						<div className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 inline-flex w-48 items-center justify-between rounded-lg border bg-white py-2 px-3 text-sm dark:text-white">
+						<div className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 !border-opacity-40 inline-flex w-48 items-center justify-between rounded-lg border bg-white py-2 px-3 text-sm dark:text-white">
 							<span className="font-display">{filter}</span>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

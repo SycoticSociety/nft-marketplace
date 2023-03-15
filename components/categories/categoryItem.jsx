@@ -29,7 +29,7 @@ const CategoryItem = ({ listings,contract,address}) => {
           
          return (
             <article key={asset.id}>
-              <div className="dark:bg-jacarta-900 dark:border-jacarta-700 border-jacarta-100 rounded-2.5xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg">
+              <div className="dark:bg-jacarta-900 dark:border-jacarta-700 !border-opacity-40 border-jacarta-100 rounded-2.5xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg">
                 <figure className="relative">
                   <img
                     src={asset.image}

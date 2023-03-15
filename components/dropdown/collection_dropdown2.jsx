@@ -28,7 +28,7 @@ const Collection_dropdown2 = ({ data, collection }) => {
 			></div>
 			{collection ? (
 				<div
-					className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 dark:text-jacarta-300 flex items-center justify-between rounded-lg border bg-white py-3 px-3 show z-50 relative"
+					className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 !border-opacity-40 dark:text-jacarta-300 flex items-center justify-between rounded-lg border bg-white py-3 px-3 show z-50 relative"
 					onClick={() => handleDropdown()}
 				>
 					<span className="">Select collection</span>
@@ -45,7 +45,7 @@ const Collection_dropdown2 = ({ data, collection }) => {
 				</div>
 			) : (
 				<div
-					className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 flex items-center justify-between rounded-lg border bg-white py-3.5 px-3 text-base dark:text-white"
+					className="dark:bg-jacarta-700 dropdown-toggle border-jacarta-100 dark:border-jacarta-600 !border-opacity-40 flex items-center justify-between rounded-lg border bg-white py-3.5 px-3 text-base dark:text-white"
 					onClick={() => handleDropdown()}
 				>
 					<span className="flex items-center">
