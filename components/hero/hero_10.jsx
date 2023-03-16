@@ -1,10 +1,9 @@
 const Hero_10 = () => {
   const heroContent = {
-    meta: "#1 CRYPTO APP IN STORES",
-    title: "Enjoy choosing to invest in digital currencies.",
-    descriptions: `Every digital creation available through MakersPlace is an
-        authentic and truly unique.`,
-    btnText: "Start Free Trial",
+    meta: "JOIN THE DIGITAL REVOLUTION",
+    title: "Sycotic Society Token on CRONOS.",
+    descriptions: `We are setting the standard in Defi, through trasparency and accountablity.`,
+    btnText: "Buy Sycotic Society",
   };
 
   return (
