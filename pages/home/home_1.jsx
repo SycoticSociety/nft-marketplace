@@ -11,6 +11,7 @@ const Home_1 = () => {
 		<main>
 			<Meta title="Home 1 || Sycotic Society | NFT Marketplace Next.js Template" />
 			<Hero />
+		        <Browse_category />
 			<NewseLatter />
 		</main>
 	);
