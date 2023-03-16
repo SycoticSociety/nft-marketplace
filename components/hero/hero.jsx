@@ -30,7 +30,7 @@ const hero = () => {
               non-fungible tokens.
             </p>
             <div className="flex space-x-4">
-              <Link href="/https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
+              <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
                 <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
                   Swap Now
                 </a>
