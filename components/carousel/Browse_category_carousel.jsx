@@ -50,7 +50,7 @@ const Browse_category_carousel = () => {
 											<img src={image} alt="item 1" className="w-full" />
 										</figure>
 										<div className="mt-4 text-center">
-											<span className="font-display text-jacarta-700 text-lg dark:text-white">
+											<span className="font-display text-jacarta-700 text-md dark:text-white">
 												{title}
 											</span>
 										</div>

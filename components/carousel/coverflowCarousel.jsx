@@ -61,7 +61,7 @@ const CoverflowCarousel = () => {
             return (
               <SwiperSlide key={id}>
                 <article>
-                  <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-900">
+                  <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-800">
                     <figure className="relative">
                         <a href="#cards">
                           <Image
