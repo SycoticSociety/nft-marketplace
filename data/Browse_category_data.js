@@ -45,7 +45,7 @@ const Browse_category_data = [
 		id: '6Domain Names',
 		image: '/images/categories/category_3.png',
 		title: 'YouTube',
-		href: 'https://www.youtube.com/channel/UC_CnMqRCFb8_4Ug5fnSvybw',
+		href: 'https://youtu.be/NiARatEGGME',
 		bgColor: 'rgb(131 88 255)',
 	},
 	{
