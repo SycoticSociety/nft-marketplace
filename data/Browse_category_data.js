@@ -44,8 +44,8 @@ const Browse_category_data = [
 	{
 		id: '6Domain Names',
 		image: '/images/categories/category_3.png',
-		title: 'Digital Art',
-		href: '#',
+		title: 'YouTube',
+		href: 'https://www.youtube.com/channel/UC_CnMqRCFb8_4Ug5fnSvybw',
 		bgColor: 'rgb(131 88 255)',
 	},
 	{
