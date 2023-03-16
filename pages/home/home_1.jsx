@@ -2,6 +2,7 @@ import React from 'react';
 import {
 	Hero,
 	Hero_3,
+	Hero_10,
 	NewseLatter,
 	Browse_category,
 } from '../../components/component';
@@ -12,6 +13,7 @@ const Home_1 = () => {
 		<main>
 			<Meta title="Home 1 || Sycotic Society | NFT Marketplace Next.js Template" />
 			<Hero />
+		        <Hero_10 />
 			<Browse_category/>
 			<NewseLatter />
 		</main>
