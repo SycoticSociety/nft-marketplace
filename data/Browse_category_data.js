@@ -30,7 +30,7 @@ const Browse_category_data = [
 	{
 		id: '4Art',
 		image: '/images/categories/category_1.png',
-		title: 'Contract',
+		title: 'SS Cronos',
 		href: 'https://cronoscan.com/token/0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59',
 		bgColor: 'rgb(16 185 129)',
 	},
@@ -44,8 +44,8 @@ const Browse_category_data = [
 	{
 		id: '6Domain Names',
 		image: '/images/categories/category_3.png',
-		title: 'Digital Art',
-		href: '#',
+		title: 'YouTube',
+		href: 'https://youtu.be/NiARatEGGME',
 		bgColor: 'rgb(131 88 255)',
 	},
 	{

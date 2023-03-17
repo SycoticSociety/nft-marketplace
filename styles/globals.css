@@ -3001,8 +3001,8 @@ html {
 	}
 
 	.py-24 {
-		padding-bottom: 6rem;
-		padding-top: 6rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
 	}
 
 	.py-20 {
@@ -4537,7 +4537,7 @@ html {
 	}
 
 	.dark .dark\:bg-jacarta-900 {
-		--tw-bg-opacity: 0.2 !important;
+    --tw-bg-opacity: 0.2 !important;
 		background-color: rgba(139, 0, 0, var(--tw-bg-opacity)) !important;
 	}
 

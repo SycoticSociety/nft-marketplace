@@ -1,10 +1,9 @@
 const Hero_10 = () => {
   const heroContent = {
-    meta: "#1 CRYPTO APP IN STORES",
-    title: "Enjoy choosing to invest in digital currencies.",
-    descriptions: `Every digital creation available through MakersPlace is an
-        authentic and truly unique.`,
-    btnText: "Start Free Trial",
+    meta: "JOIN THE DIGITAL REVOLUTION",
+    title: "Sycotic Society Token on CRONOS.",
+    descriptions: `We are setting the standard in Defi, through trasparency and accountablity.`,
+    btnText: "Buy Sycotic Society",
   };
 
   return (
@@ -37,7 +36,7 @@ const Hero_10 = () => {
               {heroContent.descriptions}
             </p>
             <a
-              href="#"
+              href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"
               className="rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
             >
               {heroContent.btnText}
