@@ -24,6 +24,7 @@ const About = () => {
           {/* <!-- Page Title --> */}
           <div className="mx-auto max-w-2xl py-16 text-center">
             <h1 className="font-display text-jacarta-700 mb-8 text-4xl font-medium dark:text-white">
+              About
             </h1>
             <p className="dark:text-jacarta-300 text-lg leading-normal">
               Every digital creation available through Sycotic Society is a
@@ -34,7 +35,7 @@ const About = () => {
       </section>
       {/* <!-- Intro / Statistics --> */}
 
-      <section className="pb-24">
+      <section className="pb-4">
         <div className="container flex flex-col sm:flex-row sm:justify-around">
           {/* <!-- Video Lightbox --> */}
           <figure className="before:bg-jacarta-900/25 rounded-xl relative m-4

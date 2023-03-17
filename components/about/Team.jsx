@@ -12,7 +12,7 @@ const Team = () => {
             text="Meet Our Amazing Team"
             classes="font-display text-jacarta-700 mb-12 text-center text-3xl dark:text-white"
           />
-          <div className="flex flex-col justify-around sm:flex-row">
+          <div className="flex flex-col justify-center gap-8 sm:flex-row">
             {team_data.map((item) => {
               const { id, image, title, name, linkedin, twitter} = item;
               return (
