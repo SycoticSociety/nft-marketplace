@@ -31,12 +31,12 @@ const hero = () => {
             </p>
             <div className="flex space-x-4">
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
-                <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                  Swap Now!
+                <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-40 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
+                Swap Now!
                 </a>
               </Link>
               <Link href="/marketplace">
-                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-36 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
+                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-40 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
                   Explore
                 </a>
               </Link>
