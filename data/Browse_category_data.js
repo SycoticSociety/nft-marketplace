@@ -30,15 +30,15 @@ const Browse_category_data = [
 	{
 		id: '4Art',
 		image: '/images/categories/category_1.png',
-		title: 'SS Cronos',
+		title: 'Cronos',
 		href: 'https://cronoscan.com/token/0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59',
 		bgColor: 'rgba(16 ,185 ,129,0.4)',
 	},
 	{
 		id: '5Collectibles',
 		image: '/images/categories/category_2.png',
-		title: 'Chain List',
-		href: 'https://chainlist.org/',
+		title: 'Infared',
+		href: 'https://oncyber.io/spaces/m4lKOQEliC9DwmR51ROB',
 		bgColor: 'rgba(254, 178, 64,0.4)',
 	},
 	{
@@ -51,7 +51,7 @@ const Browse_category_data = [
 	{
 		id: '8Sport',
 		image: '/images/categories/category_8.png',
-		title: 'SS Twitter',
+		title: 'Twitter',
 		href: 'https://twitter.com/SycoticSociety?t=YDRoiVd3CeVIdTwbIdDisQ&s=09',
 		bgColor: 'rgba(115, 126, 242, 0.4)',
 	},
