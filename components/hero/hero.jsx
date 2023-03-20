@@ -36,7 +36,7 @@ const hero = () => {
                 </a>
               </Link>
               <Link href="/marketplace">
-                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-40 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
+                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-40 rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
                   Explore
                 </a>
               </Link>
