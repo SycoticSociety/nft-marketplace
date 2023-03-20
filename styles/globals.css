@@ -4537,8 +4537,8 @@ html {
 	}
 
 	.dark .dark\:bg-jacarta-900 {
-    --tw-bg-opacity: 0.5 !important;
-		background-color: rgba(139, 0, 0, var(--tw-bg-opacity)) !important;
+    --tw-bg-opacity: 0.4 !important;
+		background-color: rgba(55, 0, 0, var(--tw-bg-opacity)) !important;
 	}
 
 	.dark .dark\:bg-white\/\[\.15\] {
