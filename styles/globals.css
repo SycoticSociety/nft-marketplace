@@ -2671,7 +2671,7 @@ html {
 	}
 
 	.bg-jacarta-700 {
-		--tw-bg-opacity: .5;
+		--tw-bg-opacity: .6;
 		background-color: rgba(55, 0, 0,var(--tw-bg-opacity));
 	}
 
@@ -4537,7 +4537,7 @@ html {
 	}
 
 	.dark .dark\:bg-jacarta-900 {
-    --tw-bg-opacity: 0.6 !important;
+    --tw-bg-opacity: 0.7 !important;
 		background-color: rgba(55, 0, 0, var(--tw-bg-opacity)) !important;
 	}
 
