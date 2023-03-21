@@ -2769,7 +2769,7 @@ html {
 	}
 
 	.bg-jacarta-800 {
-		--tw-bg-opacity: .3;
+		--tw-bg-opacity: .5;
         background-color: rgba(55, 0, 0, var(--tw-bg-opacity));
 	}
 
