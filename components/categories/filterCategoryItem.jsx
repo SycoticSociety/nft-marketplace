@@ -6,19 +6,14 @@ import {
   useActiveListings,
   useAddress
 } from "@thirdweb-dev/react";
-import { ChainId } from "@thirdweb-dev/react";
 import ChainContext from "../chainContext";
 
 
-const FilterCategoryItem = () => {
-  const {selectedChain,setSelectedChain}=useContext(ChainContext)
-  const addresses={
-    [String(ChainId.Fantom)]:"0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171",
-    [String(ChainId.Polygon)]: "0x7266BA8cA064fbFC96DAE22B5C29a468D178C253",
-    [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2"
-  }
+
+const FilterCategoryItem = ({mpaddress,setMpAddress,addresses}) => {
+  const[selectedChain,setSelectedChain]=useContext(ChainContext)
   const { contract } = useContract(
-    addresses[String(selectedChain)],
+    mpaddress,
     "marketplace"
   );
   const { data: listings, isLoading: loadingListings } = useActiveListings(contract);
@@ -40,7 +35,7 @@ const FilterCategoryItem = () => {
   return (
     <div>
       {/* <!-- Filter --> */}
-      <Collection_category_filter filter={filter} setFilter={setFilter}/>
+      <Collection_category_filter filter={filter} setFilter={setFilter} setMpAddress={setMpAddress} addresses={addresses}/>
       <CategoryItem listings={arrangeListings} contract={contract} address={address}/>
       <div className="mt-10 text-center">
         <button

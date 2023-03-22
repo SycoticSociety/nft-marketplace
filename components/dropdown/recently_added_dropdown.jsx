@@ -13,7 +13,7 @@ import {
 import { ChainId } from '@thirdweb-dev/sdk';
 
 
-const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilter,filter}) => {
+const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilter,filter , setMpAddress,addresses}) => {
 	const dispatch = useDispatch();
 	const [currencyValFrom, setCurrencyValFrom] = useState('');
 	const [currencyValTo, setCurrencyValTo] = useState('');
@@ -32,12 +32,15 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilt
 		if(setSelectedChain){
 			if(sortActive==1){
 				setSelectedChain(String(ChainId.Fantom))
+				setMpAddress(addresses[String(ChainId.Fantom)][0])
 				setBlockChainText('Fantom')
 			}else if(sortActive==2){
 				setSelectedChain(String(ChainId.Avalanche))
+				setMpAddress(addresses[String(ChainId.Avalanche)])
 				setBlockChainText('Avax')
 			}else if (sortActive==3){
 				setSelectedChain(String(ChainId.Polygon))
+				setMpAddress(addresses[String(ChainId.Polygon)])
 				setBlockChainText('Polygon')
 			}
 		}

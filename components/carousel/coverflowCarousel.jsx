@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow, Ally } from "swiper";
 import "swiper/css";
@@ -5,8 +6,11 @@ import "swiper/css/navigation";
 import { coverflow_data } from "../../data/coverflow_data";
 import Link from "next/link";
 import Image from "next/image";
+import ChainContext from "../chainContext";
+import { ChainId } from "@thirdweb-dev/react";
 
-const CoverflowCarousel = () => {
+const CoverflowCarousel = ({setMpAddress,addresses}) => {
+  const {selectedChain,setSelectedChain}=useContext(ChainContext)
   return (
     <>
       {/* <!-- Coverflow Slider --> */}
@@ -63,7 +67,7 @@ const CoverflowCarousel = () => {
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-800">
                     <figure className="relative">
-                        <a href="#cards">
+                        <a onClick={()=>setMpAddress(addresses[String(ChainId.Fantom)][1])} href="#cards">
                           <Image
                             src={img}
                             alt={title}
