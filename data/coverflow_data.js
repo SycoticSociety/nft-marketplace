@@ -3,7 +3,7 @@ export const coverflow_data = [
     img: "/images/artists/Dabbin.jpg",
     title: "Dabb'in",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
-    authorName: "Sycotic Society Artwork",
+    authorName: "Sycotic Society Cronos",
     id: "Dabbin",
   },
   {
@@ -24,14 +24,14 @@ export const coverflow_data = [
     img: "/images/artists/RebelPunk.jpg",
     title: "Rebel Punk",
     authorImage: "/images/avatars/avatar_19_rounded.jpg",
-    authorName: "Rebel Punk + Wet Women",
+    authorName: "Rebel Punk",
     id: "RebelPunk",
   },
   {
     img: "/images/artists/SycoticBTFD.jpg",
-    title: "SycoticBTFD",
+    title: "Darkest Hour",
     authorImage: "/images/avatars/avatar_20_rounded.jpg",
-    authorName: "Sycotic Society Artwork",
+    authorName: "Sycotic Society Fantom",
     id: "SycoticBTFD",
   },
   {
@@ -45,14 +45,14 @@ export const coverflow_data = [
     img: "/images/artists/AzuraInferno.jpg",
     title: "Azura Inferno",
     authorImage: "/images/avatars/avatar_22_rounded.jpg",
-    authorName: "Rebel Punk + Wet Women",
+    authorName: "Wet Women",
     id: "Azura Inferno",
   },
   {
     img: "/images/artists/DeloreanEX.jpg",
     title: "DeloreanEX",
     authorImage: "/images/avatars/avatar_17_rounded.jpg",
-    authorName: "Rebel Punk + Wet Women",
+    authorName: "Rebel Punk",
     id: "DeloreanEX",
   }
 ];

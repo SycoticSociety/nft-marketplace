@@ -2671,7 +2671,7 @@ html {
 	}
 
 	.bg-jacarta-700 {
-		--tw-bg-opacity: .4;
+		--tw-bg-opacity: .6;
 		background-color: rgba(55, 0, 0,var(--tw-bg-opacity));
 	}
 
@@ -2769,8 +2769,8 @@ html {
 	}
 
 	.bg-jacarta-800 {
-		--tw-bg-opacity: 1;
-        background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+		--tw-bg-opacity: .7;
+        background-color: rgba(55, 0, 0, var(--tw-bg-opacity));
 	}
 
 	.bg-gradient-to-r {
@@ -4537,8 +4537,8 @@ html {
 	}
 
 	.dark .dark\:bg-jacarta-900 {
-    --tw-bg-opacity: 0.2 !important;
-		background-color: rgba(139, 0, 0, var(--tw-bg-opacity)) !important;
+    --tw-bg-opacity: 0.8 !important;
+		background-color: rgba(55, 0, 0, var(--tw-bg-opacity)) !important;
 	}
 
 	.dark .dark\:bg-white\/\[\.15\] {
