@@ -9,12 +9,13 @@ import FilterCategoryItem from "../../components/categories/filterCategoryItem";
 import { ChainId } from "@thirdweb-dev/react";
 
 const Home_4 = () => {
-  const [mpaddress,setMpAddress]=useState("0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171")
+  const [mpaddress,setMpAddress]=useState("0x7979E0B2442451a2493CFC2e4264B9BeA8C86804")
   const addresses={
-    [String(ChainId.Fantom)]:["0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171","0x7979E0B2442451a2493CFC2e4264B9BeA8C86804"],
-    [String(ChainId.Polygon)]: "0x7266BA8cA064fbFC96DAE22B5C29a468D178C253",
-    [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2",
+    [String(ChainId.Fantom)]:{marketplace1:"0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171",marketplace2:"0x7979E0B2442451a2493CFC2e4264B9BeA8C86804"},
+    [String(ChainId.Polygon)]: {marketplace1:"0x7266BA8cA064fbFC96DAE22B5C29a468D178C253"},
+    [String(ChainId.Avalanche)]: {marketplace1:"0x4c2FFeBe9E22802776D6943203007898634cBDA2"},
   }
+  console.log(mpaddress)
   return (
     <>
       <Meta title="SycoticSociety | NFT Marketplace" />

@@ -67,7 +67,7 @@ const CoverflowCarousel = ({setMpAddress,addresses}) => {
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-800">
                     <figure className="relative">
-                        <a onClick={()=>setMpAddress(addresses[String(ChainId.Fantom)][1])} href="#cards">
+                        <a onClick={()=>setMpAddress(addresses[String(ChainId.Fantom)].marketplace2)} href="#cards">
                           <Image
                             src={img}
                             alt={title}
