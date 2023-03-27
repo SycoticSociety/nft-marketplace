@@ -10,13 +10,14 @@ import ChainContext from "../chainContext";
 
 
 
-const FilterCategoryItem = ({mpaddress,setMpAddress,addresses}) => {
-  const[selectedChain,setSelectedChain]=useContext(ChainContext)
+const FilterCategoryItem = () => {
+  const {marketplace,setMarketplace}=useContext(ChainContext)
   const { contract } = useContract(
-    mpaddress,
+    marketplace,
     "marketplace"
   );
   const { data: listings, isLoading: loadingListings } = useActiveListings(contract);
+  console.log(listings,marketplace)
   const [loadMore,setLoadMore]=useState(8)
   const address = useAddress();
   const [filter,setFilter]=useState('Recently_Added')
@@ -35,7 +36,7 @@ const FilterCategoryItem = ({mpaddress,setMpAddress,addresses}) => {
   return (
     <div>
       {/* <!-- Filter --> */}
-      <Collection_category_filter filter={filter} setFilter={setFilter} setMpAddress={setMpAddress} addresses={addresses}/>
+      <Collection_category_filter filter={filter} setFilter={setFilter}/>
       <CategoryItem listings={arrangeListings} contract={contract} address={address}/>
       <div className="mt-10 text-center">
         <button

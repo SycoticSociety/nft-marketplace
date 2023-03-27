@@ -2,10 +2,10 @@ import React, { useState , useContext } from "react";
 import Recently_added_dropdown from "../dropdown/recently_added_dropdown";
 import ChainContext from '../chainContext';
 
-const Collection_category_filter = ({filter,setFilter,setMpAddress,addresses}) => {
+const Collection_category_filter = ({filter,setFilter}) => {
   const [propertiesModal, setPropertiesModal] = useState(false);
   const [propetiesAccordionValue, setPropetiesAccordionValue] = useState(null);
-  const {selectedChain,setSelectedChain}=useContext(ChainContext)
+  const [selectedChain,setSelectedChain]=useContext(ChainContext)
 
   const handlePropartiesAccordion = (parentId, e) => {
     setPropetiesAccordionValue(parentId);
@@ -39,6 +39,10 @@ const Collection_category_filter = ({filter,setFilter,setMpAddress,addresses}) =
     {
       id:3,
       text:"Polygon"
+    },
+    {
+      id:4,
+      text:"Darkest Hour"
     }
   ];
   const categoryText = [

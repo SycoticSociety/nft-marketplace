@@ -9,8 +9,8 @@ import Image from "next/image";
 import ChainContext from "../chainContext";
 import { ChainId } from "@thirdweb-dev/react";
 
-const CoverflowCarousel = ({setMpAddress,addresses}) => {
-  const {selectedChain,setSelectedChain}=useContext(ChainContext)
+const CoverflowCarousel = () => {
+  const {selectedChain,setSelectedChain,setSelectedMarketplace,selectedMarketplace}=useContext(ChainContext)
   return (
     <>
       {/* <!-- Coverflow Slider --> */}
@@ -67,7 +67,10 @@ const CoverflowCarousel = ({setMpAddress,addresses}) => {
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-800">
                     <figure className="relative">
-                        <a onClick={()=>setMpAddress(addresses[String(ChainId.Fantom)].marketplace2)} href="#cards">
+                        <a onClick={()=>{
+                          setSelectedChain(ChainId.Fantom)
+                          setSelectedMarketplace('0x7979E0B2442451a2493CFC2e4264B9BeA8C86804')
+                        }} href="#cards">
                           <Image
                             src={img}
                             alt={title}

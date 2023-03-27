@@ -11,9 +11,10 @@ import {
 	updateRenkingDataByPostdate,
 } from '../../redux/counterSlice';
 import { ChainId } from '@thirdweb-dev/sdk';
+import ChainContext from '../chainContext';
 
 
-const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilter,filter , setMpAddress,addresses}) => {
+const Recently_added_dropdown = ({ data, dropdownFor,setSelectedChain ,setFilter,filter}) => {
 	const dispatch = useDispatch();
 	const [currencyValFrom, setCurrencyValFrom] = useState('');
 	const [currencyValTo, setCurrencyValTo] = useState('');
@@ -27,24 +28,30 @@ const Recently_added_dropdown = ({ data, dropdownFor ,setSelectedChain , setFilt
 	const [currencyDropdown, setCurrencyDropdown] = useState(false);
 	const [blockChainText,setBlockChainText]=useState('Fantom')
     const [filterActive,setFilterActive]=useState(1)
-
+	const {selectedMarketPlace,setSelectedMarketplace}=useContext(ChainContext)
+    console.log(sortActive)
 	useEffect(()=>{
 		if(setSelectedChain){
 			if(sortActive==1){
 				setSelectedChain(String(ChainId.Fantom))
-				setMpAddress(addresses[String(ChainId.Fantom)][0])
+				setSelectedMarketplace('0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171')
 				setBlockChainText('Fantom')
 			}else if(sortActive==2){
 				setSelectedChain(String(ChainId.Avalanche))
-				setMpAddress(addresses[String(ChainId.Avalanche)])
+				setSelectedMarketplace('0x4c2FFeBe9E22802776D6943203007898634cBDA2')
 				setBlockChainText('Avax')
 			}else if (sortActive==3){
 				setSelectedChain(String(ChainId.Polygon))
-				setMpAddress(addresses[String(ChainId.Polygon)])
+				setSelectedMarketplace('0x7266BA8cA064fbFC96DAE22B5C29a468D178C253')
 				setBlockChainText('Polygon')
 			}
+			else if (sortActive==4){
+				setSelectedChain(String(ChainId.Fantom))
+				setSelectedMarketplace('0x7979E0B2442451a2493CFC2e4264B9BeA8C86804')
+				setBlockChainText('Darkest Hour')
+			}
 		}
-	},[sortActive,setSelectedChain])
+	},[sortActive,setSelectedChain,addresses,setMpAddress])
 
 	useEffect(()=>{
       if(setFilter){

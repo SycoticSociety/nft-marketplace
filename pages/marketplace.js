@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import UserContext from "../components/UserContext";
-import Home_4 from "./home/home_4";
+import dynamic from "next/dynamic";
+const Home_4=dynamic(()=>import('./home/home_4'))
 
 export default function Home() {
   const { scrollRef } = useContext(UserContext);

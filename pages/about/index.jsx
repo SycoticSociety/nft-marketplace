@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import Team from "../../components/about/Team";
-import Partners from "../../components/partners/Partners";
-import About_news from "../../components/blog/about_news";
-import Story from "../../components/about/Story";
-import Head from "next/head";
 import Meta from "../../components/Meta";
 
 const About = () => {
