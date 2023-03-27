@@ -5,7 +5,7 @@ import ChainContext from '../chainContext';
 const Collection_category_filter = ({filter,setFilter}) => {
   const [propertiesModal, setPropertiesModal] = useState(false);
   const [propetiesAccordionValue, setPropetiesAccordionValue] = useState(null);
-  const [selectedChain,setSelectedChain]=useContext(ChainContext)
+  const {selectedChain,setSelectedChain}=useContext(ChainContext)
 
   const handlePropartiesAccordion = (parentId, e) => {
     setPropetiesAccordionValue(parentId);
@@ -393,10 +393,8 @@ const Collection_category_filter = ({filter,setFilter}) => {
 
           {/* <!-- Blockchain --> */}
           <Recently_added_dropdown
-            setMpAddress={setMpAddress}
             data={blockchainText}
             dropdownFor="blockchain"
-            addresses={addresses}
 			      setSelectedChain={setSelectedChain}
           />
         </div>

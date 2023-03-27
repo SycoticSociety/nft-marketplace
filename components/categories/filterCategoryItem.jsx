@@ -11,13 +11,12 @@ import ChainContext from "../chainContext";
 
 
 const FilterCategoryItem = () => {
-  const {marketplace,setMarketplace}=useContext(ChainContext)
+  const {selectedMarketplace, setSelectedMarketplace}=useContext(ChainContext)
   const { contract } = useContract(
-    marketplace,
+    selectedMarketplace,
     "marketplace"
   );
   const { data: listings, isLoading: loadingListings } = useActiveListings(contract);
-  console.log(listings,marketplace)
   const [loadMore,setLoadMore]=useState(8)
   const address = useAddress();
   const [filter,setFilter]=useState('Recently_Added')
@@ -35,7 +34,6 @@ const FilterCategoryItem = () => {
   if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
     <div>
-      {/* <!-- Filter --> */}
       <Collection_category_filter filter={filter} setFilter={setFilter}/>
       <CategoryItem listings={arrangeListings} contract={contract} address={address}/>
       <div className="mt-10 text-center">

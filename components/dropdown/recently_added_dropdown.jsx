@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useContext, useMemo , useEffect} from 'react';
 import Tippy from '@tippyjs/react';
 import {
 	updatetrendingCategorySorText,
@@ -28,9 +28,9 @@ const Recently_added_dropdown = ({ data, dropdownFor,setSelectedChain ,setFilter
 	const [currencyDropdown, setCurrencyDropdown] = useState(false);
 	const [blockChainText,setBlockChainText]=useState('Fantom')
     const [filterActive,setFilterActive]=useState(1)
-	const {selectedMarketPlace,setSelectedMarketplace}=useContext(ChainContext)
+	const {selectedMarketplace,setSelectedMarketplace}=useContext(ChainContext)
     console.log(sortActive)
-	useEffect(()=>{
+	useMemo(()=>{
 		if(setSelectedChain){
 			if(sortActive==1){
 				setSelectedChain(String(ChainId.Fantom))
@@ -51,9 +51,10 @@ const Recently_added_dropdown = ({ data, dropdownFor,setSelectedChain ,setFilter
 				setBlockChainText('Darkest Hour')
 			}
 		}
-	},[sortActive,setSelectedChain,addresses,setMpAddress])
+	},[sortActive,setSelectedChain])
 
-	useEffect(()=>{
+
+	useMemo(()=>{
       if(setFilter){
 		if(filterActive==1){
 			setFilter('Recently_Added')
