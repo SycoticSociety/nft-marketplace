@@ -39,6 +39,10 @@ const Collection_category_filter = ({filter,setFilter}) => {
     {
       id:3,
       text:"Polygon"
+    },
+    {
+      id:4,
+      text:"Darkest Hour"
     }
   ];
   const categoryText = [
@@ -389,7 +393,6 @@ const Collection_category_filter = ({filter,setFilter}) => {
 
           {/* <!-- Blockchain --> */}
           <Recently_added_dropdown
-
             data={blockchainText}
             dropdownFor="blockchain"
 			      setSelectedChain={setSelectedChain}

@@ -4,15 +4,22 @@ import {
 } from "../../components/component";
 import Meta from "../../components/Meta";
 import Hero_4 from "../../components/hero/hero_4";
-import CoverflowCarousel from "../../components/carousel/coverflowCarousel";
-import FilterCategoryItem from "../../components/categories/filterCategoryItem";
+import dynamic from "next/dynamic";
+
+const FilterCategoryItem=dynamic(()=>import('../../components/categories/filterCategoryItem'))
+const CoverflowCarousel=dynamic(()=>import("../../components/carousel/coverflowCarousel"))
 
 const Home_4 = () => {
+  // const addresses={
+  //   [String(ChainId.Fantom)]:{marketplace1:"0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171",marketplace2:"0x7979E0B2442451a2493CFC2e4264B9BeA8C86804"},
+  //   [String(ChainId.Polygon)]: {marketplace1:"0x7266BA8cA064fbFC96DAE22B5C29a468D178C253"},
+  //   [String(ChainId.Avalanche)]: {marketplace1:"0x4c2FFeBe9E22802776D6943203007898634cBDA2"},
+  // }
   return (
     <>
       <Meta title="SycoticSociety | NFT Marketplace" />
       <Hero_4 />
-      <CoverflowCarousel />
+      <CoverflowCarousel/>
       {/* <Top_collection /> */}
       {/* <Auctions_categories /> */}
       <section id="cards" className="py-24">

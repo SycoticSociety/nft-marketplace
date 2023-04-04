@@ -6,7 +6,6 @@ import {
   useActiveListings,
   useAddress
 } from "@thirdweb-dev/react";
-import { ChainId } from "@thirdweb-dev/react";
 import ChainContext from "../chainContext";
 
 
@@ -39,7 +38,6 @@ const FilterCategoryItem = ({marketplace}) => {
   if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
     <div>
-      {/* <!-- Filter --> */}
       <Collection_category_filter filter={filter} setFilter={setFilter}/>
       <CategoryItem listings={arrangeListings} contract={contract} address={address}/>
       <div className="mt-10 text-center">
