@@ -174,7 +174,7 @@ const BeniftContent = () => {
           {/* <!-- content --> */}
           <div className="tab-content flex-1">
             <TabPanel>
-              <div className=" relative">
+              <div className="relative">
                 <figure className="flex items-center justify-center">
                   <img
                     src="/images/dao/benefit_dao_1.jpg"

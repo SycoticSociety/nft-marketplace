@@ -10,7 +10,7 @@ import { ChainId } from "@thirdweb-dev/react";
 import ChainContext from "../chainContext";
 
 
-const FilterCategoryItem = () => {
+const FilterCategoryItem = ({marketplace}) => {
   const {selectedChain,setSelectedChain}=useContext(ChainContext)
   const addresses={
     [String(ChainId.Fantom)]:"0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171",
@@ -18,7 +18,7 @@ const FilterCategoryItem = () => {
     [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2"
   }
   const { contract } = useContract(
-    addresses[String(selectedChain)],
+    marketplace || addresses[String(selectedChain)],
     "marketplace"
   );
   const { data: listings, isLoading: loadingListings } = useActiveListings(contract);

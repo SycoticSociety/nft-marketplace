@@ -2,15 +2,15 @@ import Link from 'next/link';
 import React from 'react';
 import { hero_6_data } from '../../data/hero_6_data';
 
-const Hero_6 = () => {
+const Hero_6 = ({galleryImages}) => {
 	return (
 		<>
 			{/* <!-- Hero --> */}
-			<section className="relative px-6 pb-8 py-24 md:pt-32">
-				<div className="flex flex-col gap-5 lg:flex-row">
+			<section className="relative px-2 pb-2 py-6 md:pt-2">
+				<div className="flex flex-col gap-8 lg:flex-row">
 					<div className="w-full lg:w-1/3">
-						<div className="grid grid-cols-2 grid-rows-2 gap-5">
-							{hero_6_data.slice(0, 4).map((item) => {
+						<div className="grid grid-cols-2 grid-rows-2 gap-5 grid-flow-row-dense lg:grid-flow-col-dense">
+							{galleryImages?.slice(0, 2).map((item) => {
 								const { id, title, img, authorName } = item;
 								const itemLink = img
 									.split('/')
@@ -19,8 +19,8 @@ const Hero_6 = () => {
 									.replace('_square.jpg', '')
 									.replace('.gif', '');
 								return (
-									<article key={id}>
-										<div className="relative overflow-hidden rounded-2.5xl bg-white dark:bg-jacarta-700">
+									<article key={id} className="row-start-2 lg:row-auto lg:col-start-2">
+										<div className="relative overflow-hidden rounded-2.5xl bg-white dark:bg-jacarta-900">
 											<figure className="relative">
 												<Link href={`/item/${itemLink}`}>
 													<a className="group block after:absolute after:inset-0 after:block after:bg-jacarta-900/20">
@@ -47,7 +47,7 @@ const Hero_6 = () => {
 						</div>
 					</div>
 					<div className="w-full lg:w-1/3">
-						{hero_6_data.slice(4, -4).map((item) => {
+						{galleryImages?.slice(2,3).map((item) => {
 							const { id, title, img, authorName } = item;
 							const itemLink = img
 								.split('/')
@@ -84,8 +84,8 @@ const Hero_6 = () => {
 						})}
 					</div>
 					<div className="w-full lg:w-1/3">
-						<div className="grid grid-cols-2 grid-rows-2 gap-5">
-							{hero_6_data.slice(5, 9).map((item) => {
+						<div className="grid grid-cols-2 grid-rows-2 gap-5 lg:grid-flow-col">
+							{galleryImages?.slice(3,5).map((item) => {
 								const { id, title, img, authorName } = item;
 								const itemLink = img
 									.split('/')
