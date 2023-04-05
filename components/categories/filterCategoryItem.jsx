@@ -7,6 +7,7 @@ import {
   useAddress
 } from "@thirdweb-dev/react";
 import ChainContext from "../chainContext";
+import { ChainId } from "@thirdweb-dev/react";
 
 
 const FilterCategoryItem = ({marketplace}) => {

@@ -1,4 +1,3 @@
-import { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, EffectCoverflow, Ally } from "swiper";
 import "swiper/css";
@@ -6,11 +5,8 @@ import "swiper/css/navigation";
 import { coverflow_data } from "../../data/coverflow_data";
 import Link from "next/link";
 import Image from "next/image";
-import ChainContext from "../chainContext";
-import { ChainId } from "@thirdweb-dev/react";
 
 const CoverflowCarousel = () => {
-  const {selectedChain,setSelectedChain,setSelectedMarketplace,selectedMarketplace}=useContext(ChainContext)
   return (
     <>
       {/* <!-- Coverflow Slider --> */}
@@ -67,10 +63,7 @@ const CoverflowCarousel = () => {
                 <article>
                   <div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-800">
                     <figure className="relative">
-                        <a onClick={()=>{
-                          setSelectedChain(ChainId.Fantom)
-                          setSelectedMarketplace('0x7979E0B2442451a2493CFC2e4264B9BeA8C86804')
-                        }} href="#cards">
+                        <a href={`/artists/${id}`}>
                           <Image
                             src={img}
                             alt={title}

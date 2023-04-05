@@ -32,7 +32,7 @@ export const coverflow_data = [
     title: "Darkest Hour",
     authorImage: "/images/avatars/avatar_20_rounded.jpg",
     authorName: "Sycotic Society Fantom",
-    id: "SycoticBTFD",
+    id: "1",
   },
   {
     img: "/images/artists/CrystalLakeCarnage.jpg",

@@ -11,7 +11,7 @@ function Artist() {
   const {id} = router.query
   const {desc,img,SocialIcons,galleryImages,marketPlaceLink}=artistInfo[parseInt(id-1)] || artistInfo[0]
   return (
-    <div className='dark:bg-jacarta-900'>
+    <div className='dark:bg-jacarta-900 pt-28'>
        <div className='flex flex-col lg:flex-row justify-center gap-10 items-center mt-28 mb-10'>
            <div className='mx-4 lg:mx-0'>
               <h2 className='mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white'>
