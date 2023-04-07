@@ -77,7 +77,7 @@ const Footer = () => {
           <div className="flex flex-col items-center justify-between space-y-2 py-8 sm:flex-row sm:space-y-0">
             <span className="dark:text-jacarta-400 text-sm">
               <span>© {new Date().getFullYear()} Sycotic Society — Powered By</span>
-              <Link href="https://themeforest.net/user/ib-themes">
+              <Link href="https://sahilmaheshwari.com">
                 <a className="hover:text-accent dark:hover:text-white">
                   {" "}
                   Sahil Maheshwari and Sycotic Society
