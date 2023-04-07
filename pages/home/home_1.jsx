@@ -1,12 +1,18 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import {
 	Hero,
 	NewseLatter,
 	Browse_category,
 } from '../../components/component';
 import Meta from '../../components/Meta';
+import { useTheme } from "next-themes";
 
 const Home_1 = () => {
+	const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
 	return (
 		<main>
 			<Meta title="| Sycotic Society | NFT Marketplace" />

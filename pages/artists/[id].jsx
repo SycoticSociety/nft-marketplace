@@ -1,15 +1,21 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import Hero_6 from '../../components/hero/hero_6';
 import { HeadLine } from '../../components/component';
 import FilterCategoryItem from "../../components/categories/filterCategoryItem";
 import Link from 'next/link';
 import {artistInfo} from '../../data/artists_data';
 import {useRouter} from 'next/router';
+import { useTheme } from 'next-themes';
 
 function Artist() {
   const router=useRouter()
   const {id} = router.query
   const {desc,img,SocialIcons,galleryImages,marketPlaceLink}=artistInfo[parseInt(id-1)] || artistInfo[0]
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme("dark");
+  }, [setTheme]);
   return (
     <div className='dark:bg-jacarta-900 pt-28'>
        <div className='flex flex-col lg:flex-row justify-center gap-10 items-center mt-28 mb-10'>
