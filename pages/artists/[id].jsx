@@ -1,11 +1,11 @@
 import React , {useEffect} from 'react'
-import Hero_6 from '../../components/hero/hero_6';
 import { HeadLine } from '../../components/component';
 import FilterCategoryItem from "../../components/categories/filterCategoryItem";
 import Link from 'next/link';
 import {artistInfo} from '../../data/artists_data';
 import {useRouter} from 'next/router';
 import { useTheme } from 'next-themes';
+import More_items from '../item/more_items';
 
 function Artist() {
   const router=useRouter()
@@ -16,11 +16,13 @@ function Artist() {
   useEffect(() => {
     setTheme("dark");
   }, [setTheme]);
+
+
   return (
-    <div className='dark:bg-jacarta-900 pt-28'>
+    <div className='dark:bg-black pt-28'>
        <div className='flex flex-col lg:flex-row justify-center gap-10 items-center mt-28 mb-10'>
            <div className='mx-4 lg:mx-0'>
-              <h2 className='mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white'>
+              <h2 className='mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-accent-dark'>
               About the Artist
               </h2>
               <p>{desc}</p>
@@ -35,7 +37,7 @@ function Artist() {
                         rel="noopener noreferrer"
                         className="group cursor-pointer"
                       >
-                        <svg className="icon group-hover:fill-accent fill-jacarta-300 h-5 w-5 dark:group-hover:fill-white">
+                        <svg className="icon hover:fill-accent  fill-jacarta-300 h-5 w-5 dark:hover:fill-accent">
                           <use xlinkHref={`/icons.svg#icon-${text}`}></use>
                         </svg>
                       </a>
@@ -59,11 +61,11 @@ function Artist() {
                 </figure>
               </div>
         </div>  
-       <h2 className="font-display text-jacarta-700 mb-8 text-center text-3xl dark:text-white">
+       {/* <h2 className="font-display text-jacarta-700 mb-8 text-center text-3xl dark:text-white">
         <img src="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/1f525.png" alt="headling" className="mr-1 inline-block h-6 w-6 bg-contain bg-center text-xl"/>
             Gallery Section
         </h2>
-       <Hero_6 galleryImages={galleryImages}/>
+       <Hero_6 galleryImages={galleryImages}/> */}
        <section id="cards" className="py-24">
         <div className="container">
           <HeadLine
@@ -73,6 +75,7 @@ function Artist() {
           />
           <FilterCategoryItem marketplace={marketPlaceLink}/>
         </div>
+        <More_items galleryImages={galleryImages}/>
       </section>
     </div>
   )

@@ -2861,7 +2861,7 @@ html {
 	}
 
 	.fill-accent {
-		fill: #8358ff;
+		fill: #7f1d1d;
 	}
 
 	.fill-current {
@@ -4475,7 +4475,7 @@ html {
 	}
 
 	.group:hover .group-hover\:fill-accent {
-		fill: #8358ff;
+		fill: #7f1d1d;
 	}
 
 	.group:hover .group-hover\:text-accent {

@@ -2,9 +2,9 @@ import React from 'react';
 import { HeadLine } from '../../components/component';
 import BidsCarousel from '../../components/carousel/bidsCarousel';
 
-const More_items = () => {
+const More_items = ({galleryImages}) => {
 	return (
-		<section className="dark:bg-jacarta-800 bg-light-base py-24">
+		<section className="dark:bg-black bg-white py-24">
 			{/* <!-- Hot Bids --> */}
 			<div className="container">
 				<HeadLine
@@ -14,7 +14,7 @@ const More_items = () => {
 
 				<div className="relative">
 					{/* <!-- Slider --> */}
-					<BidsCarousel />
+					<BidsCarousel galleryImages={galleryImages} />
 				</div>
 			</div>
 			{/* <!-- end hot bids --> */}

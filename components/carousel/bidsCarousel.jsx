@@ -6,13 +6,10 @@ import Image from "next/image";
 import "tippy.js/dist/tippy.css";
 import { bidsData } from "../../data/bids_data";
 import Link from "next/link";
-import Tippy from "@tippyjs/react";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import { bidsModalShow } from "../../redux/counterSlice";
 import { useDispatch } from "react-redux";
-import Likes from "../likes";
 
-const BidsCarousel = () => {
+const BidsCarousel = ({galleryImages}) => {
   const dispatch = useDispatch();
   const handleclick = () => {
     console.log("clicked on ");
@@ -44,25 +41,18 @@ const BidsCarousel = () => {
         }}
         className=" card-slider-4-columns !py-5"
       >
-        {bidsData.map((item) => {
-          const { id, image, title, bid_number, eth_number, react_number } =
+        {galleryImages.map((item) => {
+          const { id, img, title } =
             item;
-          const itemLink = image
-            .split("/")
-            .slice(-1)
-            .toString()
-            .replace(".jpg", "");
           return (
             <SwiperSlide className="text-white" key={id}>
               <article>
                 <div className="dark:bg-jacarta-700 dark:border-jacarta-700 border-jacarta-100 rounded-2xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg text-jacarta-500">
                   <figure>
-                    {/* {`item/${itemLink}`} */}
-                    <Link href={"/item/" + itemLink}>
                       <a>
                         <div className="w-full">
                           <Image
-                            src={image}
+                            src={img}
                             alt={title}
                             height={230}
                             width={230}
@@ -73,39 +63,13 @@ const BidsCarousel = () => {
                           />
                         </div>
                       </a>
-                    </Link>
                   </figure>
                   <div className="mt-4 flex items-center justify-between">
-                    <Link href={"/item/" + itemLink}>
                       <a>
                         <span className="font-display text-jacarta-700 hover:text-accent text-base dark:text-white">
                           {title}
                         </span>
                       </a>
-                    </Link>
-                  </div>
-                  <div className="mt-2 text-sm">
-                    <span className="dark:text-jacarta-300 text-jacarta-500">
-                      Current Bid
-                    </span>
-                    <span className="dark:text-jacarta-100 text-jacarta-700">
-                      {bid_number} ETH
-                    </span>
-                  </div>
-
-                  <div className="mt-8 flex items-center justify-between">
-                    <button
-                      type="button"
-                      className="text-accent font-display text-sm font-semibold"
-                      onClick={() => dispatch(bidsModalShow())}
-                    >
-                      Place bid
-                    </button>
-
-                    <Likes
-                      like={react_number}
-                      classes="flex items-center space-x-1"
-                    />
                   </div>
                 </div>
               </article>
