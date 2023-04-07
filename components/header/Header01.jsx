@@ -4,7 +4,7 @@ import DarkMode from "../mode/DarkMode";
 import Logo from "./../../public/images/sycoLogo.svg";
 import WhiteLogo from "./../../public/images/sycoLogoWhite.svg";
 import { v4 as uuidv4 } from "uuid";
-import { useRouter } from "next/router";
+import Router, { useRouter } from "next/router";
 import {
   isChildrenPageActive,
   isParentPageActive,
@@ -527,7 +527,7 @@ export default function Header01() {
                   </ul> */}
                 </li>
                 <li className="js-nav-dropdown group relative">
-                  <Link p href='marketplace'>
+                  <Link href='/marketplace' prefetch={false}>
                   <a  className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
                     <span
                     >
