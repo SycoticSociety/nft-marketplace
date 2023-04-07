@@ -41,7 +41,7 @@ const BidsCarousel = ({galleryImages}) => {
         }}
         className=" card-slider-4-columns !py-5"
       >
-        {galleryImages.map((item) => {
+        {galleryImages?.map((item) => {
           const { id, img, title } =
             item;
           return (
