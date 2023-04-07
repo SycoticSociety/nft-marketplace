@@ -4,7 +4,7 @@ import BidsCarousel from '../../components/carousel/bidsCarousel';
 
 const More_items = ({galleryImages}) => {
 	return (
-		<section className="dark:bg-black bg-white py-24">
+		<section className="dark:bg-black bg-white pt-20">
 			{/* <!-- Hot Bids --> */}
 			<div className="container">
 				<HeadLine

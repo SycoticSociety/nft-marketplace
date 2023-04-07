@@ -66,7 +66,7 @@ function Artist() {
             Gallery Section
         </h2>
        <Hero_6 galleryImages={galleryImages}/> */}
-       <section id="cards" className="py-24">
+       <section id="cards" className="py-12 pt-24">
         <div className="container">
           <HeadLine
             image="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/26a1.png"
