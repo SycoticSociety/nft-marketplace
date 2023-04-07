@@ -6,9 +6,9 @@ import Meta from "../../components/Meta";
 import Hero_4 from "../../components/hero/hero_4";
 import dynamic from "next/dynamic";
 import { useTheme } from "next-themes";
+import CoverflowCarousel from '../../components/carousel/coverflowCarousel'
 
 const FilterCategoryItem=dynamic(()=>import('../../components/categories/filterCategoryItem'))
-const CoverflowCarousel=dynamic(()=>import("../../components/carousel/coverflowCarousel"))
 
 const Home_4 = () => {
   const { theme, setTheme } = useTheme();
