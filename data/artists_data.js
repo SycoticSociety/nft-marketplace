@@ -1,7 +1,7 @@
 export const artistInfo = [
 	{
 		title: 'General Partner at Entrepreneur',
-		desc: "Sycotic Society is the owner of the website. He is a Digital Investor and a Nft Collector. ",
+		desc: "Darkest Hour: Our Fantom Opera NFT collection.",
 		id: '1',
 		name: 'Katie Smith',
 		img: '/images/dao/benefit_dao_1.jpg',

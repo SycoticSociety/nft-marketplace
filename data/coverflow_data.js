@@ -1,9 +1,9 @@
 export const coverflow_data = [
   {
     img: "/images/artists/Dabbin.jpg",
-    title: "Dabb'in",
+    title: "Sycotic PUNKS",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
-    authorName: "Sycotic Society Cronos",
+    authorName: "Sycotic Society Polygon",
     id: "Dabbin",
   },
   {
