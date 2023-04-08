@@ -68,7 +68,7 @@ export const artistInfo = [
 		desc: "Sycotic PUNKZ: Our First Polygon NFT collection.",
 		id: 'Dabbin',
 		name: 'Katie Smith',
-		img: '/images/dao/benefit_dao_1.jpg',
+		img: '/images/dao/Mohowak.jpg',
         SocialIcons:[
             {
               id: 1,
