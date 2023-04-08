@@ -19,8 +19,22 @@ function Artist() {
 
 
   return (
-    <div className='dark:bg-black pt-28'>
+    <div className='dark:bg-gray-900 pt-28'>
        <div className='flex flex-col lg:flex-row justify-center gap-10 items-center mt-28 mb-10'>
+       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 block dark:hidden h-full">
+        <img
+          src="/images/gradient.jpg"
+          alt="gradient"
+          className="h-full w-full"
+        />
+      </picture>
+      <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block h-full" >
+        <img
+          src="/images/gradient_dark.jpg"
+          alt="gradient dark"
+          className="h-full w-full"
+        />
+      </picture>
            <div className='mx-4 lg:mx-0'>
               <h2 className='mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-accent-dark'>
               About the Artist
