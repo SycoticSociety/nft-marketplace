@@ -1,7 +1,7 @@
 export const artistInfo = [
 	{
 		title: 'General Partner at Entrepreneur',
-		desc: "Darkest Hour a Sycotic 💢 Society Exclusive Fantom Opera NFT collection.. ",
+		desc: "Darkest Hour: Our Fantom Opera NFT collection.",
 		id: '1',
 		name: 'Katie Smith',
 		img: '/images/dao/benefit_dao_1.jpg',
