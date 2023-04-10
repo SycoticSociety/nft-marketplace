@@ -63,7 +63,8 @@ export const artistInfo = [
         marketPlaceLink:'0x7979E0B2442451a2493CFC2e4264B9BeA8C86804'
 	},
 
-{
+export const artistInfo = [
+        {
                 title: 'General Partner at Entrepreneur',
 		desc: "Sycotic PUNKZ: Our First Polygon NFT collection.",
 		id: 'Dabbin',
