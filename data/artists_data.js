@@ -1,10 +1,22 @@
 export const artistInfo = [
 	{
+
+           {
 		title: 'General Partner at Entrepreneur',
 		desc: "Darkest Hour: Our first Fantom Opera NFT collection.",
 		id: '1',
 		name: 'Katie Smith',
 		img: '/images/dao/benefit_dao_1.jpg',
+             }
+
+          {
+
+                title: 'General Partner at Entrepreneur',
+		desc: "Sycotic PUNKZ: Our first Polygon NFT collection.",
+		id: 'Dabbin',
+		name: 'Katie Smith',
+		img: '/images/dao/Mohawk.jpg',
+            }
 
         SocialIcons:[
             {
