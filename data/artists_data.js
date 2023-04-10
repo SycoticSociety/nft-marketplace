@@ -3,7 +3,7 @@ export const artistInfo = [
 		title: 'General Partner at Entrepreneur',
 		desc: "Darkest Hour: Our Fantom Opera NFT collection.",
 		id: '1',
-		name: 'Katie Smith',
+		name: 'Darkest Hour',
 		img: '/images/dao/benefit_dao_1.jpg',
         SocialIcons:[
             {
@@ -64,10 +64,10 @@ export const artistInfo = [
 	},
 
 	{
-		title: 'General Partner at Entrepreneur',
+		title: 'Sycotic PUNKZ',
 		desc: "Sycotic PUNKZ: Our first Polygon NFT collection.",
 		id: 'Dabbin',
-		name: 'Katie Smith',
+		name: 'Sycotic Society Polygon',
 		img: '/images/dao/Mohawk.jpg',
         SocialIcons:[
             {
