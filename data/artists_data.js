@@ -1,9 +1,9 @@
 export const artistInfo = [
 	{
-		title: 'General Partner at Entrepreneur',
+		title: 'Darkest Hour',
 		desc: "Darkest Hour: Our Fantom Opera NFT collection.",
 		id: '1',
-		name: 'Darkest Hour',
+		name: 'Sycotic Society Fantom',
 		img: '/images/dao/benefit_dao_1.jpg',
         SocialIcons:[
             {
