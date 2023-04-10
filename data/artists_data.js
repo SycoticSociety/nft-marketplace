@@ -7,7 +7,7 @@ export const artistInfo = [
 		id: '1',
 		name: 'Katie Smith',
 		img: '/images/dao/benefit_dao_1.jpg',
-             }
+             },
 
           {
 
@@ -79,11 +79,7 @@ export const artistInfo = [
 
 
 {
-		title: 'General Partner at Entrepreneur',
-		desc: "Sycotic PUNKZ: Our first Polygon NFT collection.",
-		id: 'Dabbin',
-		name: 'Katie Smith',
-		img: '/images/dao/Mohawk.jpg',
+		
 
         SocialIcons:[
             {
