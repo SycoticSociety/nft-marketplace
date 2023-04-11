@@ -10,7 +10,7 @@ import More_items from '../item/more_items';
 function Artist() {
   const router=useRouter()
   const {id} = router.query
-  const {desc,img,SocialIcons,galleryImages,marketPlaceLink,artistChainId}=artistInfo[parseInt(id-1)] || artistInfo[0]
+  const {title,desc,img,SocialIcons,galleryImages,marketPlaceLink,artistChainId}=artistInfo[parseInt(id-1)] || artistInfo[0]
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
@@ -84,7 +84,7 @@ function Artist() {
         <div className="container">
           <HeadLine
             image="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/26a1.png"
-            text="Darkest Hour Collection"
+            text={title}
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white"
           />
           <FilterCategoryItem marketplace={marketPlaceLink} artistChainId={artistChainId}/>

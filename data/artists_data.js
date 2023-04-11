@@ -2,7 +2,7 @@ import { ChainId } from "@thirdweb-dev/sdk";
 
 export const artistInfo = [
 	{
-		title: 'Darkest Hour',
+		title: 'Darkest Hour Collection',
 		desc: "Darkest Hour: Our Fantom Opera NFT collection.",
 		id: '1',
 		name: 'Sycotic Society Fantom',
