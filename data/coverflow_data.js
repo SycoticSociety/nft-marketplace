@@ -4,7 +4,7 @@ export const coverflow_data = [
     title: "Sycotic PUNKS",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
     authorName: "Sycotic Society Polygon",
-    id: "Dabbin",
+    id: "2",
   },
   {
     img: "/images/artists/Crawl.jpg",

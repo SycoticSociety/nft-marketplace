@@ -10,7 +10,7 @@ import More_items from '../item/more_items';
 function Artist() {
   const router=useRouter()
   const {id} = router.query
-  const {desc,img,SocialIcons,galleryImages,marketPlaceLink}=artistInfo[parseInt(id-1)] || artistInfo[0]
+  const {desc,img,SocialIcons,galleryImages,marketPlaceLink,artistChainId}=artistInfo[parseInt(id-1)] || artistInfo[0]
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
@@ -87,7 +87,7 @@ function Artist() {
             text="Darkest Hour Collection"
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white"
           />
-          <FilterCategoryItem marketplace={marketPlaceLink}/>
+          <FilterCategoryItem marketplace={marketPlaceLink} artistChainId={artistChainId}/>
         </div>
         <More_items galleryImages={galleryImages}/>
       </section>

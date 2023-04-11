@@ -10,12 +10,15 @@ import ChainContext from "../chainContext";
 import { ChainId } from "@thirdweb-dev/react";
 
 
-const FilterCategoryItem = ({marketplace}) => {
+const FilterCategoryItem = ({marketplace,artistChainId}) => {
   const {selectedChain,setSelectedChain}=useContext(ChainContext)
   const addresses={
     [String(ChainId.Fantom)]:"0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171",
     [String(ChainId.Polygon)]: "0x7266BA8cA064fbFC96DAE22B5C29a468D178C253",
     [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2"
+  }
+  if(artistChainId){
+    setSelectedChain(artistChainId)
   }
   const { contract } = useContract(
     marketplace || addresses[String(selectedChain)],
@@ -39,7 +42,7 @@ const FilterCategoryItem = ({marketplace}) => {
   if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
     <div>
-      <Collection_category_filter filter={filter} setFilter={setFilter}/>
+      {!artistChainId &&  <Collection_category_filter filter={filter} setFilter={setFilter}/>}
       <CategoryItem listings={arrangeListings} contract={contract} address={address}/>
       <div className="mt-10 text-center">
         <button

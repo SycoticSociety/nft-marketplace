@@ -1,3 +1,5 @@
+import { ChainId } from "@thirdweb-dev/sdk";
+
 export const artistInfo = [
 	{
 		title: 'Darkest Hour',
@@ -60,13 +62,14 @@ export const artistInfo = [
                 authorName: 'by Lazy Panda',
             },
         ],
-        marketPlaceLink:'0x7979E0B2442451a2493CFC2e4264B9BeA8C86804'
+        marketPlaceLink:'0x7979E0B2442451a2493CFC2e4264B9BeA8C86804',
+        artistChainId:ChainId.Fantom
 	},
 
 	{
 		title: 'Sycotic PUNKZ',
 		desc: "Sycotic PUNKZ: Our first Polygon NFT collection.",
-		id: 'Dabbin',
+		id: '2',
 		name: 'Sycotic Society Polygon',
 		img: '/images/dao/Mohawk.jpg',
         SocialIcons:[
@@ -124,7 +127,8 @@ export const artistInfo = [
                 authorName: 'by Lazy Panda',
             },
         ],
-        marketPlaceLink:'0x9f927cB9299B047d1e52776bAe2803fccfC0D540'
+        marketPlaceLink:'0x9f927cB9299B047d1e52776bAe2803fccfC0D540',
+        artistChainId:ChainId.Polygon
 	},
 
 ];
