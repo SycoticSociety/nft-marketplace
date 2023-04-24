@@ -7,7 +7,10 @@ const nextConfig = {
 		  topLevelAwait: true,
 		}
 		return config
-	  }
+	  },
+	  future: {
+		webpack5: true,
+	  },
 };
 
 module.exports = nextConfig;
