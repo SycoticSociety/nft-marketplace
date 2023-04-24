@@ -1,6 +1,7 @@
 const nextConfig = {
 	experimental: {
 		appDir: true,
+		layers:true
 	  },
 	webpack: (config) => {
 		config.experiments = {
