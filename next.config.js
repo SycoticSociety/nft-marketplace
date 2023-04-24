@@ -8,9 +8,7 @@ const nextConfig = {
 		}
 		return config
 	  },
-	  future: {
-		webpack5: true,
-	  },
+	webpack5:false,
 };
 
 module.exports = nextConfig;
