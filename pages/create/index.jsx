@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useMintNFT, useContract, Web3Button , useAddress } from "@thirdweb-dev/react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
@@ -11,8 +12,17 @@ import Proparties_modal from "../../components/modal/proparties_modal";
 import { useDispatch } from "react-redux";
 import { showPropatiesModal } from "../../redux/counterSlice";
 import Meta from "../../components/Meta";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
+
+const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY,"mumbai");
+const contract=await sdk.getContract("0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721")
+
+
 
 const Create = () => {
+  console.log(contract)
+  const address = useAddress();
+  const { mutateAsync: mintNft, isLoading, error } = useMintNFT(contract);
   const fileTypes = [
     "JPG",
     "PNG",
@@ -27,11 +37,14 @@ const Create = () => {
     "GLTF",
   ];
   const [file, setFile] = useState("");
+  const [name,setName]=useState("")
+  const [desc,setDesc]=useState("")
+
 
   const dispatch = useDispatch();
 
   const handleChange = (file) => {
-    setFile(file.name);
+    setFile(file);
   };
 
   const popupItemData = [
@@ -56,7 +69,7 @@ const Create = () => {
   ];
   return (
     <div>
-      <Meta title="Create || Xhibiter | NFT Marketplace Next.js Template" />
+      <Meta title="Create your Nfts || Sycotic Society" />
       {/* <!-- Create --> */}
       <section className="relative py-24">
         <picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">
@@ -70,11 +83,6 @@ const Create = () => {
           <h1 className="font-display text-jacarta-700 py-8 text-center text-4xl font-medium dark:text-white">
             Create
           </h1>
-          
-          <h1 className="font-display text-jacarta-700 pb-4 text-center text-4xl font-medium dark:text-white">
-            Coming Soon!
-          </h1>
-
           <div className="mx-auto max-w-[48.125rem]">
             {/* <!-- File Upload --> */}
             <div id="#nfts" className="mb-6">
@@ -85,7 +93,7 @@ const Create = () => {
 
               {file ? (
                 <p className="dark:text-jacarta-300 text-2xs mb-3">
-                  successfully uploaded : {file}
+                  successfully uploaded : {file.name}
                 </p>
               ) : (
                 <p className="dark:text-jacarta-300 text-2xs mb-3">
@@ -136,6 +144,8 @@ const Create = () => {
                 id="item-name"
                 className="dark:bg-jacarta-700 border-jacarta-100 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 !border-opacity-40 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 placeholder="Item name"
+                value={name}
+                onChange={e=>setName(e.target.value)}
                 required
               />
             </div>
@@ -178,6 +188,8 @@ const Create = () => {
                 className="dark:bg-jacarta-700 border-jacarta-100 !border-opacity-40 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 rows="4"
                 required
+                value={desc}
+                onChange={e=>setDesc(e.target.value)}
                 placeholder="Provide a detailed description of your item."
               ></textarea>
             </div>
@@ -473,12 +485,25 @@ const Create = () => {
             </div>
 
             {/* <!-- Submit --> */}
-            <button
-              disabled
+            <Web3Button
+               contractAddress="0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721"
+               disabled={!address|| !name || !desc || !file}
+                 action={async() =>{
+                  await contract.roles.grant("minter", address);
+                  await mintNft({
+                    metadata: {
+                      name: name,
+                      description: desc,
+                      image: file, // Accepts any URL or File type
+                    },
+                    to: address, // Use useAddress hook to get current wallet address
+                  })
+                  await contract.call("setRoyaltyInfoForToken",[0,address,0])
+                }}
               className="bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
             >
               Create
-            </button>
+            </Web3Button>
           </div>
         </div>
       </section>
