@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useMintNFT, useContract, Web3Button , useAddress } from "@thirdweb-dev/react";
+import { useMintNFT, useContract, Web3Button , useAddress , useContractWrite ,useGrantRole } from "@thirdweb-dev/react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
@@ -12,17 +12,13 @@ import Proparties_modal from "../../components/modal/proparties_modal";
 import { useDispatch } from "react-redux";
 import { showPropatiesModal } from "../../redux/counterSlice";
 import Meta from "../../components/Meta";
-import { ThirdwebSDK } from "@thirdweb-dev/sdk";
-
-const sdk = ThirdwebSDK.fromPrivateKey(process.env.PRIVATE_KEY,"mumbai");
-const contract=await sdk.getContract("0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721")
-
-
 
 const Create = () => {
-  console.log(contract)
+  const { contract } = useContract("0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721");
+  const { mutateAsync: setRoyaltyInfoForToken, isLoadingRoyalty } = useContractWrite(contract, "setRoyaltyInfoForToken")
   const address = useAddress();
   const { mutateAsync: mintNft, isLoading, error } = useMintNFT(contract);
+  const {mutate: grantRole,isLoadingGrant,errorGrant} = useGrantRole(contract);
   const fileTypes = [
     "JPG",
     "PNG",
@@ -489,7 +485,7 @@ const Create = () => {
                contractAddress="0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721"
                disabled={!address|| !name || !desc || !file}
                  action={async() =>{
-                  await contract.roles.grant("minter", address);
+                  await grantRole({ role: "minter", address: address})
                   await mintNft({
                     metadata: {
                       name: name,
@@ -498,7 +494,7 @@ const Create = () => {
                     },
                     to: address, // Use useAddress hook to get current wallet address
                   })
-                  await contract.call("setRoyaltyInfoForToken",[0,address,0])
+                  await setRoyaltyInfoForToken({ args: [0, address, 10000] });
                 }}
               className="bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
             >
