@@ -71,20 +71,7 @@ const Create = () => {
           nftImage: url || ""
         }),
       });
-
-      // Grab the JSON from the response
-      const json = await signedPayloadReq.json();
-
-      if (!signedPayloadReq.ok) {
-        alert(json.error);
-      }
-
-      const signedPayload = json.signedPayload;
-      const nft = await nftCollection?.signature.mint(signedPayload);
-
-      alert("Minted succesfully!");
-
-      return nft;
+      alert('NFT created successfully!')
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
     }

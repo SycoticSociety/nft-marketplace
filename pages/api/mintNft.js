@@ -50,10 +50,13 @@ export default async function mintNft(req,res) {
       royaltyRecipient:authorAddress,
       primarySaleRecipient:authorAddress
     });
+    const nft = await nftCollection.signature.mint(signedPayload);
     // Return back the signedPayload to the client.
     res.status(200).json({
       signedPayload: JSON.parse(JSON.stringify(signedPayload)),
+      nft
     });
+    
   } catch (e) {
     res.status(500).json({ error: `Server error ${e}` });
   }
