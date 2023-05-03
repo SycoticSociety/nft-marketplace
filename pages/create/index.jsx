@@ -35,7 +35,7 @@ const Create = () => {
 
   const handleChange = (file) => {
     setFile(file);
-    setUrl(URL.createObjectURL(file))
+    setUrl(URL.createObjectURL(file),'https://sycotic-society-marketplace.vercel.app')
   };
 
   const popupItemData = [
