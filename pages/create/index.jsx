@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useMintNFT, useContract, Web3Button , useAddress , useContractWrite ,useGrantRole } from "@thirdweb-dev/react";
-import Tippy from "@tippyjs/react";
+import {  Web3Button , useAddress } from "@thirdweb-dev/react";
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
 import {
-  collectionDropdown2_data,
+
   EthereumDropdown2_data,
 } from "../../data/dropdown";
 import { FileUploader } from "react-drag-drop-files";
@@ -14,11 +13,7 @@ import { showPropatiesModal } from "../../redux/counterSlice";
 import Meta from "../../components/Meta";
 
 const Create = () => {
-  const { contract } = useContract("0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721");
-  const { mutateAsync: setRoyaltyInfoForToken, isLoadingRoyalty } = useContractWrite(contract, "setRoyaltyInfoForToken")
   const address = useAddress();
-  const { mutateAsync: mintNft, isLoading, error } = useMintNFT(contract);
-  const {mutate: grantRole,isLoadingGrant,errorGrant} = useGrantRole(contract);
   const fileTypes = [
     "JPG",
     "PNG",
@@ -32,15 +27,15 @@ const Create = () => {
     "GLB",
     "GLTF",
   ];
-  const [file, setFile] = useState("");
+  const [file, setFile] = useState(null);
   const [name,setName]=useState("")
   const [desc,setDesc]=useState("")
-
-
-  const dispatch = useDispatch();
+  const [url,setUrl]=useState('')
+  console.log(file,name,desc,address)
 
   const handleChange = (file) => {
     setFile(file);
+    setUrl(URL.createObjectURL(file))
   };
 
   const popupItemData = [
@@ -63,6 +58,38 @@ const Create = () => {
       icon: "stats-icon",
     },
   ];
+
+  const mintWithSignature = async () => {
+    try {
+      // Make a request to /api/server
+      const signedPayloadReq = await fetch(`/api/mintNft`, {
+        method: "POST",
+        body: JSON.stringify({
+          authorAddress: address, // Address of the current user
+          nftName: name || "",
+          nftDesc:desc || "",
+          nftImage: url || ""
+        }),
+      });
+
+      // Grab the JSON from the response
+      const json = await signedPayloadReq.json();
+
+      if (!signedPayloadReq.ok) {
+        alert(json.error);
+      }
+
+      const signedPayload = json.signedPayload;
+      const nft = await nftCollection?.signature.mint(signedPayload);
+
+      alert("Minted succesfully!");
+
+      return nft;
+    } catch (e) {
+      console.error("An error occurred trying to mint the NFT:", e);
+    }
+  };
+
   return (
     <div>
       <Meta title="Create your Nfts || Sycotic Society" />
@@ -147,7 +174,7 @@ const Create = () => {
             </div>
 
             {/* <!-- External Link --> */}
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <label
                 htmlFor="item-external-link"
                 className="font-display text-jacarta-700 mb-2 block dark:text-white"
@@ -165,7 +192,7 @@ const Create = () => {
                 className="dark:bg-jacarta-700 border-jacarta-100 !border-opacity-40 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 placeholder="https://yoursite.io/item/123"
               />
-            </div>
+            </div> */}
 
             {/* <!-- Description --> */}
             <div className="mb-6">
@@ -191,7 +218,7 @@ const Create = () => {
             </div>
 
             {/* <!-- Collection --> */}
-            <div className="relative">
+            {/* <div className="relative">
               <div>
                 <label className="font-display text-jacarta-700 mb-2 block dark:text-white">
                   Collection
@@ -225,17 +252,17 @@ const Create = () => {
                 </div>
               </div>
 
-              {/* dropdown */}
-              <div className="dropdown my-1 cursor-pointer">
+              
+              <div className="dropdown my-4 cursor-pointer">
                 <Collection_dropdown2
                   data={collectionDropdown2_data}
                   collection={true}
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* <!-- Properties --> */}
-            {popupItemData.map(({ id, name, text, icon }) => {
+            {/* {popupItemData.map(({ id, name, text, icon }) => {
               return (
                 <div
                   key={id}
@@ -272,14 +299,14 @@ const Create = () => {
                   </div>
                 </div>
               );
-            })}
+            })} */}
 
-            <Proparties_modal />
+            {/* <Proparties_modal /> */}
 
             {/* <!-- Properties --> */}
 
             {/* <!-- Unlockable Content --> */}
-            <div className="dark:border-jacarta-600 border-jacarta-100 !border-opacity-40 relative border-b py-6">
+            {/* <div className="dark:border-jacarta-600 border-jacarta-100 !border-opacity-40 relative border-b py-6">
               <div className="flex items-center justify-between">
                 <div className="flex">
                   <svg
@@ -310,10 +337,10 @@ const Create = () => {
                   className="checked:bg-accent checked:focus:bg-accent checked:hover:bg-accent after:bg-jacarta-400 bg-jacarta-100 relative h-6 w-[2.625rem] cursor-pointer appearance-none rounded-full border-none after:absolute after:top-[0.1875rem] after:left-[0.1875rem] after:h-[1.125rem] after:w-[1.125rem] after:rounded-full after:transition-all checked:bg-none checked:after:left-[1.3125rem] checked:after:bg-white focus:ring-transparent focus:ring-offset-0"
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* <!-- Explicit & Sensitive Content --> */}
-            <div className="dark:border-jacarta-600 border-jacarta-100 relative mb-6 border-b py-6">
+            {/* <div className="dark:border-jacarta-600 border-jacarta-100 relative mb-6 border-b py-6">
               <div className="flex items-center justify-between">
                 <div className="flex">
                   <svg
@@ -325,9 +352,9 @@ const Create = () => {
                   >
                     <path fill="none" d="M0 0h24v24H0z" />
                     <path d="M12.866 3l9.526 16.5a1 1 0 0 1-.866 1.5H2.474a1 1 0 0 1-.866-1.5L11.134 3a1 1 0 0 1 1.732 0zM11 16v2h2v-2h-2zm0-7v5h2V9h-2z" />
-                  </svg>
+                  </svg> */}
 
-                  <div>
+                  {/* <div>
                     <label className="font-display text-jacarta-700 dark:text-white">
                       Explicit & Sensitive Content
                     </label>
@@ -358,8 +385,8 @@ const Create = () => {
                         </span>
                       </Tippy>
                     </p>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div>
                 <input
                   type="checkbox"
                   value="checkbox"
@@ -367,10 +394,10 @@ const Create = () => {
                   className="checked:bg-accent checked:focus:bg-accent checked:hover:bg-accent after:bg-jacarta-400 bg-jacarta-100 relative h-6 w-[2.625rem] cursor-pointer appearance-none rounded-full border-none after:absolute after:top-[0.1875rem] after:left-[0.1875rem] after:h-[1.125rem] after:w-[1.125rem] after:rounded-full after:transition-all checked:bg-none checked:after:left-[1.3125rem] checked:after:bg-white focus:ring-transparent focus:ring-offset-0"
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* <!-- Supply --> */}
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <label
                 htmlFor="item-supply"
                 className="font-display text-jacarta-700 mb-2 block dark:text-white"
@@ -413,7 +440,7 @@ const Create = () => {
                 className="dark:bg-jacarta-700 border-jacarta-100 !border-opacity-40 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
                 placeholder="1"
               />
-            </div>
+            </div> */}
 
             {/* <!-- Blockchain --> */}
             <div className="mb-6">
@@ -431,7 +458,7 @@ const Create = () => {
             </div>
 
             {/* <!-- Freeze metadata --> */}
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <div className="mb-2 flex items-center space-x-2">
                 <label
                   htmlFor="item-freeze-metadata"
@@ -478,28 +505,14 @@ const Create = () => {
                 className="dark:bg-jacarta-700 bg-jacarta-50 border-jacarta-100 dark:border-jacarta-600 !border-opacity-40 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 dark:text-white"
                 placeholder="To freeze your metadata, you must create your item first."
               />
-            </div>
+            </div> */}
 
             {/* <!-- Submit --> */}
-            <Web3Button
-               contractAddress="0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721"
-               disabled={!address|| !name || !desc || !file}
-                 action={async() =>{
-                  await grantRole({ role: "minter", address: address})
-                  await mintNft({
-                    metadata: {
-                      name: name,
-                      description: desc,
-                      image: file, // Accepts any URL or File type
-                    },
-                    to: address, // Use useAddress hook to get current wallet address
-                  })
-                  await setRoyaltyInfoForToken({ args: [0, address, 10000] });
-                }}
-              className="bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
+            <button
+              onClick={()=>mintWithSignature()}
             >
               Create
-            </Web3Button>
+            </button>
           </div>
         </div>
       </section>
