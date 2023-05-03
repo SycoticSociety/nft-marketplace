@@ -510,6 +510,7 @@ const Create = () => {
             {/* <!-- Submit --> */}
             <button
               onClick={()=>mintWithSignature()}
+              className="bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"
             >
               Create
             </button>
