@@ -19,11 +19,7 @@ export default async function mintNft(req,res) {
     );
 
     // Load the NFT Collection via it's contract address using the SDK
-    const nftCollection = await sdk.getContract(
-      // Use your NFT_COLLECTION_ADDRESS constant
-      "0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721",
-      "nft-collection"
-    );
+    const nftCollection = await sdk.getContract("0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721");
 
     // Here we can make all kinds of cool checks to see if the user is eligible to mint the NFT.
     // Here are a few examples:
