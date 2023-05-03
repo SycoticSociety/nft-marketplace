@@ -19,7 +19,7 @@ export default async function mintNft(req,res) {
     );
 
     // Load the NFT Collection via it's contract address using the SDK
-    const nftCollection = await sdk.getContract("0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721");
+    const nftCollection = await sdk.getContract("0xed8553aFBE7Fa3Cf26637eDC7FF52Daf3C4a8721","nft-collection");
 
     // Here we can make all kinds of cool checks to see if the user is eligible to mint the NFT.
     // Here are a few examples:
@@ -32,11 +32,11 @@ export default async function mintNft(req,res) {
     // }
 
     // 2) Check that this wallet hasn't already minted a page - 1 NFT per wallet
-    const hasMinted = (await nftCollection.balanceOf(authorAddress)).gt(0);
-    if (hasMinted) {
-      res.status(400).json({ error: "Already minted" });
-      return;
-    }
+    // const hasMinted = (await nftCollection?.balanceOf(authorAddress)).gt(0);
+    // if (hasMinted) {
+    //   res.status(400).json({ error: "Already minted" });
+    //   return;
+    // }
 
     // If all the checks pass, begin generating the signature...
     // Generate the signature for the page NFT
