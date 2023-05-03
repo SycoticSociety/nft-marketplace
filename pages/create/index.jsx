@@ -430,7 +430,7 @@ const Create = () => {
             </div> */}
 
             {/* <!-- Blockchain --> */}
-            <div className="mb-6">
+            {/* <div className="mb-6">
               <label
                 htmlFor="item-supply"
                 className="font-display text-jacarta-700 mb-2 block dark:text-white"
@@ -438,11 +438,11 @@ const Create = () => {
                 Blockchain
               </label>
 
-              {/* dropdown */}
+              {/* dropdown 
               <div className="dropdown relative mb-4 cursor-pointer ">
                 <Collection_dropdown2 data={EthereumDropdown2_data} />
               </div>
-            </div>
+            </div> */}
 
             {/* <!-- Freeze metadata --> */}
             {/* <div className="mb-6">
@@ -497,6 +497,7 @@ const Create = () => {
             {/* <!-- Submit --> */}
             <button
               onClick={()=>mintWithSignature()}
+              disabled={!file && !name && !desc}
               className={file && name && desc ? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
             >
               Create
