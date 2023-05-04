@@ -85,7 +85,7 @@ const Create = () => {
     },
   ];
 
-  const mintWithSignature = async () => {
+  const mintWithSignature = async (file,name,desc,address) => {
     try {
       //Check the file is square
       const { width, height } = await imageSize(url);
@@ -100,7 +100,7 @@ const Create = () => {
       const signedPayloadReq =fetch(`/api/mintNft`, {
         method: "POST",
         body: JSON.stringify({
-          authorAddress: address, // Address of the current user
+          authorAddress: address,
           nftName: name || "",
           nftDesc:desc || "",
           nftImage: uploadUrl?.[0] || ""
@@ -538,7 +538,7 @@ const Create = () => {
 
             {/* <!-- Submit --> */}
             <button
-              onClick={()=>mintWithSignature()}
+              onClick={()=>mintWithSignature(file,name,desc,address)}
               disabled={!file && !name && !desc && !address}
               className={file && name && desc && !address ? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
             >
