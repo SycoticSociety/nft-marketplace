@@ -61,7 +61,7 @@ const Create = () => {
 
   const handleChange = (file) => {
     setFile(file);
-    setUrl(URL.createObjectURL(file),'https://sycotic-society-marketplace.vercel.app')
+    setUrl(URL.createObjectURL(file))
   };
 
   const popupItemData = [
@@ -106,13 +106,14 @@ const Create = () => {
           nftImage: uploadUrl?.[0] || ""
         }),
       }).then((response)=>{
-        alert("NFT minted successfully!")
+        if(response.status=500){
+          alert('We had an issue minting your NFT!')
+        }else{
+          alert('The nft was minted successfully!')
+        }
       }).catch((error)=>{
         alert("There was an error minting NFT.",error)
       });
-      if(signedPayloadReq){
-        alert('NFT has been created successfully!')
-      }
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
     }

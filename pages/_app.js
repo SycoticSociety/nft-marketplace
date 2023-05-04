@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
   const scrollRef = useRef({
     scrollPos: 0,
   });
-  const [selectedChain, setSelectedChain] = useState(ChainId.Mumbai);
+  const [selectedChain, setSelectedChain] = useState(ChainId.Fantom);
   const [selectedMarketplace, setSelectedMarketplace] = useState(
     "0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171"
   );
