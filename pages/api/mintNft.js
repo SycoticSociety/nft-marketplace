@@ -10,7 +10,6 @@ export default async function mintNft(req,res) {
     if (!process.env.PRIVATE_KEY) {
       throw new Error("You're missing PRIVATE_KEY in your .env.local file.");
     }
-    console.log(process.env)
     // Initialize the Thirdweb SDK on the serverside
     const sdk = ThirdwebSDK.fromPrivateKey(
       // Your wallet private key (read it in from .env.local file)
@@ -40,13 +39,17 @@ export default async function mintNft(req,res) {
 
     // If all the checks pass, begin generating the signature...
     // Generate the signature for the page NFT
+    const metadata={
+      name: nftName,
+      image:nftImage,
+      description: nftDesc
+    }
+
+    const mintNFTToWallet=await nftCollection.erc721.mintTo(authorAddress,metadata)
+    console.log(mintNFTToWallet)
     const signedPayload = await nftCollection.signature.generate({
       to: authorAddress,
-      metadata: {
-        name: nftName,
-        image:nftImage,
-        description: nftDesc
-      },
+      metadata,
       royaltyRecipient:authorAddress,
       primarySaleRecipient:authorAddress
     });
@@ -56,6 +59,7 @@ export default async function mintNft(req,res) {
       signedPayload: JSON.parse(JSON.stringify(signedPayload)),
       nft
     });
+    
     
   } catch (e) {
     res.status(500).json({ error: `Server error ${e}` });

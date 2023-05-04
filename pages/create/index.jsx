@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  Web3Button , useAddress } from "@thirdweb-dev/react";
+import {  Web3Button , useAddress , useStorageUpload } from "@thirdweb-dev/react";
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
 import {
@@ -31,7 +31,33 @@ const Create = () => {
   const [name,setName]=useState("")
   const [desc,setDesc]=useState("")
   const [url,setUrl]=useState('')
-  console.log(file,name,desc,address)
+
+  const { mutateAsync: upload } = useStorageUpload();
+
+  async function imageSize(url) {
+    const img = document.createElement("img");
+  
+    const promise = new Promise((resolve, reject) => {
+      img.onload = () => {
+        // Natural size is the actual image size regardless of rendering.
+        // The 'normal' `width`/`height` are for the **rendered** size.
+        const width = img.naturalWidth;
+        const height = img.naturalHeight;
+  
+        // Resolve promise with the width and height
+        resolve({ width, height });
+      };
+  
+      // Reject promise on error
+      img.onerror = reject;
+    });
+  
+    // Setting the source makes it start downloading and eventually call `onload`
+    img.src = url;
+  
+    return promise
+  }
+  
 
   const handleChange = (file) => {
     setFile(file);
@@ -61,6 +87,15 @@ const Create = () => {
 
   const mintWithSignature = async () => {
     try {
+      //Check the file is square
+      const { width, height } = await imageSize(url);
+      if (height !== width) {
+         return alert('The image must be a square.')
+      }
+      const uploadUrl = await upload({
+        data: [file],
+        options: { uploadWithGatewayUrl: true, uploadWithoutDirectory: true },
+      });
       // Make a request to /api/server
       const signedPayloadReq = await fetch(`/api/mintNft`, {
         method: "POST",
@@ -68,10 +103,12 @@ const Create = () => {
           authorAddress: address, // Address of the current user
           nftName: name || "",
           nftDesc:desc || "",
-          nftImage: url || ""
+          nftImage: uploadUrl?.[0] || ""
         }),
       });
-      alert('NFT created successfully!')
+      if(signedPayloadReq){
+        alert('NFT has been created successfully!')
+      }
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
     }
