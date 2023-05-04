@@ -39,6 +39,7 @@ export default async function mintNft(req,res) {
 
     // If all the checks pass, begin generating the signature...
     // Generate the signature for the page NFT
+
     const metadata={
       name: nftName,
       image:nftImage,
@@ -59,8 +60,6 @@ export default async function mintNft(req,res) {
       signedPayload: JSON.parse(JSON.stringify(signedPayload)),
       nft
     });
-    
-    
   } catch (e) {
     res.status(500).json({ error: `Server error ${e}` });
   }

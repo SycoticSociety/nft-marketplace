@@ -97,7 +97,7 @@ const Create = () => {
         options: { uploadWithGatewayUrl: true, uploadWithoutDirectory: true },
       });
       // Make a request to /api/server
-      const signedPayloadReq = await fetch(`/api/mintNft`, {
+      const signedPayloadReq =fetch(`/api/mintNft`, {
         method: "POST",
         body: JSON.stringify({
           authorAddress: address, // Address of the current user
@@ -105,6 +105,10 @@ const Create = () => {
           nftDesc:desc || "",
           nftImage: uploadUrl?.[0] || ""
         }),
+      }).then((response)=>{
+        alert("NFT minted successfully!")
+      }).catch((error)=>{
+        alert("There was an error minting NFT.",error)
       });
       if(signedPayloadReq){
         alert('NFT has been created successfully!')
