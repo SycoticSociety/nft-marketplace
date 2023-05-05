@@ -107,7 +107,7 @@ const Auctions_categories = ({ ownedNFTs }) => {
                             >
                              Transfer NFT to
                             </Typography>
-                            <input type="text" value={walletAddress} onChange={(e)=>setWalletAddress(e.target.value)} placeholder="Enter wallet address" type="text"/>
+                            <input type="text" value={walletAddress} onChange={(e)=>setWalletAddress(e.target.value)} placeholder="Enter wallet address"/>
 							<Button disabled={!walletAddress} onClick={()=>{
                               transferNFT({
 								to:walletAddress,
