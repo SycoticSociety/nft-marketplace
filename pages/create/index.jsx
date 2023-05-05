@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  Web3Button , useAddress , useStorageUpload } from "@thirdweb-dev/react";
+import {  Web3Button , useAddress , useStorageUpload, ConnectWallet , useOwnedNFTs, useContract } from "@thirdweb-dev/react";
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
 import {
@@ -8,9 +8,9 @@ import {
 } from "../../data/dropdown";
 import { FileUploader } from "react-drag-drop-files";
 import Proparties_modal from "../../components/modal/proparties_modal";
-import { useDispatch } from "react-redux";
 import { showPropatiesModal } from "../../redux/counterSlice";
 import Meta from "../../components/Meta";
+import { Auctions_categories } from "../../components/component";
 
 const Create = () => {
   const address = useAddress();
@@ -32,8 +32,9 @@ const Create = () => {
   const [desc,setDesc]=useState("")
   const [url,setUrl]=useState('')
 
+  const { contract, isLoading } = useContract("0x1583ecdf26e245D4E5D8CAe54CdF10D32667892C");
   const { mutateAsync: upload } = useStorageUpload();
-
+  const { data: ownedNFTs, loadingNfts, error } = useOwnedNFTs(contract, address);
   async function imageSize(url) {
     const img = document.createElement("img");
   
@@ -97,23 +98,28 @@ const Create = () => {
         options: { uploadWithGatewayUrl: true, uploadWithoutDirectory: true },
       });
       // Make a request to /api/server
-      const signedPayloadReq =fetch(`/api/mintNft`, {
-        method: "POST",
-        body: JSON.stringify({
-          authorAddress: address,
-          nftName: name || "",
-          nftDesc:desc || "",
-          nftImage: uploadUrl?.[0] || ""
-        }),
-      }).then((response)=>{
-        if(response.status=500){
-          alert('We had an issue minting your NFT!')
-        }else{
-          alert('The nft was minted successfully!')
-        }
-      }).catch((error)=>{
-        alert("There was an error minting NFT.",error)
-      });
+      if(address){
+        const signedPayloadReq =fetch(`/api/mintNft`, {
+          method: "POST",
+          body: JSON.stringify({
+            authorAddress: address,
+            nftName: name || "",
+            nftDesc:desc || "",
+            nftImage: uploadUrl?.[0] || ""
+          }),
+        }).then((response)=>{
+          console.log(response)
+          if(response.status==500){
+            alert('We had an issue minting your NFT!')
+          }else{
+            alert('The nft was minted successfully!')
+          }
+        }).catch((error)=>{
+          alert("There was an error minting NFT.",error)
+        });
+      }else{
+        alert('Please connect your wallet!')
+      }
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
     }
@@ -537,14 +543,16 @@ const Create = () => {
             </div> */}
 
             {/* <!-- Submit --> */}
+            {address ?
             <button
-              onClick={()=>mintWithSignature()}
+              onClick={mintWithSignature}
               disabled={!file && !name && !desc && !address}
-              className={file && name && desc && !address ? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
+              className={file && name && desc && address ? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
             >
               Create
-            </button>
+            </button>: <ConnectWallet/>}
           </div>
+          {ownedNFTs && <Auctions_categories ownedNFTs={ownedNFTs}/>}
         </div>
       </section>
       {/* <!-- end create --> */}
