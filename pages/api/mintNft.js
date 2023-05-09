@@ -14,7 +14,7 @@ export default async function mintNft(req,res) {
     const sdk = ThirdwebSDK.fromPrivateKey(
       // Your wallet private key (read it in from .env.local file)
       process.env.PRIVATE_KEY,
-      "mumbai"
+      "polygon"
     );
 
     // Load the NFT Collection via it's contract address using the SDK
