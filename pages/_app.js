@@ -8,7 +8,7 @@ import Meta from "../components/Meta";
 import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 import UserContext from "../components/UserContext";
 import ChainContext from "../components/chainContext";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
 
 function MyApp({ Component, pageProps }) {
@@ -17,10 +17,20 @@ function MyApp({ Component, pageProps }) {
   const scrollRef = useRef({
     scrollPos: 0,
   });
-  const [selectedChain, setSelectedChain] = useState(ChainId.Mumbai);
+  const [selectedChain, setSelectedChain] = useState(ChainId.Fantom);
   const [selectedMarketplace, setSelectedMarketplace] = useState(
     "0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171"
   );
+  console.log(router.pathname)
+  useEffect(()=>{
+    if(router.pathname=='/marketplace'){
+      setSelectedChain(ChainId.Fantom)
+    }else if(router.pathname=='/create'){
+      setSelectedChain(ChainId.Polygon)
+    }
+  },[
+    router.pathname
+  ])
   return (
     <>
       <Meta title="Sycotic Society | NFT Marketplace" />

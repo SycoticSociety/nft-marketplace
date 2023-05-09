@@ -592,6 +592,28 @@ export default function Header01() {
                   </a>
                   </Link>
                 </li>
+                <li className="js-nav-dropdown group relative">
+                  <Link href='/create'>
+                  <a  className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
+                    <span
+                    >
+                      Create
+                    </span>
+                    <i className="lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width={24}
+                        height={24}
+                        className="h-4 w-4 dark:fill-white"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z" />
+                      </svg>
+                    </i>
+                  </a>
+                  </Link>
+                </li>
                 {/* page */}
                 {/* <li className="js-nav-dropdown group relative">
                   <button className="dropdown-toggle text-jacarta-700 font-display hover:text-accent focus:text-accent dark:hover:text-accent dark:focus:text-accent flex items-center justify-between py-3.5 text-base dark:text-white lg:px-5 w-full">
