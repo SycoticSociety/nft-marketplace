@@ -2,7 +2,7 @@ const newseLatterData = [
 	{
 		id: '1',
 		icon: { parentBg: '#beaaf7', childBg: 'rgb(131 88 255) ', svg: 'icon-wallet' },
-        link:'#wallet',
+        link:'/yourNfts',
 		title: [' Set ', 'up ', 'your ', 'wallet '],
 		text: "Once you've set up your wallet of choice, connect it to Open Sea by clicking the NFT Marketplacein the topright corner.",
 	},

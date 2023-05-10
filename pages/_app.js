@@ -27,6 +27,8 @@ function MyApp({ Component, pageProps }) {
       setSelectedChain(ChainId.Fantom)
     }else if(router.pathname=='/create'){
       setSelectedChain(ChainId.Polygon)
+    }else if (router.pathname=='/yourNfts'){
+      setSelectedChain(ChainId.Polygon)
     }
   },[
     router.pathname
