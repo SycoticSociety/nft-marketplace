@@ -11,6 +11,7 @@ import Proparties_modal from "../../components/modal/proparties_modal";
 import { showPropatiesModal } from "../../redux/counterSlice";
 import Meta from "../../components/Meta";
 import { Auctions_categories } from "../../components/component";
+import { CircularProgress } from "@mui/material";
 
 const Create = () => {
   const address = useAddress();
@@ -31,6 +32,7 @@ const Create = () => {
   const [name,setName]=useState("")
   const [desc,setDesc]=useState("")
   const [url,setUrl]=useState('')
+  const [loading,setLoading]=useState(false)
 
   const { contract, isLoading } = useContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991");
   const { mutateAsync: upload } = useStorageUpload();
@@ -88,6 +90,7 @@ const Create = () => {
 
   const mintWithSignature = async () => {
     try {
+      setLoading(true)
       //Check the file is square
       const { width, height } = await imageSize(url);
       if (height !== width) {
@@ -120,6 +123,7 @@ const Create = () => {
       }else{
         alert('Please connect your wallet!')
       }
+      setLoading(false)
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
     }
@@ -129,6 +133,7 @@ const Create = () => {
     <div>
       <Meta title="Create your Nfts || Sycotic Society" />
       {/* <!-- Create --> */}
+      {!address && <h3>Connect your wallet to create nfts.</h3>}
       <section className="relative py-24">
         <picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">
           <img
@@ -543,7 +548,8 @@ const Create = () => {
             </div> */}
 
             {/* <!-- Submit --> */}
-            {address ?
+
+            {loading ? <CircularProgress sx={{color:red}}/> : address ?
             <button
               onClick={mintWithSignature}
               disabled={!file && !name && !desc && !address}
