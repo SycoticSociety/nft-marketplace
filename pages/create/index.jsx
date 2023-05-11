@@ -182,7 +182,7 @@ const Create = () => {
                     size: 100 MB
                   </p>
                 </div>
-                <div className="dark:bg-accent !border-opacity-40 bg-jacarta-50 absolute inset-4 cursor-pointer rounded opacity-0 group-hover:opacity-100 ">
+                <div className="dark:bg-accent !border-opacity-40 bg-jacarta-50 absolute inset-4 cursor-pointer rounded opacity-0 group-hover:opacity-100">
                   <FileUploader
                     handleChange={handleChange}
                     name="file"
@@ -193,7 +193,9 @@ const Create = () => {
                   />
                 </div>
               </div>
+              {url && <img src={url} className="rounded-sm max-w-xs max-h-xs mt-4"/>}
             </div>
+            
 
             {/* <!-- Name --> */}
             <div className="mb-6">
