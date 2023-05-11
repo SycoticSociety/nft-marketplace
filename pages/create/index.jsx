@@ -133,7 +133,7 @@ const Create = () => {
     <div>
       <Meta title="Create your Nfts || Sycotic Society" />
       {/* <!-- Create --> */}
-      {!address && <h3>Connect your wallet to create nfts.</h3>}
+
       <section className="relative py-24">
         <picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">
           <img
@@ -146,6 +146,7 @@ const Create = () => {
           <h1 className="font-display text-jacarta-700 py-8 text-center text-4xl font-medium dark:text-white">
             Create
           </h1>
+          {!address && <h3 >Connect your wallet to create nfts.</h3>}
           <div className="mx-auto max-w-[48.125rem]">
             {/* <!-- File Upload --> */}
             <div id="#nfts" className="mb-6">
