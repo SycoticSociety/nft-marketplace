@@ -1,17 +1,21 @@
 import React from 'react'
 import { Auctions_categories } from '../components/component'
-import { useOwnedNFTs, useContract,useAddress} from "@thirdweb-dev/react";
+import { useOwnedNFTs, useContract,useAddress,ConnectWallet} from "@thirdweb-dev/react";
 
 function YourNfts() {
  const address = useAddress();
  const { contract, isLoading } = useContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991");
  const { data: ownedNFTs, loadingNfts, error } = useOwnedNFTs(contract, address);
   return (
+    <div className='container mt-28'>
+    {!address && 
     <>
-    {!address && <h1>Connect your wallet to see your nfts.</h1>}
-    {ownedNFTs && <Auctions_categories ownedNFTs={ownedNFTs}/>}
+    <h1 className='font-display text-jacarta-700 py-8 text-center text-xl font-medium dark:text-white'>Connect your wallet to see your nfts.</h1>
+    <ConnectWallet/>
     </>
-    
+    }
+    {ownedNFTs && <Auctions_categories ownedNFTs={ownedNFTs}/>}
+    </div>
   )
 }
 
