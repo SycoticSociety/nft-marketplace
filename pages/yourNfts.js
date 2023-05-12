@@ -1,7 +1,7 @@
 import React from 'react'
 import { Auctions_categories } from '../components/component'
 import { useOwnedNFTs, useContract,useAddress,ConnectWallet} from "@thirdweb-dev/react";
-import { useMetamask } from 'metamask-react';
+import { useMetamask } from "@thirdweb-dev/react";
 
 function YourNfts() {
  const address = useAddress();
