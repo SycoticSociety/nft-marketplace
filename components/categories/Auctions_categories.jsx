@@ -39,7 +39,7 @@ const Auctions_categories = ({ ownedNFTs }) => {
 	boxShadow: 24,
 	p: 4,
   };
-  const { contract } = useContract("0x1583ecdf26e245D4E5D8CAe54CdF10D32667892C");
+  const { contract } = useContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991");
   const {
     mutate: transferNFT,
     isLoading,
