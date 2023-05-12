@@ -18,7 +18,7 @@ function YourNfts() {
               className="bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" 
             >
               Connect Your Wallet
-            </button>}
+            </button>
     </>
     }
     {ownedNFTs && <Auctions_categories ownedNFTs={ownedNFTs}/>}
