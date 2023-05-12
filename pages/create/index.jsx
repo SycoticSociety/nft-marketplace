@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  Web3Button , useAddress , useStorageUpload, ConnectWallet , useOwnedNFTs, useContract } from "@thirdweb-dev/react";
+import {  Web3Button , useAddress , useStorageUpload, useMetamask , useOwnedNFTs, useContract } from "@thirdweb-dev/react";
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
 import {
@@ -15,6 +15,7 @@ import { CircularProgress } from "@mui/material";
 
 const Create = () => {
   const address = useAddress();
+  const connectWithMetamask = useMetamask();
   const fileTypes = [
     "JPG",
     "PNG",
@@ -146,8 +147,9 @@ const Create = () => {
           <h1 className="font-display text-jacarta-700 py-8 text-center text-4xl font-medium dark:text-white">
             Create
           </h1>
-          {!address && <h3 >Connect your wallet to create nfts.</h3>}
+          
           <div className="mx-auto max-w-[48.125rem]">
+          {!address && <h3 className="mx-auto text-lg mb-4" >Connect your wallet to create nfts.</h3>}
             {/* <!-- File Upload --> */}
             <div id="#nfts" className="mb-6">
               <label className="font-display text-jacarta-700 mb-2 block dark:text-white">
@@ -559,7 +561,12 @@ const Create = () => {
               className={file && name && desc && address ? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
             >
               Create
-            </button>: <ConnectWallet/>}
+            </button>: <button
+              onClick={connectWithMetamask}
+              className="bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" 
+            >
+              Connect Your Wallet
+            </button>}
           </div>
           {ownedNFTs && <Auctions_categories ownedNFTs={ownedNFTs}/>}
         </div>
