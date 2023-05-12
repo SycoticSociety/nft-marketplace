@@ -14,7 +14,7 @@ function YourNfts() {
     <>
     <h1 className='font-display text-jacarta-700 py-8 text-center text-xl font-medium dark:text-white'>Connect your wallet to see your nfts.</h1>
     <button
-              onClick={connectWithMetaMask}
+              onClick={()=>connectWithMetaMask()}
               className="bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" 
             >
               Connect Your Wallet

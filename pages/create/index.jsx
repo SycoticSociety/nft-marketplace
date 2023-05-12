@@ -562,7 +562,7 @@ const Create = () => {
             >
               Create
             </button>: <button
-              onClick={connectWithMetamask}
+              onClick={()=>connectWithMetamask()}
               className="bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" 
             >
               Connect Your Wallet
