@@ -123,6 +123,7 @@ const Create = () => {
           }
         }).catch((error)=>{
           alert("There was an error minting NFT.",error)
+          Router.reload()
         });
       }else{
         alert('Please connect your wallet!')
