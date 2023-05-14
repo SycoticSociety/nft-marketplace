@@ -12,6 +12,7 @@ import { showPropatiesModal } from "../../redux/counterSlice";
 import Meta from "../../components/Meta";
 import { Auctions_categories } from "../../components/component";
 import { CircularProgress } from "@mui/material";
+import { useRouter } from "next/router";
 
 const Create = () => {
   const address = useAddress();
@@ -34,6 +35,7 @@ const Create = () => {
   const [desc,setDesc]=useState("")
   const [url,setUrl]=useState('')
   const [loading,setLoading]=useState(false)
+  const Router=useRouter()
 
   const { contract, isLoading } = useContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991");
   const { mutateAsync: upload } = useStorageUpload();
@@ -95,6 +97,7 @@ const Create = () => {
       //Check the file is square
       const { width, height } = await imageSize(url);
       if (height !== width) {
+         Router.reload()
          return alert('The image must be a square.')
       }
       const uploadUrl = await upload({
@@ -125,6 +128,7 @@ const Create = () => {
         alert('Please connect your wallet!')
       }
       setLoading(false)
+      Router.reload()
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
     }
@@ -554,7 +558,7 @@ const Create = () => {
 
             {/* <!-- Submit --> */}
 
-            {loading ? <CircularProgress sx={{color:red}}/> : address ?
+            {loading ? <CircularProgress sx={{color:'red'}}/> : address ?
             <button
               onClick={mintWithSignature}
               disabled={!file && !name && !desc && !address}
