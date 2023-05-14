@@ -123,7 +123,7 @@ const Create = () => {
             alert('The nft was minted successfully!')
           }
         }).catch((error)=>{
-          alert("There was an error minting NFT.",error)
+          alert(`There was an error minting NFT. + ${error.msg}`,error)
           Router.reload()
         });
       }else{
