@@ -118,6 +118,8 @@ const Create = () => {
           if(response.status==500){
             throw error;
           }else{
+            setLoading(false)
+            Router.reload()
             alert('The nft was minted successfully!')
           }
         }).catch((error)=>{
@@ -127,8 +129,6 @@ const Create = () => {
       }else{
         alert('Please connect your wallet!')
       }
-      setLoading(false)
-      Router.reload()
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
     }
