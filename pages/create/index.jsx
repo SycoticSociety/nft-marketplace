@@ -115,7 +115,6 @@ const Create = () => {
             nftImage: uploadUrl?.[0] || ""
           }),
         }).then((response)=>{
-          console.log(response)
           if(response.status==500){
             alert('We had an issue minting your NFT!')
           }else{
