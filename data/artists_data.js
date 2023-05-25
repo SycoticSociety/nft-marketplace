@@ -136,7 +136,7 @@ export const artistInfo = [
 		desc: "Dead Riot Society: Cross promotional NFT project on polygon.",
 		id: '3',
 		name: 'Dead Riot Society Polygon',
-		img: '/images/dao/benefit_dao_1.jpg',
+		img: '/images/dao/SycoticRiotAlt_copy_426x426.jpg',
         SocialIcons:[
             {
               id: 1,
