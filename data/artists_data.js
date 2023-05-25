@@ -133,7 +133,7 @@ export const artistInfo = [
 	
 	{
 		title: 'Dead Riot Society',
-		desc: "Dead Riot Society: Cross promotional NFT project on polygon.",
+		desc: "Dead Riot Society: Cross promotional NFT project on polygon. More about AXM tinyurl.com/5auafe79",
 		id: '3',
 		name: 'Dead Riot Society Polygon',
 		img: '/images/dao/SycoticRiotAlt_copy_426x426.jpg',
