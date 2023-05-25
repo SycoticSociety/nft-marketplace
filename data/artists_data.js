@@ -140,7 +140,7 @@ export const artistInfo = [
         SocialIcons:[
             {
               id: 1,
-              href: "https://twitter.com/SycoticSociety",
+              href: "https://witter.com/AAXXIOOMM?t=J16xrek-qemeXxk2FJ_o3Q&s=09",
               text: "twitter",
             },
             {
@@ -150,7 +150,7 @@ export const artistInfo = [
             },
             {
               id: 3,
-              href: "https://www.instagram.com/sycoticsociety/?hl=en",
+              href: "https://instagram.com/deadriotsociety?igshid=NTc4MTIwNjQ2YQ==",
               text: "instagram",
             }
           ],
