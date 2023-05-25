@@ -140,7 +140,7 @@ export const artistInfo = [
         SocialIcons:[
             {
               id: 1,
-              href: "https://witter.com/AAXXIOOMM",
+              href: "https://twitter.com/AAXXIOOMM?t=0Ec_TKqCXd0E1MjkOo7_Dg&s=07",
               text: "twitter",
             },
             {
