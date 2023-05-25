@@ -7,11 +7,11 @@ export const coverflow_data = [
     id: "2",
   },
   {
-    img: "/images/artists/Crawl.jpg",
-    title: "Crawl",
+    img: "/images/artists/EmpathRiot.jpg",
+    title: "Dead Riot Society",
     authorImage: "/images/avatars/avatar_22_rounded.jpg",
-    authorName: "Betty Blockchain",
-    id: "Crawl",
+    authorName: "AXM",
+    id: "3",
   },
   {
     img: "/images/artists/BetterOutThenIn.jpg",
