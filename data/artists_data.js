@@ -192,8 +192,8 @@ export const artistInfo = [
                 authorName: 'by Lazy Panda',
             },
         ],
-        marketPlaceLink:'0x61BB0FC43B34937661CCEb163404564a07a27af9',
-        artistChainId:ChainId.arbitrum
+        marketPlaceLink:'0x3DA4ee4912734D6d0D6DefB65b6D64754A432295',
+        artistChainId:ChainId.Arbitrum
 	},
 
 ];
