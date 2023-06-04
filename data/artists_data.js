@@ -132,7 +132,7 @@ export const artistInfo = [
 	},
 	
 	{
-		title: 'Sycotic Society Promotions',
+		title: 'Sycotic Society Concept Art',
 		desc: "Sycotic Society's promotional NFT concept artwork",
 		id: '3',
 		name: 'Sycotic Society Arbitrum',
@@ -140,7 +140,7 @@ export const artistInfo = [
         SocialIcons:[
             {
               id: 1,
-              href: "https://twitter.com/AAXXIOOMM?t=0Ec_TKqCXd0E1MjkOo7_Dg&s=07",
+              href: "https://twitter.com/SycoticSociety",
               text: "twitter",
             },
             {
@@ -150,7 +150,7 @@ export const artistInfo = [
             },
             {
               id: 3,
-              href: "https://instagram.com/deadriotsociety?igshid=NTc4MTIwNjQ2YQ==",
+              href: "https://www.instagram.com/sycoticsociety/?hl=en",
               text: "instagram",
             }
           ],
@@ -193,7 +193,7 @@ export const artistInfo = [
             },
         ],
         marketPlaceLink:'0x61BB0FC43B34937661CCEb163404564a07a27af9',
-        artistChainId:ChainId.Arbitrum
+        artistChainId:ChainId.Ethereum 
 	},
 
 ];
