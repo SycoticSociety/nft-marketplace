@@ -136,7 +136,7 @@ export const artistInfo = [
 		desc: "Sycotic Society's promotional NFT concept artwork",
 		id: '3',
 		name: 'Sycotic Society Arbitrum',
-		img: '/images/dao/SycoticPromotions.jpg.',
+		img: '/images/dao/SycoticPromotions.jpg',
         SocialIcons:[
             {
               id: 1,
