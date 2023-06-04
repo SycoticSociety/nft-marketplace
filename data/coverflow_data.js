@@ -7,10 +7,10 @@ export const coverflow_data = [
     id: "2",
   },
   {
-    img: "/images/artists/EmpathRiot.jpg",
-    title: "Dead Riot Society",
+    img: "/images/artists/SycoticPromotions.jpg",
+    title: "Sycotic Society",
     authorImage: "/images/avatars/avatar_22_rounded.jpg",
-    authorName: "AXM",
+    authorName: "Sycotic Society Arbitrum",
     id: "3",
   },
   {
