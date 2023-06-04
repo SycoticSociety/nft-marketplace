@@ -193,7 +193,7 @@ export const artistInfo = [
             },
         ],
         marketPlaceLink:'0x61BB0FC43B34937661CCEb163404564a07a27af9',
-        artistChainId:ChainId.Arbitrum+One
+        artistChainId:ChainId.arbitrum
 	},
 
 ];
