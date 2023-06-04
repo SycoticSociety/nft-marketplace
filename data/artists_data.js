@@ -132,10 +132,10 @@ export const artistInfo = [
 	},
 	
 	{
-		title: 'Dead Riot Society',
-		desc: "Dead Riot Society: Cross promotional NFT project on polygon. More about AXM https://www.tinyurl.com/5auafe79",
+		title: 'Sycotic Society Promotions',
+		desc: "Sycotic Society's promotional NFT concept artwork",
 		id: '3',
-		name: 'Dead Riot Society Polygon',
+		name: 'Sycotic Society Arbitrum',
 		img: '/images/dao/SycoticRiotAlt_copy_426x426.jpg',
         SocialIcons:[
             {
@@ -192,8 +192,8 @@ export const artistInfo = [
                 authorName: 'by Lazy Panda',
             },
         ],
-        marketPlaceLink:'0x7979E0B2442451a2493CFC2e4264B9BeA8C86804',
-        artistChainId:ChainId.Fantom
+        marketPlaceLink:'0x61BB0FC43B34937661CCEb163404564a07a27af9',
+        artistChainId:ChainId.Arbitrum
 	},
 
 ];
