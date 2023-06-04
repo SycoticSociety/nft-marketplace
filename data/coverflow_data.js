@@ -7,7 +7,7 @@ export const coverflow_data = [
     id: "2",
   },
   {
-    img: "/images/artists/SycoticPromotions.jpg",
+    img: "/images/artists/CosmicBabies.jpg",
     title: "Sycotic Society",
     authorImage: "/images/avatars/avatar_22_rounded.jpg",
     authorName: "Sycotic Society Arbitrum",
