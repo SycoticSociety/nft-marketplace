@@ -1,16 +1,16 @@
 export const coverflow_data = [
   {
     img: "/images/artists/Dabbin.jpg",
-    title: "Sycotic PUNKS",
+    title: "Sycotic PUNKZ Polygon",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
-    authorName: "Sycotic Society Polygon",
+    authorName: "Sycotic Society",
     id: "2",
   },
   {
-    img: "/images/artists/SycoticPromotions.jpg",
-    title: "Sycotic Society",
+    img: "/images/artists/CosmicBabies.jpg",
+    title: "Sycotic Society Arbitrum",
     authorImage: "/images/avatars/avatar_22_rounded.jpg",
-    authorName: "Sycotic Society Arbitrum",
+    authorName: "Sycotic Society",
     id: "3",
   },
   {
@@ -29,9 +29,9 @@ export const coverflow_data = [
   },
   {
     img: "/images/artists/SycoticBTFD.jpg",
-    title: "Darkest Hour",
+    title: "Darkest Hour Fantom",
     authorImage: "/images/avatars/avatar_20_rounded.jpg",
-    authorName: "Sycotic Society Fantom",
+    authorName: "Sycotic Society",
     id: "1",
   },
   {
