@@ -11,7 +11,7 @@ import Testimonial from "../../components/testimonial/Testimonial";
 const Home_1 = () => {
   return (
     <main>
-      <Meta title="Home 10 || Xhibiter | NFT Marketplace Next.js Template" />
+      <Meta title="Home 10 || Sycotic Society | NFT Marketplace" />
       <Hero_10 />
      
        <FancyBlock />
