@@ -115,7 +115,7 @@ const Create = () => {
             nftName: name || "",
             nftDesc:desc || "",
             nftImage: uploadUrl?.[0] || "",
-            nftCollectionContract:collection
+            nftCollectionContract: collection
           }),
         }).then((response)=>{
           if(response.status==500){

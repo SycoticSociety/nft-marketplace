@@ -5,7 +5,6 @@ export default async function mintNft(req,res) {
     // De-structure the arguments we passed in out of the request body
     const { authorAddress, nftName , nftDesc , nftImage , nftCollectionContract } = JSON.parse(req.body);
     
-    console.log(nftCollectionContract)
     // You'll need to add your private key in a .env.local file in the root of your project
     // !!!!! NOTE !!!!! NEVER LEAK YOUR PRIVATE KEY to anyone!
     if (!process.env.PRIVATE_KEY) {
