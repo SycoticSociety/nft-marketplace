@@ -14,7 +14,7 @@ const Home_1 = () => {
       <Meta title="Home 10 || Sycotic Society | NFT Marketplace" />
       <Hero_10 />
      
-       <FancyBlock />
+      
    
 
   
