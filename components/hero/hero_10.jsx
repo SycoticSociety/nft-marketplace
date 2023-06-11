@@ -63,6 +63,10 @@ const Hero_10 = () => {
                   alt=""
                   className="hidden dark:block"
                 />
+               
+                    
+                <iframe height="100%" width="100%" id="geckoterminal-embed" title="GeckoTerminal Embed" src="https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d?embed=1&info=1&swaps=0" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+                    
               </div>
             </div>
           </div>
