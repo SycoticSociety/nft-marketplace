@@ -115,7 +115,7 @@ const Create = () => {
             nftName: name || "",
             nftDesc:desc || "",
             nftImage: uploadUrl?.[0] || "",
-            nftCollectionContract: collection
+            nftCollectionContract: collection 
           }),
         }).then((response)=>{
           if(response.status==500){
@@ -588,7 +588,7 @@ const Create = () => {
             <button
               onClick={mintWithSignature}
               disabled={!file && !name && !desc && !address}
-              className={file && name && desc && address ? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
+              className={file && name && desc && address && collection? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
             >
               Create
             </button>: <button

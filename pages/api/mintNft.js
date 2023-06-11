@@ -15,20 +15,20 @@ export default async function mintNft(req,res) {
     let sdk=null
     let nftCollection=''
 
-    if(nftCollectionContract=='Polygon'){
-      sdk = ThirdwebSDK.fromPrivateKey(
-        // Your wallet private key (read it in from .env.local file)
-        process.env.PRIVATE_KEY,
-        "polygon"
-      );
-      nftCollection = await sdk.getContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991","nft-collection");
-    }else{
+    if(nftCollectionContract=='Arbitrum'){
       sdk = ThirdwebSDK.fromPrivateKey(
         // Your wallet private key (read it in from .env.local file)
         process.env.PRIVATE_KEY,
         "arbitrum"
       );
       nftCollection = await sdk.getContract("0xA53A24AFa3BC77E1d8FCBB28FbdFA48e70A5Ebe6","nft-collection");
+    }else{
+      sdk = ThirdwebSDK.fromPrivateKey(
+        // Your wallet private key (read it in from .env.local file)
+        process.env.PRIVATE_KEY,
+        "polygon"
+      );
+      nftCollection = await sdk.getContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991","nft-collection");
     }
     
 
