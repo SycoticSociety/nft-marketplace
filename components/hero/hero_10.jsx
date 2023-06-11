@@ -1,6 +1,6 @@
 const Hero_10 = () => {
   const heroContent = {
-    meta: "JOIN THE DIGITAL REVOLUTION",
+    meta: "",
     title: "Sycotic Society Token on CRONOS.",
     descriptions: `We are setting the standard in Defi, through trasparency and accountablity.`,
     btnText: "Buy Sycotic Society",
@@ -20,7 +20,7 @@ const Hero_10 = () => {
           <div className="flex h-full flex-col items-center justify-center py-10 lg:col-span-5 lg:items-start lg:py-20">
             <div className="mb-8 flex items-center space-x-3 rounded-3xl border border-jacarta-200 px-5 py-2 dark:border-jacarta-300">
               <img
-                src="/images/crypto-app/rocket_crypto_app.png"
+                src=""
                 alt="cryto app"
                 width="20"
                 height="20"
