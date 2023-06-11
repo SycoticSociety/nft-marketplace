@@ -42,6 +42,10 @@ const Create = () => {
   const { contract, isLoading } = useContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991");
   const { mutateAsync: upload } = useStorageUpload();
   const { data: ownedNFTs, loadingNfts, error } = useOwnedNFTs(contract, address);
+
+
+  console.log(collection)
+
   async function imageSize(url) {
     const img = document.createElement("img");
   
@@ -287,8 +291,8 @@ const Create = () => {
                 onChange={e=>setCollection(e.target.value)}
                 placeholder="Provide a detailed description of your item."
               >
-                <option>Arbitrum</option>
-                <option>Polygon</option>
+                <option value='Arbitrum'>Arbitrum</option>
+                <option value='Polygon'>Polygon</option>
               </select>
             </div>
 
