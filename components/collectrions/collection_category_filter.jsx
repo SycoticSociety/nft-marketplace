@@ -43,6 +43,10 @@ const Collection_category_filter = ({filter,setFilter}) => {
     {
       id:4,
       text:"Darkest Hour"
+    },
+    {
+      id:5,
+      text:"Arbitrum"
     }
   ];
   const categoryText = [

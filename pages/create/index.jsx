@@ -3,7 +3,7 @@ import {  Web3Button , useAddress , useStorageUpload, useMetamask , useOwnedNFTs
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
 import {
-
+  collectionDropdown2_data,
   EthereumDropdown2_data,
 } from "../../data/dropdown";
 import { FileUploader } from "react-drag-drop-files";
@@ -13,6 +13,7 @@ import Meta from "../../components/Meta";
 import { Auctions_categories } from "../../components/component";
 import { CircularProgress } from "@mui/material";
 import { useRouter } from "next/router";
+import Tippy from "@tippyjs/react";
 
 const Create = () => {
   const address = useAddress();
@@ -34,6 +35,7 @@ const Create = () => {
   const [name,setName]=useState("")
   const [desc,setDesc]=useState("")
   const [url,setUrl]=useState('')
+  const [collection,setCollection]=useState('Polygon')
   const [loading,setLoading]=useState(false)
   const Router=useRouter()
 
@@ -112,7 +114,8 @@ const Create = () => {
             authorAddress: address,
             nftName: name || "",
             nftDesc:desc || "",
-            nftImage: uploadUrl?.[0] || ""
+            nftImage: uploadUrl?.[0] || "",
+            nftCollectionContract:collection
           }),
         }).then((response)=>{
           if(response.status==500){
@@ -266,8 +269,31 @@ const Create = () => {
               ></textarea>
             </div>
 
+            <div className="mb-6">
+              <label
+                htmlFor="item-collection"
+                className="font-display text-jacarta-700 mb-2 block dark:text-white"
+              >
+                Collection
+              </label>
+              <p className="dark:text-jacarta-300 text-2xs mb-3">
+                Select the collection where you want your NFT to appear.
+              </p>
+              <select
+                id="item-collection"
+                className="dark:bg-jacarta-700 border-jacarta-100 !border-opacity-40 hover:ring-accent/10 focus:ring-accent dark:border-jacarta-600 dark:placeholder:text-jacarta-300 w-full rounded-lg py-3 px-3 hover:ring-2 dark:text-white"
+                required
+                value={collection}
+                onChange={e=>setCollection(e.target.value)}
+                placeholder="Provide a detailed description of your item."
+              >
+                <option>Arbitrum</option>
+                <option>Polygon</option>
+              </select>
+            </div>
+
             {/* <!-- Collection --> */}
-            {/* <div className="relative">
+             {/* <div className="relative">
               <div>
                 <label className="font-display text-jacarta-700 mb-2 block dark:text-white">
                   Collection
@@ -308,7 +334,7 @@ const Create = () => {
                   collection={true}
                 />
               </div>
-            </div> */}
+            </div>  */}
 
             {/* <!-- Properties --> */}
             {/* {popupItemData.map(({ id, name, text, icon }) => {

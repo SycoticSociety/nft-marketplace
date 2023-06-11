@@ -29,7 +29,7 @@ const Recently_added_dropdown = ({ data, dropdownFor,setSelectedChain ,setFilter
 	const [blockChainText,setBlockChainText]=useState('Fantom')
     const [filterActive,setFilterActive]=useState(1)
 	const {selectedMarketplace,setSelectedMarketplace}=useContext(ChainContext)
-    console.log(sortActive)
+
 	useMemo(()=>{
 		if(setSelectedChain){
 			if(sortActive==1){
@@ -49,6 +49,10 @@ const Recently_added_dropdown = ({ data, dropdownFor,setSelectedChain ,setFilter
 				setSelectedChain(String(ChainId.Fantom))
 				setSelectedMarketplace('0x7979E0B2442451a2493CFC2e4264B9BeA8C86804')
 				setBlockChainText('Darkest Hour')
+			}else if (sortActive==5){
+				setSelectedChain(String(ChainId.Arbitrum))
+				setSelectedMarketplace('0x9a6032e89B02C6CE0902b8546543D79ceB797871')
+				setBlockChainText('Arbitrum')
 			}
 		}
 	},[sortActive,setSelectedChain])

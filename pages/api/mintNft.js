@@ -3,22 +3,35 @@ import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 export default async function mintNft(req,res) {
   try {
     // De-structure the arguments we passed in out of the request body
-    const { authorAddress, nftName , nftDesc , nftImage } = JSON.parse(req.body);
-
+    const { authorAddress, nftName , nftDesc , nftImage , nftCollectionContract } = JSON.parse(req.body);
+    
+    console.log(nftCollectionContract)
     // You'll need to add your private key in a .env.local file in the root of your project
     // !!!!! NOTE !!!!! NEVER LEAK YOUR PRIVATE KEY to anyone!
     if (!process.env.PRIVATE_KEY) {
       throw new Error("You're missing PRIVATE_KEY in your .env.local file.");
     }
     // Initialize the Thirdweb SDK on the serverside
-    const sdk = ThirdwebSDK.fromPrivateKey(
-      // Your wallet private key (read it in from .env.local file)
-      process.env.PRIVATE_KEY,
-      "polygon"
-    );
-
     // Load the NFT Collection via it's contract address using the SDK
-    const nftCollection = await sdk.getContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991","nft-collection");
+    let sdk=null
+    let nftCollection=''
+
+    if(nftCollectionContract='Polygon'){
+      sdk = ThirdwebSDK.fromPrivateKey(
+        // Your wallet private key (read it in from .env.local file)
+        process.env.PRIVATE_KEY,
+        "polygon"
+      );
+      nftCollection = await sdk.getContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991","nft-collection");
+    }else{
+      sdk = ThirdwebSDK.fromPrivateKey(
+        // Your wallet private key (read it in from .env.local file)
+        process.env.PRIVATE_KEY,
+        "arbitrum"
+      );
+      nftCollection = await sdk.getContract("0xA53A24AFa3BC77E1d8FCBB28FbdFA48e70A5Ebe6","nft-collection");
+    }
+    
 
     // Here we can make all kinds of cool checks to see if the user is eligible to mint the NFT.
     // Here are a few examples:

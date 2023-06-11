@@ -15,7 +15,8 @@ const FilterCategoryItem = ({marketplace,artistChainId}) => {
   const addresses={
     [String(ChainId.Fantom)]:"0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171",
     [String(ChainId.Polygon)]: "0x7266BA8cA064fbFC96DAE22B5C29a468D178C253",
-    [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2"
+    [String(ChainId.Avalanche)]: "0x4c2FFeBe9E22802776D6943203007898634cBDA2",
+    [String(ChainId.Arbitrum)]:"0x9a6032e89B02C6CE0902b8546543D79ceB797871"
   }
   if(artistChainId){
     setSelectedChain(artistChainId)
