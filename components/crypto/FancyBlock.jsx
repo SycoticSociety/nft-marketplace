@@ -34,7 +34,7 @@ NFT gallery`,
             {/* <!-- Info --> */}
             <div className="py-10 px-6 lg:w-[37%] lg:pl-28">
               <h2 className="mb-6 font-display text-3xl text-jacarta-700 dark:text-white">
-                Sycotic Society:  we are the Standard in Decentralized Finance.
+                Sycotic Society-We are the Standard in Decentralized Finance.
               </h2>
               <p className="mb-12 text-lg leading-normal dark:text-jacarta-300">
                 
