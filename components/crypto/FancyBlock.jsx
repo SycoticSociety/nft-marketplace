@@ -33,14 +33,10 @@ assets`,
             {/* <!-- Info --> */}
             <div className="py-10 px-6 lg:w-[37%] lg:pl-28">
               <h2 className="mb-6 font-display text-3xl text-jacarta-700 dark:text-white">
-                The safest most secure crypto app like never before
+                Sycotic Society we are the Standar im Decentralized Finance.
               </h2>
               <p className="mb-12 text-lg leading-normal dark:text-jacarta-300">
-                Xhibiter security is unlike every other. It’s better. No more
-                complex passwords or long phrases to store, browser extensions,
-                or special hardware required. Your account is secured by private
-                facial biometrics and industry-leading encryption to keep you
-                safe from account
+                
               </p>
 
               {fancyList.map((val, i) => (
