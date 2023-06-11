@@ -15,7 +15,7 @@ export default async function mintNft(req,res) {
     let sdk=null
     let nftCollection=''
 
-    if(nftCollectionContract='Polygon'){
+    if(nftCollectionContract=='Polygon'){
       sdk = ThirdwebSDK.fromPrivateKey(
         // Your wallet private key (read it in from .env.local file)
         process.env.PRIVATE_KEY,
