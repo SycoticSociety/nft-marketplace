@@ -1,6 +1,6 @@
 const Hero_10 = () => {
   const heroContent = {
-    meta: "",
+    meta: "JOIN THE CRYPTO REVOLUTION!",
     title: "Sycotic Society Token on CRONOS.",
     descriptions: `We are setting the standard in Defi, through trasparency and accountablity.`,
     btnText: "Buy Sycotic Society",
@@ -64,14 +64,31 @@ const Hero_10 = () => {
                   className="hidden dark:block"
                 />
                
+                      <div className="container">
+      {/* <!-- Video Lightbox --> */}
+      <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-24 overflow-hidden rounded-3xl before:absolute before:inset-0 ">
+      <iframe
+        className="h-[80vh] w-[80vw]"
+        id="geckoterminal-embed"
+        title="GeckoTerminal Embed"
+        src="https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d?embed=1&info=1&swaps=1"
+        allow="clipboard-write"
+        allowfullscreen
+      ></iframe>
+      </figure>
+    </div> 
                     
-                <iframe height="100%" width="100%" id="geckoterminal-embed" title="GeckoTerminal Embed" src="https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d?embed=1&info=1&swaps=0" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+                
                     
               </div>
             </div>
           </div>
         </div>
       </div>
+              
+                
+    
+               
     </section>
   );
 };
