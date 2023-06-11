@@ -13,13 +13,13 @@ const Home_1 = () => {
     <main>
       <Meta title="Home 10 || Xhibiter | NFT Marketplace Next.js Template" />
       <Hero_10 />
-      <Feature />
+     
       <FancyBlock />
       <Partners />
-      <WalletFeature />
-      <Testimonial />
+
+  
       <DownloadAppBanner />
-      <NeedHelpBlock />
+  
     </main>
   );
 };
