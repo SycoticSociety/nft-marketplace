@@ -1,5 +1,8 @@
-function tokenomics() {
+const DownloadAppBanner = () => {
+
   return (
+
+
     <div className="container">
       {/* <!-- Video Lightbox --> */}
       <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-24 overflow-hidden rounded-3xl before:absolute before:inset-0 ">
