@@ -44,8 +44,6 @@ const Create = () => {
   const { data: ownedNFTs, loadingNfts, error } = useOwnedNFTs(contract, address);
 
 
-  console.log(collection)
-
   async function imageSize(url) {
     const img = document.createElement("img");
   
@@ -106,34 +104,55 @@ const Create = () => {
          Router.reload()
          return alert('The image must be a square.')
       }
-      const uploadUrl = await upload({
-        data: [file],
-        options: { uploadWithGatewayUrl: true, uploadWithoutDirectory: true },
-      });
+       const uploadUrl = await upload({
+         data: [file],
+         options: { uploadWithGatewayUrl: true, uploadWithoutDirectory: true },
+       });
       // Make a request to /api/server
       if(address){
-        const signedPayloadReq =fetch(`/api/mintNft`, {
-          method: "POST",
-          body: JSON.stringify({
-            authorAddress: address,
-            nftName: name || "",
-            nftDesc:desc || "",
-            nftImage: uploadUrl?.[0] || "",
-            nftCollectionContract: collection 
-          }),
-        }).then((response)=>{
-          if(response.status==500){
-            throw error;
-          }else{
-            setLoading(false)
+        if (collection=='Polygon') {
+          fetch(`/api/mintNft`, {
+            method: "POST",
+            body: JSON.stringify({
+              authorAddress: address,
+              nftName: name || "",
+              nftDesc:desc || "",
+              nftImage: uploadUrl?.[0] || "",
+            }),
+          }).then((response)=>{
+            if(response.status==500){
+              throw error;
+            }else{
+              setLoading(false)
+              Router.reload()
+              alert('The nft was minted successfully!')
+            }
+          }).catch((error)=>{
+            alert(`There was an error minting NFT. + ${error.msg}`,error)
             Router.reload()
-            alert('The nft was minted successfully!')
-          }
-        }).catch((error)=>{
-          alert(`There was an error minting NFT. + ${error.msg}`,error)
-          Router.reload()
-        });
-      }else{
+          })
+        } else {
+          fetch(`/api/mintNftArbitrum`, {
+            method: "POST",
+            body: JSON.stringify({
+              authorAddress: address,
+              nftName: name || "",
+              nftDesc:desc || "",
+              nftImage: uploadUrl?.[0] || "",
+            }).then((response)=>{
+              if(response.status==500){
+                throw error;
+              }else{
+                setLoading(false)
+                Router.reload()
+                alert('The nft was minted successfully!')
+              }
+            }).catch((error)=>{
+              alert(`There was an error minting NFT. + ${error.msg}`,error)
+              Router.reload()
+            })
+          })
+        }}else{
         alert('Please connect your wallet!')
       }
     } catch (e) {
@@ -591,7 +610,7 @@ const Create = () => {
             {loading ? <CircularProgress sx={{color:'red'}}/> : address ?
             <button
               onClick={mintWithSignature}
-              disabled={!file && !name && !desc && !address}
+              disabled={!file && !name && !desc && !address && !collection}
               className={file && name && desc && address && collection? "bg-accent cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all" : "bg-accent-lighter cursor-default rounded-full py-3 px-8 text-center font-semibold text-white transition-all"}
             >
               Create
