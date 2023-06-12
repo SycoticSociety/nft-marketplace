@@ -1,6 +1,6 @@
 const Hero_10 = () => {
   const heroContent = {
-    meta: "JOIN THE DIGITAL REVOLUTION",
+    meta: "JOIN THE CRYPTO REVOLUTION!",
     title: "Sycotic Society Token on CRONOS.",
     descriptions: `We are setting the standard in Defi, through trasparency and accountablity.`,
     btnText: "Buy Sycotic Society",
@@ -63,12 +63,27 @@ const Hero_10 = () => {
                   alt=""
                   className="hidden dark:block"
                 />
+               
+                      
+                    
+                
+                    
               </div>
             </div>
           </div>
         </div>
       </div>
+              
+                
+    
+
+               
     </section>
+
+    
+
+
+
   );
 };
 

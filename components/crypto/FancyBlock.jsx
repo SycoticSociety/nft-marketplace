@@ -1,10 +1,11 @@
 const FancyBlock = () => {
   const fancyList = [
-    ` Safe storage of cryptocurrencies – take control of your own
+    ` Deploy your own NFTs easily– take control of your own
 assets`,
-    `  Safe storage of cryptocurrencies – take control of your own
-assets`,
-    ` 10,000+ DApps - enjoy DeFi`,
+    `  View your NFTs directly on site– Inquire about 
+    creating your very own
+NFT gallery`,
+    ` Sycotic Society- True DeFi`,
   ];
 
   return (
@@ -33,14 +34,10 @@ assets`,
             {/* <!-- Info --> */}
             <div className="py-10 px-6 lg:w-[37%] lg:pl-28">
               <h2 className="mb-6 font-display text-3xl text-jacarta-700 dark:text-white">
-                The safest most secure crypto app like never before
+                Sycotic Society-We are the Standard in Decentralized Finance.
               </h2>
               <p className="mb-12 text-lg leading-normal dark:text-jacarta-300">
-                Xhibiter security is unlike every other. It’s better. No more
-                complex passwords or long phrases to store, browser extensions,
-                or special hardware required. Your account is secured by private
-                facial biometrics and industry-leading encryption to keep you
-                safe from account
+                
               </p>
 
               {fancyList.map((val, i) => (

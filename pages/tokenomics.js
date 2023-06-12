@@ -1,21 +1,24 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import UserContext from "../components/UserContext";
+import Home_10 from './home/home_10'
 
-function tokenomics() {
+export default function Home() {
+  const { scrollRef } = useContext(UserContext);
+
+  useEffect(() => {
+    window.scrollTo(0, scrollRef.current.scrollPos);
+    const handleScrollPos = () => {
+      scrollRef.current.scrollPos = window.scrollY;
+    };
+    window.addEventListener("scroll", handleScrollPos);
+    return () => {
+      window.removeEventListener("scroll", handleScrollPos);
+    };
+  });
+
   return (
-    <div className="container">
-      {/* <!-- Video Lightbox --> */}
-      <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-24 overflow-hidden rounded-3xl before:absolute before:inset-0 ">
-      <iframe
-        className="h-[80vh] w-[80vw]"
-        id="geckoterminal-embed"
-        title="GeckoTerminal Embed"
-        src="https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d?embed=1&info=1&swaps=1"
-        allow="clipboard-write"
-        allowfullscreen
-      ></iframe>
-      </figure>
-    </div>
+    <>
+      <Home_10/>
+    </>
   );
 }
-
-export default tokenomics;
