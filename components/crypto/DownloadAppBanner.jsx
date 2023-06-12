@@ -2,19 +2,6 @@ const DownloadAppBanner = () => {
   return (
     <section className="relative pt-20">
     
-    <div className="container">
-      {/* <!-- Video Lightbox --> */}
-      <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-24 overflow-hidden rounded-3xl before:absolute before:inset-0 ">
-      <iframe
-        className="h-[80vh] w-[80vw]"
-        id="geckoterminal-embed"
-        title="GeckoTerminal Embed"
-        src="https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d?embed=1&info=1&swaps=1"
-        allow="clipboard-write"
-        allowfullscreen
-      ></iframe>
-      </figure>
-    </div>
     
     
     
@@ -100,6 +87,24 @@ const DownloadAppBanner = () => {
                 <span className="text-lg text-jacarta-700 dark:text-white">
                   Scan to download Sycotic Societys app
                 </span>
+
+
+<div className="container">
+      {/* <!-- Video Lightbox --> */}
+      <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-24 overflow-hidden rounded-3xl before:absolute before:inset-0 ">
+      <iframe
+        className="h-[80vh] w-[80vw]"
+        id="geckoterminal-embed"
+        title="GeckoTerminal Embed"
+        src="https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d?embed=1&info=1&swaps=1"
+        allow="clipboard-write"
+        allowfullscreen
+      ></iframe>
+      </figure>
+    </div>
+
+
+
               </div>
             </div>
           </div>
