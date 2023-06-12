@@ -19,6 +19,7 @@
     "@tippyjs/react": "^4.2.6",
     "axios": "^1.2.1",
     "chart.js": "^3.8.0",
+    "ethereum-unit-converter": "^0.0.17",
     "ethers": "^5.7.2",
     "metamask-react": "^2.4.0",
     "moment": "^2.29.4",

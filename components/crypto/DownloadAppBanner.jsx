@@ -1,10 +1,6 @@
 const DownloadAppBanner = () => {
   return (
     <section className="relative pt-20">
-    
-    
-    
-    
       <picture className="pointer-events-none absolute inset-0 -z-10 dark:hidden">
         <img
           src="/images/gradient_light.jpg"
@@ -26,7 +22,7 @@ const DownloadAppBanner = () => {
           <div className="mb-10 lg:order-1 lg:w-2/4 xl:w-[30%]">
             <div className="text-center lg:text-left">
               <h2 className="mb-6 font-display text-xl text-jacarta-700 dark:text-white lg:pr-4">
-                Download Sycotic Society- 
+                Download Sycotic Society-
                 <span className="text-jacarta-300">
                   Free to play games, and more.
                 </span>
@@ -65,24 +61,6 @@ const DownloadAppBanner = () => {
               className="inline-block"
               alt=""
             />
-                
-               <div className="container">
-      {/* <!-- Video Lightbox --> */}
-      <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-24 overflow-hidden rounded-3xl before:absolute before:inset-0 ">
-      <iframe
-        className="h-[80vh] w-[80vw]"
-        id="geckoterminal-embed"
-        title="GeckoTerminal Embed"
-        src="https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d?embed=1&info=1&swaps=1"
-        allow="clipboard-write"
-        allowfullscreen
-      ></iframe>
-      </figure>
-    </div>
- 
-                
-                
-                
           </div>
           {/* mobile app */}
 
@@ -105,12 +83,6 @@ const DownloadAppBanner = () => {
                 <span className="text-lg text-jacarta-700 dark:text-white">
                   Scan to download Sycotic Societys app
                 </span>
-
-
-
-
-
-
               </div>
             </div>
           </div>

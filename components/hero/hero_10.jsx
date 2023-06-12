@@ -1,7 +1,8 @@
 const Hero_10 = () => {
   const heroContent = {
     meta: "JOIN THE CRYPTO REVOLUTION!",
-    title: "Sycotic Society Token on CRONOS.",
+    title: "Sycotic Society Token on",
+    titleHighlight:'CRONOS',
     descriptions: `We are setting the standard in Defi, through trasparency and accountablity.`,
     btnText: "Buy Sycotic Society",
   };
@@ -30,7 +31,8 @@ const Hero_10 = () => {
               </span>
             </div>
             <h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white lg:text-left lg:text-6xl">
-              {heroContent.title}
+              {heroContent.title} {' '}
+              <span className="animate-gradient">{heroContent.titleHighlight}</span>
             </h1>
             <p className="mb-8 max-w-md text-center text-lg dark:text-jacarta-200 lg:text-left">
               {heroContent.descriptions}
@@ -63,27 +65,12 @@ const Hero_10 = () => {
                   alt=""
                   className="hidden dark:block"
                 />
-               
-                      
-                    
-                
-                    
               </div>
             </div>
           </div>
         </div>
       </div>
-              
-                
-    
-
-               
     </section>
-
-    
-
-
-
   );
 };
 
