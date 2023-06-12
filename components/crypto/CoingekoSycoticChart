@@ -1,4 +1,4 @@
-const DownloadAppBanner = () => {
+const tokenomics = () => {
 
   return (
 
