@@ -132,7 +132,7 @@ export const artistInfo = [
 	},
 	
 	{
-		title: 'Sycotic Society: Our Founder',
+		title: 'Sycotic Society: Our Founding Father',
 		desc: "Sycotic Society's Exclusive NFT Collection",
 		id: '3',
 		name: 'Sycotic Society Cronos',
