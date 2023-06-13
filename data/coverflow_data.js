@@ -8,7 +8,7 @@ export const coverflow_data = [
   },
   {
     img: "/images/artists/OurFounder.jpg",
-    title: "Sycotic Society Cronos",
+    title: "Sycotic Society Arbitrum",
     authorImage: "/images/avatars/avatar_22_rounded.jpg",
     authorName: "Sycotic Society",
     id: "3",
