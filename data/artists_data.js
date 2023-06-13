@@ -132,10 +132,10 @@ export const artistInfo = [
 	},
 	
 	{
-		title: 'Sycotic Society Concept Art',
-		desc: "Sycotic Society's promotional NFT concept artwork",
+		title: 'Sycotic Society: Our Founding Father',
+		desc: "Sycotic Society's Exclusive NFT Collection",
 		id: '3',
-		name: 'Sycotic Society Arbitrum',
+		name: 'Sycotic Society Cronos',
 		img: '/images/dao/SycoticPromotions.jpg',
         SocialIcons:[
             {
@@ -192,8 +192,8 @@ export const artistInfo = [
                 authorName: 'by Lazy Panda',
             },
         ],
-        marketPlaceLink:'0x3DA4ee4912734D6d0D6DefB65b6D64754A432295',
-        artistChainId:ChainId.Arbitrum
+        marketPlaceLink:'0xCf064D26D6aE604112db8Ceb81323282BdE81130',
+        artistChainId:ChainId.Cronos
 	},
 
 ];
