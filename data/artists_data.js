@@ -6,7 +6,7 @@ export const artistInfo = [
 		desc: "Darkest Hour: Our Fantom Opera NFT collection.",
 		id: '1',
 		name: 'Sycotic Society Fantom',
-		img: '/images/dao/CyberFounder.jpg',
+		img: '/images/dao/benefit_dao_1.jpg',
         SocialIcons:[
             {
               id: 1,
