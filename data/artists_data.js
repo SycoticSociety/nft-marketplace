@@ -135,7 +135,7 @@ export const artistInfo = [
 		title: 'Sycotic Society: Our Founding Father',
 		desc: "Sycotic Society's Exclusive NFT Collection",
 		id: '3',
-		name: 'Sycotic Society Cronos',
+		name: 'Sycotic Society Arbitrum',
 		img: '/images/dao/SycoticPromotions.jpg',
         SocialIcons:[
             {
@@ -193,7 +193,7 @@ export const artistInfo = [
             },
         ],
         marketPlaceLink:'0xCf064D26D6aE604112db8Ceb81323282BdE81130',
-        artistChainId:ChainId.CronosBeta
+        artistChainId:ChainId.Arbitrum
 	},
 
 ];
