@@ -193,7 +193,7 @@ export const artistInfo = [
             },
         ],
         marketPlaceLink:'0xCf064D26D6aE604112db8Ceb81323282BdE81130',
-        artistChainId:ChainId.CronosMainnetBeta
+        artistChainId:ChainId.CronosBeta
 	},
 
 ];
