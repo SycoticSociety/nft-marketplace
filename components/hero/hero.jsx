@@ -40,6 +40,11 @@ const hero = () => {
                   Explore our NFTS
                 </a>
               </Link>
+              <Link href=" ">
+                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-fit-content rounded-full bg-purple py-3 px-8 text-center font-semibold transition-all hover:text-white">
+                  Utility Factory!
+                </a>
+              </Link>
             </div>
           </div>
 
