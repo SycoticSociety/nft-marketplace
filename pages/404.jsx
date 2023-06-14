@@ -34,7 +34,7 @@ const Error_page = () => {
               </h1>
               <p className="dark:text-jacarta-300 mb-12 text-lg leading-normal">
                 Sycotic 💢 Society is working continuously around
-                the clock to bring you the most interactive useful website
+                the clock to bring you the most interactive utility based website
                 possible.  Thank you for your patience and support!
               </p>
               <Link href="/">
