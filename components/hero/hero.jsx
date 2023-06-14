@@ -41,8 +41,8 @@ const hero = () => {
                 </a>
               </Link>
               <Link href=" ">
-                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-fit-content rounded-full bg-purple py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Utility Factory!
+                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-fit-content rounded-full bg-pink py-3 px-8 text-center font-semibold transition-all hover:text-white">
+                 Digital Utility Factory!
                 </a>
               </Link>
             </div>
