@@ -19,8 +19,8 @@ const Home_1 = () => {
 		<main>
 			<Meta title="| Sycotic Society | NFT Marketplace" />
 			<Hero />
-			<Hero_6/>
-		    <Browse_category/>
+			<Browse_category/>
+		        <Browse_category/>
 			<NewseLatter />
 		</main>
 	);
