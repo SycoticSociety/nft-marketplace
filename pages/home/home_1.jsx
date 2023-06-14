@@ -5,6 +5,7 @@ import {
 	Browse_category,
 } from '../../components/component';
 import Meta from '../../components/Meta';
+import Hero_6 from '../../components/hero/hero_6';
 import { useTheme } from "next-themes";
 
 const Home_1 = () => {
