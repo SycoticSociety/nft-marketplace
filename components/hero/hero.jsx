@@ -37,7 +37,7 @@ const hero = () => {
               </Link>
               <Link href="/marketplace">
                 <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-fit-content rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Explore our NFTS
+                  Explore NFT Markets!
                 </a>
               </Link>
               <Link href=" ">
