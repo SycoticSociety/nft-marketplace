@@ -1,6 +1,8 @@
 import Partner1 from "./Partner1";
 import Partner2 from "./Partner2";
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'tippy.js/dist/tippy.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Browse_category_carousel from "../carousel/Browse_category_carousel";
 
