@@ -22,12 +22,12 @@ const TrustedPartner = () => {
           </div>
         </div>
         <div className="mb-8 flex animate-marqueeRight space-x-8">
-          <Browse_category/>
+          <Partner1 />
         </div>
         {/* End .animate-marqueeRight */}
 
         <div className="flex animate-marquee space-x-8">
-          <Browse_category/>
+          <Partner2 />
         </div>
         {/* animate-marquee */}
       </section>
