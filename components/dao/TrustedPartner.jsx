@@ -17,7 +17,7 @@ const TrustedPartner = () => {
               
             </h2>
             <p className="text-lg dark:text-jacarta-300">
-            
+            Sycotic 💢 Society:  We are in good company!
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@ const TrustedPartner = () => {
         {/* End .animate-marqueeRight */}
 
         <div className="flex animate-marquee space-x-8">
-        
+          <Partner1 />
         </div>
         {/* animate-marquee */}
       </section>
