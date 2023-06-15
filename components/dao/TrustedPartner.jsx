@@ -27,7 +27,7 @@ const TrustedPartner = () => {
         {/* End .animate-marqueeRight */}
 
         <div className="flex animate-marquee space-x-8">
-          <Partner2 />
+        
         </div>
         {/* animate-marquee */}
       </section>
