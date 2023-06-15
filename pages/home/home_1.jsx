@@ -22,7 +22,6 @@ const Home_1 = () => {
 			<Hero />
 			<Browse_category/>
 			<TrustedPartner />
-			<Browse_category/>
 			
 			<NewseLatter />
 		</main>
