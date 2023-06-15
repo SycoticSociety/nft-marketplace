@@ -1,6 +1,6 @@
 import Partner1 from "./Partner1";
 import Partner2 from "./Partner2";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Browse_category_carousel from "../carousel/Browse_category_carousel";
 
 const TrustedPartner = () => {
