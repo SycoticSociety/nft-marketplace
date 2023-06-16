@@ -14,7 +14,7 @@ const TrustedPartner = () => {
         <div className="container">
           <div className="mx-auto mb-14 max-w-xl text-center">
             <h2 className="mb-6 text-center font-display text-3xl font-medium text-jacarta-700 dark:text-white">
-              Sycotic 💢 Society Trusted Partners.
+              Trusted 💢 Partners.
             </h2>
             <p className="text-lg dark:text-jacarta-300">
             </p>
