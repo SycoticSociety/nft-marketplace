@@ -26,7 +26,8 @@ const Home_4 = () => {
         <div className="container">
           <HeadLine
             image="https://cdn.jsdelivr.net/npm/emoji-datasource-apple@7.0.2/img/apple/64/26a1.png"
-            text="Explore multiple NFT BlockChains"
+		  
+             text="Explore BlockChains"
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white"
           />
           <FilterCategoryItem />
