@@ -16,8 +16,8 @@ const Meta = ({ title, keyword, desc }) => {
 Meta.defaultProps = {
   title: "Sycotic Society | NFT Marketplace ",
   keyword:
-    "bitcoin, blockchain, crypto, crypto collectibles, crypto makretplace, cryptocurrency, digital items, market, nft, nft marketplace, nft next js, NFT react, non-fungible tokens, virtual asset, wallet",
-  desc: "The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.",
+    "Trade Fantom opera, Cronos main net beta, Arbitrum crypto, crypto collectibles, crypto makretplace, cryptocurrency, digital items, market, nft, nft marketplace, nft next js, NFT react, non-fungible tokens, virtual asset, wallet",
+  desc: "Sycotic 💢 Society.  Your home for everything Blockchain.  Create and trade your very own NFTs onsite, while utilizing powerful tools like our eth gwei wei converter.",
 };
 
 export default Meta;
