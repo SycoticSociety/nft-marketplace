@@ -1,5 +1,10 @@
 import Partner1 from "./Partner1";
 import Partner2 from "./Partner2";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'tippy.js/dist/tippy.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Browse_category_carousel from "../carousel/Browse_category_carousel";
 
 const TrustedPartner = () => {
   return (
@@ -9,11 +14,10 @@ const TrustedPartner = () => {
         <div className="container">
           <div className="mx-auto mb-14 max-w-xl text-center">
             <h2 className="mb-6 text-center font-display text-3xl font-medium text-jacarta-700 dark:text-white">
-              They trust Us
+              
             </h2>
             <p className="text-lg dark:text-jacarta-300">
-              NFTs can be used to represent items such as photos, videos, audio,
-              and other types of digital files.
+            Sycotic 💢 Society:  We are in good company!
             </p>
           </div>
         </div>
@@ -23,7 +27,7 @@ const TrustedPartner = () => {
         {/* End .animate-marqueeRight */}
 
         <div className="flex animate-marquee space-x-8">
-          <Partner2 />
+          <Partner1 />
         </div>
         {/* animate-marquee */}
       </section>

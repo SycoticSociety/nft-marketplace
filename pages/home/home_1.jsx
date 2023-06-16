@@ -5,6 +5,9 @@ import {
 	Browse_category,
 } from '../../components/component';
 import Meta from '../../components/Meta';
+import TrustedPartner from "../../components/dao/TrustedPartner";
+import { hero_6_data } from '../../data/hero_6_data';
+import Hero_6 from '../../components/hero/hero_6';
 import { useTheme } from "next-themes";
 
 const Home_1 = () => {
@@ -17,8 +20,10 @@ const Home_1 = () => {
 		<main>
 			<Meta title="| Sycotic Society | NFT Marketplace" />
 			<Hero />
-		    <Browse_category/>
+			<Browse_category/>
+	
 			<NewseLatter />
+			<TrustedPartner />
 		</main>
 	);
 };
