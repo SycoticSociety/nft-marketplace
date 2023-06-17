@@ -10,14 +10,13 @@ const TrustedPartner = () => {
   return (
     <>
       {/* <!-- Partners --> */}
-      <section className="overflow-hidden py-8 dark:bg-accent-light bg-accent-lighter">
+      <section className="overflow-hidden py-24 dark:bg-accent-light bg accent-lighter">
         <div className="container">
           <div className="mx-auto mb-14 max-w-xl text-center">
             <h2 className="mb-6 text-center font-display text-3xl font-medium text-jacarta-700 dark:text-white">
-              Our Links
+              <span className="animate-gradient">Trusted 💢 Partners.</span>
             </h2>
             <p className="text-lg dark:text-white">
-            Sycotic 💢 Society:  We are in good company!
             </p>
           </div>
         </div>

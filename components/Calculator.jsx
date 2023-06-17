@@ -31,7 +31,8 @@ function Calculator() {
   return (
     <div className="container ">
       <h2 className="font-display text-base leading-none text-white text-5xl text-center my-4">
-		Ethereum Calculator
+	<span className="animate-gradient">Ethereum Calculator</span>
+	
 	  </h2>
       <div className="mb-6">
       <label
