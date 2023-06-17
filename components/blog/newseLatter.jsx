@@ -54,11 +54,11 @@ const NewseLatter = () => {
           })}
         </div>
 
-        <p className="text-jacarta-700 mx-auto mt-20 max-w-2xl text-center text-lg dark:text-white">
+        {/* <p className="text-jacarta-700 mx-auto mt-20 max-w-2xl text-center text-lg dark:text-white">
           Join our mailing list to stay in the loop with Sycotic Society updates.
-        </p>
+        </p> */}
 
-        <div className="mx-auto mt-7 max-w-md text-center">
+        {/* <div className="mx-auto mt-7 max-w-md text-center">
           <form className="relative" onSubmit={(e) => e.preventDefault()}>
             <input
               type="email"
@@ -69,7 +69,7 @@ const NewseLatter = () => {
               Subscribe
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   );
