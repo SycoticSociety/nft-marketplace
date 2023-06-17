@@ -1,4 +1,4 @@
-import { ThirdwebSDK } from "@thirdweb-dev/sdk/evm";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
 export default async function mintNftArbitrum(req,res) {
   try {

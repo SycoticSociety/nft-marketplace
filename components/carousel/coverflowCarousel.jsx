@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow, Ally } from "swiper";
+import { Navigation, Pagination, EffectCoverflow, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import { coverflow_data } from "../../data/coverflow_data";
@@ -42,12 +42,16 @@ const CoverflowCarousel = () => {
             slideShadows: true,
           }}
           pagination={true}
-          modules={[EffectCoverflow, Pagination, Navigation]}
+          modules={[EffectCoverflow, Pagination, Navigation , Autoplay]}
           navigation={{
-            nextEl: ".swiper-button-next-4",
-            prevEl: ".swiper-button-prev-4",
-          }}
+             nextEl: ".swiper-button-next-4",
+             prevEl: ".swiper-button-prev-4",
+           }}
           className="swiper coverflow-slider !py-5"
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
         >
           {coverflow_data.map((item) => {
             const { img, id, authorImage, authorName, title } = item;

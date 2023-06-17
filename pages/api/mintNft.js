@@ -11,24 +11,12 @@ export default async function mintNft(req,res) {
     }
     // Initialize the Thirdweb SDK on the serverside
     // Load the NFT Collection via it's contract address using the SDK
-    let sdk = null
-    let nftCollection = ''
-
-    if(nftCollectionContract == 'Arbitrum'){
-      sdk = ThirdwebSDK.fromPrivateKey(
-        // Your wallet private key (read it in from .env.local file)
-        process.env.PRIVATE_KEY,
-        "arbitrum"
-      );
-      nftCollection = await sdk.getContract("0xA622c4C68656dBc7595E1089A3946b5478954d16","nft-collection");
-    }else{
-      sdk = ThirdwebSDK.fromPrivateKey(
+    const sdk = ThirdwebSDK.fromPrivateKey(
         // Your wallet private key (read it in from .env.local file)
         process.env.PRIVATE_KEY,
         "polygon"
       );
-      nftCollection = await sdk.getContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991","nft-collection");
-    }
+    const nftCollection = await sdk.getContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991","nft-collection");
     
 
     // Here we can make all kinds of cool checks to see if the user is eligible to mint the NFT.

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import {artistInfo} from '../../data/artists_data';
 import {useRouter} from 'next/router';
 import { useTheme } from 'next-themes';
+import {Browse_category} from '../../components/component';
 import More_items from '../item/more_items';
 
 function Artist() {
@@ -89,7 +90,8 @@ function Artist() {
           />
           <FilterCategoryItem marketplace={marketPlaceLink} artistChainId={artistChainId}/>
         </div>
-        <More_items galleryImages={galleryImages}/>
+        {/* <More_items galleryImages={galleryImages}/> */}
+        <Browse_category/>
       </section>
     </div>
   )

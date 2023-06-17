@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, EffectCoverflow, Autoplay } from "swiper";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'tippy.js/dist/tippy.css';
@@ -35,6 +36,11 @@ const Browse_category_carousel = () => {
 				}}
 				className=" card-slider-4-columns !py-5"
 				style={{ transform: 'scaleX(1.2)' }}
+				modules={[EffectCoverflow, Pagination, Navigation , Autoplay]}
+				autoplay={{
+					delay: 3500,
+					disableOnInteraction: false,
+				  }}
 			>
 				{Browse_category_data.map((item) => {
 					const { id, image, title, bgColor , href } = item;

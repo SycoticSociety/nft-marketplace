@@ -19,7 +19,7 @@ const CategoryItem = ({ listings,contract,address}) => {
 
   if(listings && contract){
     return (
-      <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-[1.875rem] lg:grid-cols-3 xl:grid-cols-4">
         {listings?.map((item) => {
           const {
             asset,
@@ -34,38 +34,8 @@ const CategoryItem = ({ listings,contract,address}) => {
                   <img
                     src={asset.image}
                     alt="item 5"
-                    className="w-full h-[230px] rounded-[0.625rem] object-cover"
+                    className="w-full h-[230px] rounded-[0.625rem]"
                   />
-  
-                  {/* <Likes like={likes} /> */}
-  
-                  {/* <div className="absolute left-3 -bottom-3">
-                    <div className="flex -space-x-2">
-                      <Link href={`/item/${itemLink}`}>
-                        <a>
-                          <Tippy content={<span>creator: {creator.name}</span>}>
-                            <img
-                              src={creator.image}
-                              alt="creator"
-                              className="dark:border-jacarta-600 hover:border-accent dark:hover:border-accent h-6 w-6 rounded-full border-2 border-white"
-                            />
-                          </Tippy>
-                        </a>
-                      </Link>
-                      <Link href={`/item/${itemLink}`}>
-                        <a>
-                          <Tippy content={<span>creator: {owner.name}</span>}>
-                            <img
-                              src={owner.image}
-                              alt="owner"
-                              layout="fill"
-                              className="dark:border-jacarta-600 hover:border-accent dark:hover:border-accent h-6 w-6 rounded-full border-2 border-white"
-                            />
-                          </Tippy>
-                        </a>
-                      </Link>
-                    </div>
-                  </div> */}
                 </figure>
                 <div className="mt-7 flex items-center justify-between">
                   <span className="font-display text-jacarta-700 hover:text-accent text-base dark:text-white">
