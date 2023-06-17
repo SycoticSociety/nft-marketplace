@@ -10,13 +10,13 @@ const TrustedPartner = () => {
   return (
     <>
       {/* <!-- Partners --> */}
-      <section className="overflow-hidden py-24 dark:bg-jacarta-900">
+      <section className="overflow-hidden py-24 dark:bg-accent-light bg accent-lighter">
         <div className="container">
           <div className="mx-auto mb-14 max-w-xl text-center">
             <h2 className="mb-6 text-center font-display text-3xl font-medium text-jacarta-700 dark:text-white">
               <span className="animate-gradient">Trusted 💢 Partners.</span>
             </h2>
-            <p className="text-lg dark:text-jacarta-300">
+            <p className="text-lg dark:text-white">
             </p>
           </div>
         </div>
@@ -26,7 +26,7 @@ const TrustedPartner = () => {
         {/* End .animate-marqueeRight */}
 
         <div className="flex animate-marquee space-x-8">
-          <Partner1 />
+          <Partner2 />
         </div>
         {/* animate-marquee */}
       </section>
