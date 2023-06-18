@@ -3,7 +3,7 @@ const Partner2 = () => {
     {link:'https://www.cameltoecan.com/',image:'partner_dao_1'},
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_2'},
     {link:'https://dexscreener.com/cronos/0x172ef983f851bcdbf2a26a14756955a9c5954b7d/',image:'partner_dao_8'},
-    {link:'https://coinmarketcap.com/dexscan/cronos/0x172ef983f851bcdbf2a26a14756955a9c5954b7d/',image:'partner_dao_10'},
+    {link:'https://coinmarketcap.com/dexscan/cronos/0x172ef983f851bcdbf2a26a14756955a9c5954b7d/',image:'partner_dao_5'},
     {link:'https://www.spatial.io/s/Sycotic-Society-Token-NFT-Gallery-6313041cebd6c80001d718ea?share=5572695680266736611/',image:'partner_dao_4'},
     {link:'https://www.geckoterminal.com/',image:'partner_dao_10'},
     {link:'https://www.cameltoecan.com/',image:'partner_dao_2'},
