@@ -10,6 +10,7 @@ const Partner1 = () => {
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_2'},
     {link:'https://phenix.finance/',image:'partner_dao_3'},
     {link:'https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d',image:'partner_dao_4'},
+    {link:'https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d',image:'partner_dao_10'},
   ];
   return (
     <>
