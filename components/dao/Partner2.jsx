@@ -2,7 +2,7 @@ const Partner2 = () => {
   const partnerItem = [
     {link:'https://www.cameltoecan.com/',image:'partner_dao_1'},
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_2'},
-    {link:'https://phenix.finance/',image:'partner_dao_8'},
+    {link:'https://dexscreener.com/cronos/0x172ef983f851bcdbf2a26a14756955a9c5954b7d/',image:'partner_dao_8'},
     {link:'https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d /',image:'partner_dao_10'},
     {link:'https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d /',image:'partner_dao_10'},
     {link:'https://www.geckoterminal.com/cro/pools/0x172ef983f851bcdbf2a26a14756955a9c5954b7d /',image:'partner_dao_10'},
