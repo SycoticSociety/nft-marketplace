@@ -32,7 +32,7 @@ const Footer = () => {
                 {socialIcons.map((item) => {
                   const { id, href, text } = item;
                   return (
-                    <Link href={href} key={id}>
+                    <Link className="" href={href} key={id}>
                       <a
                         target="_blank"
                         rel="noopener noreferrer"

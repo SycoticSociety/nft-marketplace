@@ -16,7 +16,7 @@ const CoverflowCarousel = () => {
           breakpoints={{
             // when window width is >= 640px
             100: {
-              // width: 640,
+              width: 640,
               slidesPerView: 1,
             },
             575: {

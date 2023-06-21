@@ -15,7 +15,7 @@ const Partner2 = () => {
       {partnerItem.map((item, i) => (
         <a
           href={item.link}
-          className="flex flex-shrink-0 items-center justify-center rounded-2.5xl bg-jacarta-900 opacity-80 p-4 p-6"
+          className="flex flex-shrink-0 items-center justify-center rounded-2.5xl  p-4 opacity-80 bg-jacarta-200 dark:bg-jacarta-900"
           key={i}
         >
           <img src={`/images/dao/${item.image}.jpg`} alt="partner item" />

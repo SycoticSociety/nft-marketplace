@@ -19,7 +19,7 @@ const CategoryItem = ({ listings,contract,address}) => {
 
   if(listings && contract){
     return (
-      <div className="grid grid-cols-2 gap-[1.875rem] lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-[3rem] sm:gap-[1.875rem] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {listings?.map((item) => {
           const {
             asset,
