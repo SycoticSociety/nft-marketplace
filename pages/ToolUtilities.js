@@ -25,9 +25,11 @@ export default function Home() {
   });
 
   return (
+      <main>
       <Meta title="| Sycotic Society | NFT Marketplace" />
       <Hero_11 />
       <CryptoPrice />
       <InvestEarn />
+      <main/>
   );
 }
