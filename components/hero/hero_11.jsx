@@ -30,13 +30,13 @@ const hero_11 = () => {
             className="h-[150%] w-full object-cover"
           />
         </picture>
-        <picture className="pointer-events-none absolute bottom-[15%] left-1/2 -translate-x-1/2">
+         <picture className="pointer-events-none absolute bottom-[15%] left-1/2 -translate-x-1/2">
           <img
             src="/images/crypto-trading/crypto_trading_icons.png"
             alt=""
             className="animate-fly"
           />
-        </picture>
+        </picture> 
 
         <div className="container">
           <div className="mx-auto max-w-4xl pt-16 text-center">
@@ -55,12 +55,12 @@ const hero_11 = () => {
             <figure className="relative z-10 mt-12 text-center">
               <img
                 src={heroContent.heroImg}
-                className="relative z-10 -ml-16 inline-block"
+                className="relative z-10  inline-block"
                 alt="hero"
               />
-              <div className="absolute bottom-0 left-1/2 h-[364px] w-[364px] -translate-x-1/2 overflow-hidden rounded-[1.875rem] bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70]">
+              {/* <div className="absolute bottom-5 left-1/2 h-[364px] w-[364px] -translate-x-1/2 overflow-hidden rounded-[1.875rem] bg-gradient-to-tr from-[#4158D0] via-[#C850C0] to-[#FFCC70]">
                 <div className="absolute -left-1/4 -top-1/4 h-[150%] w-[150%] -rotate-45 animate-gradientDiagonal"></div>
-              </div>
+              </div>  */}
             </figure>
           </div>
         </div>

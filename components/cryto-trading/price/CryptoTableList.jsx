@@ -8,7 +8,7 @@ function CryptoTableList() {
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false"
+        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false"
       )
       .then((res) => {
         setMoedas(res.data);
@@ -20,7 +20,7 @@ function CryptoTableList() {
   const filteredMoedas = moedas.filter((moeda) => moeda.name.toLowerCase());
   return (
     <div className="divide-y divide-jacarta-100 dark:divide-jacarta-600">
-      {filteredMoedas.slice(0, 5).map((moeda) => {
+      {filteredMoedas.slice(0, 20).map((moeda) => {
         return (
           <Moeda
             key={moeda.id}

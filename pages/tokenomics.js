@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import UserContext from "../components/UserContext";
 import Home_10 from './home/home_10'
 
-export default function Home() {
+export default function Tokenomics() {
   const { scrollRef } = useContext(UserContext);
 
   useEffect(() => {
