@@ -3,7 +3,7 @@ const hero_11 = () => {
     subTitle: " ",
     title: (
       <>
-        Your Future On-Chain, Simplified.
+        The Blockchain, Simplified!
         <br />
         <span className="animate-gradient">Sycotic 💢 Society</span>
       
