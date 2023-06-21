@@ -1,4 +1,5 @@
-
+import React, { useContext, useEffect } from "react";
+import UserContext from "../components/UserContext";
 
 import Partners2 from "../../components/partners/Partners2";
 import CryptoCounter from "../../components/cryto-trading/CryptoCounter";
