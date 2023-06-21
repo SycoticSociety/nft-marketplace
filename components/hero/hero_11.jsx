@@ -3,12 +3,12 @@ const hero_11 = () => {
     subTitle: " Welcome Ladies and Gentlemen!",
     title: (
       <>
-        Your Future on the Blockchain starts here.
+        Your Future On-Chain, Simplified.
         <br />
-        Trade Sycotic 💢 Society crypto
+        Sycotic 💢 Society
       </>
     ),
-    btnText: " Sycotic Society",
+    btnText: "Sycotic Society",
     heroImg: "/images/hero/hero_crypto_trading.png",
     link: "https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59",
   };
