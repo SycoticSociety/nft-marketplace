@@ -1,3 +1,5 @@
+import React,{useEffect} from "react";
+
 import Partners2 from "../../components/partners/Partners2";
 import CryptoCounter from "../../components/cryto-trading/CryptoCounter";
 import CryptoPrice from "../../components/cryto-trading/price";
