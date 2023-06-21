@@ -10,7 +10,7 @@ import Meta from "../../components/Meta";
 const Home_11 = () => {
   return (
     <main>
-      <Meta title="Home 11 || Xhibiter | NFT Marketplace Next.js Template" />
+      <Meta title="| Sycotic Society| NFT Marketplace" />
       <Hero_11 />
       <CryptoPrice />
       <CryptoCounter />
