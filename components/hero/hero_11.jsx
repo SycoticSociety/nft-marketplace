@@ -5,11 +5,11 @@ const hero_11 = () => {
       <>
         Your Future On-Chain, Simplified.
         <br />
-        <span className="animate-gradient">Sycotic 💢 Society Cronos</span>
+        <span className="animate-gradient">Sycotic 💢 Society</span>
       
       </>
     ),
-    btnText: "Sycotic Society",
+    btnText: "Sycotic Society Cronos",
     heroImg: "/images/hero/hero_crypto_trading.png",
     link: "https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59",
   };
