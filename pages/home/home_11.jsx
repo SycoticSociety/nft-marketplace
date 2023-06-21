@@ -1,3 +1,6 @@
+import React,{useEffect} from "react";
+import Meta from "../../components/Meta";
+
 import Partners2 from "../../components/partners/Partners2";
 import CryptoCounter from "../../components/cryto-trading/CryptoCounter";
 import CryptoPrice from "../../components/cryto-trading/price";
@@ -7,10 +10,10 @@ import ProcessCta from "../../components/cryto-trading/ProcessCta";
 import Hero_11 from "../../components/hero/hero_11";
 import Meta from "../../components/Meta";
 
-const Home_1 = () => {
+const Home_11 = () => {
   return (
     <main>
-      <Meta title="Home 11 || Xhibiter | NFT Marketplace Next.js Template" />
+      <Meta title="| Sycotic Society| NFT Marketplace" />
       <Hero_11 />
       <CryptoPrice />
       <CryptoCounter />
@@ -22,4 +25,4 @@ const Home_1 = () => {
   );
 };
 
-export default Home_1;
+export default Home_11;
