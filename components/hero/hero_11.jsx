@@ -1,6 +1,6 @@
 const hero_11 = () => {
   const heroContent = {
-    subTitle: " Welcome Ladies and Gentlemen!",
+    subTitle: " ",
     title: (
       <>
         Your Future On-Chain, Simplified.
