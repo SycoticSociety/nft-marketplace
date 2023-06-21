@@ -5,7 +5,8 @@ const hero_11 = () => {
       <>
         Your Future On-Chain, Simplified.
         <br />
-        Sycotic 💢 Society
+        <span className="animate-gradient">Sycotic 💢 Society</span>
+      
       </>
     ),
     btnText: "Sycotic Society",
