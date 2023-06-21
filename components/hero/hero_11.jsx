@@ -5,7 +5,7 @@ const hero_11 = () => {
       <>
         Your Future On-Chain, Simplified.
         <br />
-        <span className="animate-gradient">Sycotic 💢 Society</span>
+        <span className="animate-gradient">Sycotic 💢 Society Cronos</span>
       
       </>
     ),
