@@ -1,4 +1,5 @@
 import React,{useEffect} from "react";
+import Meta from "../../components/Meta";
 
 import Partners2 from "../../components/partners/Partners2";
 import CryptoCounter from "../../components/cryto-trading/CryptoCounter";
