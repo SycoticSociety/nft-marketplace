@@ -7,7 +7,7 @@ import ProcessCta from "../../components/cryto-trading/ProcessCta";
 import Hero_11 from "../../components/hero/hero_11";
 import Meta from "../../components/Meta";
 
-const Home_1 = () => {
+const Home_11 = () => {
   return (
     <main>
       <Meta title="Home 11 || Xhibiter | NFT Marketplace Next.js Template" />
@@ -22,4 +22,4 @@ const Home_1 = () => {
   );
 };
 
-export default Home_1;
+export default Home_11;
