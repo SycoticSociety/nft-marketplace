@@ -1,14 +1,14 @@
 const hero_11 = () => {
   const heroContent = {
-    subTitle: " Open Free Crypto Trading Account",
+    subTitle: " Welcome Ladies and Gentlemen!",
     title: (
       <>
-        Join the Future of Blockchain
+        Your Future on the Blockchain starts here.
         <br />
-        Buy & Trade Crypto
+        Trade Sycotic 💢 Society crypto
       </>
     ),
-    btnText: " Start Earning",
+    btnText: " Sycotic Society",
     heroImg: "/images/hero/hero_crypto_trading.png",
     link: "#",
   };
