@@ -40,7 +40,7 @@ const hero = () => {
                 Explore our NFT Market!
                 </a>
               </Link>
-              <Link href="/404.jsx ">
+              <Link href="/ToolUtilities.js">
                 <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
                 Tools, Utilities & More!
                 </a>
