@@ -80,7 +80,7 @@ const Footer = () => {
               <Link href="https://sahilmaheshwari.com">
                 <a className="hover:text-accent dark:hover:text-white">
                   {" "}
-                  Sahil Maheshwari and Sycotic Society
+                  Sahil Maheshwari
                 </a>
               </Link>
             </span>

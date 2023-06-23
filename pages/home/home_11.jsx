@@ -17,9 +17,7 @@ const Home_11 = () => {
       <CryptoPrice />
       {/* <CryptoCounter /> */}
       {/* <Features /> */}
-      <InvestEarn />
-      <ProcessCta />
-      <Partners2 />
+      
     </main>
   );
 };
