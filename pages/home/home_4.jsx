@@ -20,7 +20,7 @@ const Home_4 = () => {
     <>
       <Meta title="SycoticSociety | NFT Marketplace" />
       <Hero_4 />
-      
+      <Characters />
       <CoverflowCarousel/>
       {/* <Top_collection /> */}
       {/* <Auctions_categories /> */}
