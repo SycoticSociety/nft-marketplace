@@ -32,8 +32,8 @@ const Home_4 = () => {
 	          text="Explore BlockChains" 
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white animate-gradient"
           />
-          <Hero_6 />
-	  <Characters />
+          
+	  
           <FilterCategoryItem />
         </div>
       </section>
