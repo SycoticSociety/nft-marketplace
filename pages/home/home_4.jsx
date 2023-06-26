@@ -4,7 +4,7 @@ import {
 } from "../../components/component";
 import Meta from "../../components/Meta";
 import Hero_4 from "../../components/hero/hero_4";
-import Hero_6 from "../../components/hero/hero_11";
+import Hero_6 from "../../components/hero/hero_6";
 import { useTheme } from "next-themes";
 import CoverflowCarousel from '../../components/carousel/coverflowCarousel'
 import FilterCategoryItem from "../../components/categories/filterCategoryItem";
@@ -20,6 +20,7 @@ const Home_4 = () => {
     <>
       <Meta title="SycoticSociety | NFT Marketplace" />
       <Hero_4 />
+      <Hero_6 />
       <CoverflowCarousel/>
       {/* <Top_collection /> */}
       {/* <Auctions_categories /> */}
@@ -30,7 +31,6 @@ const Home_4 = () => {
 	          text="Explore BlockChains" 
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white animate-gradient"
           />
-	  <Hero_6 />
           <FilterCategoryItem />
         </div>
       </section>
