@@ -20,7 +20,7 @@ const Home_4 = () => {
     <>
       <Meta title="SycoticSociety | NFT Marketplace" />
       <Hero_4 />
-      <Characters />
+      
       <CoverflowCarousel/>
       {/* <Top_collection /> */}
       {/* <Auctions_categories /> */}
@@ -31,6 +31,8 @@ const Home_4 = () => {
 	          text="Explore BlockChains" 
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white animate-gradient"
           />
+		
+	  <Characters />
           <FilterCategoryItem />
         </div>
       </section>
