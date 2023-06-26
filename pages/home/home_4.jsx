@@ -4,6 +4,7 @@ import {
 } from "../../components/component";
 import Meta from "../../components/Meta";
 import Hero_4 from "../../components/hero/hero_4";
+import Hero_6 from '../../components/hero/hero_6';
 import Characters from "../../components/characters";
 import { useTheme } from "next-themes";
 import CoverflowCarousel from '../../components/carousel/coverflowCarousel'
@@ -31,7 +32,7 @@ const Home_4 = () => {
 	          text="Explore BlockChains" 
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white animate-gradient"
           />
-		
+     
 	  <Characters />
           <FilterCategoryItem />
         </div>
