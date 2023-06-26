@@ -4,6 +4,7 @@ import {
 } from "../../components/component";
 import Meta from "../../components/Meta";
 import Hero_4 from "../../components/hero/hero_4";
+import Hero_11 from "../../components/hero/hero_11";
 import { useTheme } from "next-themes";
 import CoverflowCarousel from '../../components/carousel/coverflowCarousel'
 import FilterCategoryItem from "../../components/categories/filterCategoryItem";
