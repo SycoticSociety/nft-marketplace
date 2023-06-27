@@ -41,17 +41,17 @@ const Hero_5 = () => {
 								Buy and Sell Digital collectibles
 							</h1>
 							<p className="mb-8 text-center text-lg dark:text-jacarta-200 md:text-left">
-								The {"world's"} Featuring amazing new concept art!
+								{""} Featuring amazing new concept artwork!
 							</p>
 							<div className="flex space-x-4">
 								<Link href="/create">
 									<a className="w-36 rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-										Create NFTs
+								                Upload
 									</a>
 								</Link>
 								<Link href="/collection/explore_collection">
-									<a className="w-36 rounded-full bg-white py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
-										Collections
+									<a className="w-36 rounded-full bg-purple py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
+										Explore 
 									</a>
 								</Link>
 							</div>
