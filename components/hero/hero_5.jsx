@@ -19,40 +19,39 @@ const Hero_5 = () => {
 						<div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-5 xl:pl-[20%] xl:pr-[10%]">
 							<div className="mb-10 w-full sm:flex sm:space-x-4">
 								<div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-									<span className="block font-display text-3xl text-[#8DD059]">10,568</span>
+									<span className="block font-display text-3xl text-[#8DD059]">Minting Now!</span>
 									<span className="block font-display text-sm text-jacarta-500 dark:text-white">
-										Collectibles
+										
 									</span>
 								</div>
 								<div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-									<span className="block font-display text-3xl text-[#737EF2]">1,200</span>
+									<span className="block font-display text-3xl text-[#737EF2]">View Your NFTs</span>
 									<span className="block font-display text-sm text-jacarta-500 dark:text-white">
-										Auctions
+										
 									</span>
 								</div>
 								<div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-									<span className="block font-display text-3xl text-[#F35BC7]">6,897</span>
+									<span className="block font-display text-3xl text-[#F35BC7]">Transfer NFTs</span>
 									<span className="block font-display text-sm text-jacarta-500 dark:text-white">
-										Artists
+										
 									</span>
 								</div>
 							</div>
 							<h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white md:text-left lg:text-5xl xl:text-6xl">
-								Buy and Sell Digital Art and NFT’s
+								Buy and Sell Digital collectibles
 							</h1>
 							<p className="mb-8 text-center text-lg dark:text-jacarta-200 md:text-left">
-								The {"world's"} largest digital marketplace for crypto collectibles and non-fungible
-								tokens
+								The {"world's"} Featuring amazing new concept art!
 							</p>
 							<div className="flex space-x-4">
 								<Link href="/create">
 									<a className="w-36 rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-										Upload
+										Create NFTs
 									</a>
 								</Link>
 								<Link href="/collection/explore_collection">
 									<a className="w-36 rounded-full bg-white py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
-										Explore
+										Collections
 									</a>
 								</Link>
 							</div>
