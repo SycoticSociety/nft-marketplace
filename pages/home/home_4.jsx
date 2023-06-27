@@ -20,6 +20,7 @@ const Home_4 = () => {
   return (
     <>
       <Meta title="SycoticSociety | NFT Marketplace" />
+      <Hero_5 />
       <Hero_4 />
       
       <CoverflowCarousel/>
@@ -32,8 +33,6 @@ const Home_4 = () => {
 	          text="" 
             classes="mb-8 text-center font-display text-3xl text-jacarta-700 dark:text-white animate-gradient"
           />
-
-	<Hero_5 />
 	  
         
         </div>
