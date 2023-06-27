@@ -16,7 +16,7 @@ const Home_1 = () => {
     <main>
       <Meta title="Home 10 || Sycotic Society | NFT Marketplace" />
       <Hero_10 />
-     <DownloadAppBanner />
+     
       <Calculator/>
       <div className="container">
         <figure className="before:bg-jacarta-900/25 rounded-xl relative mt-24 overflow-hidden rounded-3xl before:absolute before:inset-0 ">
@@ -30,7 +30,7 @@ const Home_1 = () => {
           ></iframe>
         </figure>
       </div>
-    
+    <DownloadAppBanner />
      
     </main>
   );
