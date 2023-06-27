@@ -35,7 +35,7 @@ const Home_4 = () => {
 
 	<Hero_5 />
 	  
-          <FilterCategoryItem />
+        
         </div>
       </section>
       {/* <NewseLatter bgWhite={true} /> */}
