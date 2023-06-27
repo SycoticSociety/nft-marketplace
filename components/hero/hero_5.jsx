@@ -38,7 +38,7 @@ const Hero_5 = () => {
 								</div>
 							</div>
 							<h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white md:text-left lg:text-5xl xl:text-6xl">
-								⚡ Explore Blockchains ⚡
+							
 							</h1>
 							<p className="mb-8 text-center text-lg dark:text-jacarta-200 md:text-left">
 								{""} 
@@ -50,7 +50,7 @@ const Hero_5 = () => {
 									</a>
 								</Link>
 								<Link href="/collection/explore_collection">
-									<a className="w-36 rounded-full bg-yellow py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
+									<a className="w-36 rounded-full bg-green py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
 										Explore 
 									</a>
 								</Link>
