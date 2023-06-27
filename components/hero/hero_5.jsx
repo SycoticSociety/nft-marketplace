@@ -19,19 +19,19 @@ const Hero_5 = () => {
 						<div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-5 xl:pl-[20%] xl:pr-[10%]">
 							<div className="mb-10 w-full sm:flex sm:space-x-4">
 								<div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-									<span className="block font-display text-3xl text-[#8DD059]">Minting Now!</span>
+									<span className="block font-display text-3xl text-[#8DD059]"></span>
 									<span className="block font-display text-sm text-jacarta-500 dark:text-white">
 										
 									</span>
 								</div>
 								<div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-									<span className="block font-display text-3xl text-[#737EF2]">View Your NFTs</span>
+									<span className="block font-display text-3xl text-[#737EF2]"></span>
 									<span className="block font-display text-sm text-jacarta-500 dark:text-white">
 										
 									</span>
 								</div>
 								<div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-									<span className="block font-display text-3xl text-[#F35BC7]">Transfer NFTs</span>
+									<span className="block font-display text-3xl text-[#F35BC7]"></span>
 									<span className="block font-display text-sm text-jacarta-500 dark:text-white">
 										
 									</span>
