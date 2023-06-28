@@ -53,10 +53,10 @@ const Hero_5 = () => {
 								
 							</div>
 							<h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white md:text-left lg:text-5xl xl:text-6xl">
-							
+							      Expect more from your NFT Marketplace!
 							</h1>
 							<p className="mb-8 text-center text-lg dark:text-jacarta-200 md:text-left">
-								{""} 
+								{"Sycotic 💢 Society has dedicated ourselves to providing you with useful features and web3 solutions that enhance your end user experience.  Truly, Sy"} 
 							</p>
 							
 						</div>
