@@ -46,12 +46,12 @@ const Hero_5 = () => {
 							<div className="flex space-x-4">
 								<Link href="/create">
 									<a className="w-36 rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-								                Upload
+								        
 									</a>
 								</Link>
 								<Link href="/collection/explore_collection">
 									<a className="w-36 rounded-full bg-green py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
-										Explore 
+									
 									</a>
 								</Link>
 							</div>
