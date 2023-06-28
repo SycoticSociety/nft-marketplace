@@ -1,6 +1,6 @@
 import React from "react";
 import Meta from "../../components/Meta";
-
+import FancyBlock from "../../components/crypto/FancyBlock";
 import Partners2 from "../../components/partners/Partners2";
 import CryptoCounter from "../../components/cryto-trading/CryptoCounter";
 import CryptoPrice from "../../components/cryto-trading/price";
@@ -14,6 +14,7 @@ const Home_11 = () => {
     <main>
       <Meta title="| Sycotic Society| NFT Marketplace" />
       <Hero_11 />
+      <InvestEarn />
       <CryptoPrice />
       {/* <CryptoCounter /> */}
       {/* <Features /> */}
