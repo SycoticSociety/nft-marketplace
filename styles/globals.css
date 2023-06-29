@@ -2037,7 +2037,7 @@ html {
 		}
 	}
 	.animate-marqueeRight {
-		animation: marqueeRight 60s linear infinite;
+		animation: marqueeRight 25s linear infinite;
 	}
 	@keyframes marquee {
 		0% {
@@ -2048,7 +2048,7 @@ html {
 		}
 	}
 	.animate-marquee {
-		animation: marquee 60s linear infinite;
+		animation: marquee 25s linear infinite;
 	}
 
 	@-webkit-keyframes heartBeat {

@@ -23,8 +23,14 @@ function MyApp({ Component, pageProps }) {
   );
   console.log(router.pathname)
   useEffect(()=>{
-    if(router.pathname=='/marketplace'){
-      setSelectedChain(ChainId.Fantom)
+    if(router.pathname){
+      if(router.pathname?.includes('fantom')){
+        setSelectedChain(ChainId.Fantom)
+      }else if(router.pathname.includes('polygon')){
+        setSelectedChain(ChainId.Polygon)
+      }else if(router.pathname.includes('arbitrum')){
+        setSelectedChain(ChainId.Arbitrum)
+      }
     }else if(router.pathname=='/create'){
       setSelectedChain(ChainId.Polygon)
     }else if (router.pathname=='/yourNfts'){

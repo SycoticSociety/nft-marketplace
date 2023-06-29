@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import UserContext from "../components/UserContext";
-import Home_4 from './home/home_4'
+import UserContext from "../../components/UserContext";
+import Home_4 from '../home/home_4'
 
 export default function Home() {
   const { scrollRef } = useContext(UserContext);

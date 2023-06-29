@@ -5,7 +5,7 @@ const Hero_4 = () => {
     <>
       {/* <!-- Hero --> */}
       <section className="hero relative py-20 md:pt-32">
-         <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
+         {/* <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
           <img
             className="h-full w-full"
             src="/images/gradient.jpg"
@@ -18,7 +18,7 @@ const Hero_4 = () => {
             src="/images/gradient_dark.jpg"
             alt="gradient dark"
           />
-        </picture> 
+        </picture>  */}
 
         <div className="container">
           <div className="mx-auto max-w-2xl pt-24 text-center">

@@ -64,6 +64,15 @@ export const hero_5_data = [
     authorImage: "/images/avatars/avatar_18_rounded.gif",
     authorName: "051_Hart",
     id: "0Etherium NFT Launching Lab",
+    link:"marketplace/arbitrum"
+  },
+  {
+    img: "/images/products/item_16_2lg.jpg",
+    title: "Etherium NFT Launching Lab",
+    authorImage: "/images/avatars/avatar_18_rounded.gif",
+    authorName: "051_Hart",
+    id: "0Etherium NFT Launching Lab",
+    link:"marketplace/polygon"
   },
   {
     img: "/images/products/item_12_2lg.jpg",
@@ -71,15 +80,6 @@ export const hero_5_data = [
     authorImage: "/images/avatars/avatar_22_rounded.jpg",
     authorName: "MadeByM1KE",
     id: "1Oceania \\\\ OVERSEER 017",
-
-    subItem: [
-      {
-        img: "/images/products/item_13_lg.jpg",
-        title: "Light Bars",
-        authorImage: "/images/avatars/avatar_17_rounded.jpg",
-        authorName: "Wow Frens",
-        id: "2Light Bars",
-      },
-    ],
+    link:"marketplace/fantom",
   },
 ];

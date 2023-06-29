@@ -425,7 +425,7 @@ export default function Header01() {
       {/* main desktop menu sart*/}
       <header className="js-page-header fixed top-0 z-20 w-full backdrop-blur transition-colors">
         <div className="flex items-center px-6 py-6 xl:px-24 ">
-          <Link className="shrink-0" href="/">
+          {/* <Link className="shrink-0" href="/">
             <a>
               <div className="dark:hidden">
                 <Image
@@ -445,7 +445,7 @@ export default function Header01() {
                 />
               </div>
             </a>
-          </Link>
+          </Link> */}
           {/* End  logo */}
 
           {/* <form
@@ -799,7 +799,7 @@ export default function Header01() {
                   <path d="M22 6h-7a6 6 0 1 0 0 12h7v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2zm-7 2h8v8h-8a4 4 0 1 1 0-8zm0 3v2h3v-2h-3z" />
                 </svg>
               </button>
-
+              
               <div className="js-nav-dropdown group-dropdown relative">
                 {/* <button className="dropdown-toggle border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]">
                   <svg
@@ -900,8 +900,24 @@ export default function Header01() {
             {/* End header right content (metamask and other) for desktop */}
           </div>
           {/* header menu conent end for desktop */}
-
           <div id="#wallet" className="ml-auto flex lg:hidden">
+             <Link href="/">
+              <a
+                className="border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
+                aria-label="profile"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width={24}
+                  height={24}
+                  className="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path d="M10 20V14h4v6h5V12h3L12 3 2 12h3v8z"></path>
+                </svg>
+              </a>
+            </Link> 
             <button
               onClick={connectWithMetamask}
               className="dropdown-toggle border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
@@ -917,23 +933,6 @@ export default function Header01() {
                 <path d="M22 6h-7a6 6 0 1 0 0 12h7v2a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v2zm-7 2h8v8h-8a4 4 0 1 1 0-8zm0 3v2h3v-2h-3z" />
               </svg>
             </button>
-            {/* <Link href="/profile/user_avatar">
-              <a
-                className="border-jacarta-100 hover:bg-accent focus:bg-accent group dark:hover:bg-accent ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"
-                aria-label="profile"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width={24}
-                  height={24}
-                  className="fill-jacarta-700 h-4 w-4 transition-colors group-hover:fill-white group-focus:fill-white dark:fill-white"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path d="M11 14.062V20h2v-5.938c3.946.492 7 3.858 7 7.938H4a8.001 8.001 0 0 1 7-7.938zM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6z" />
-                </svg>
-              </a>
-            </Link> */}
             <DarkMode />
             <button
               className="js-mobile-toggle border-jacarta-100 hover:bg-accent dark:hover:bg-accent focus:bg-accent group ml-2 flex h-10 w-10 items-center justify-center rounded-full border bg-white transition-colors hover:border-transparent focus:border-transparent dark:border-transparent dark:bg-white/[.15]"

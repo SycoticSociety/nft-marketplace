@@ -17,10 +17,17 @@ const Hero_5 = () => {
 				<div className="h-full px-6 xl:px-20">
 					<div className="grid h-full items-center gap-4 lg:grid-cols-12">
 						<div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-5 xl:pl-[20%] xl:pr-[10%]">
+							
+							<h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white md:text-left lg:text-5xl xl:text-6xl">
+							      Expect more from your Marketplace!
+							</h1>
+							<p className="mb-8 text-center text-lg dark:text-jacarta-200 md:text-left">
+								{"Sycotic 💢 Society has dedicated ourselves to providing you with useful features and web3 solutions,that enhance your end user experience.💯"} 
+							</p>
 							<div className="mb-10 w-full sm:flex sm:space-x-4">
 								
 								<div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-									<span className="block font-display text-3xl text-[#737EF2]">Transfer NTFs</span>
+									<span className="block font-display text-3xl text-[#737EF2]">Transfer NFTs</span>
 									<span className="block font-display text-sm text-jacarta-500 dark:text-white">
 										
 									</span>
@@ -41,12 +48,6 @@ const Hero_5 = () => {
 								
 								
 							</div>
-							<h1 className="mb-6 text-center font-display text-5xl text-jacarta-700 dark:text-white md:text-left lg:text-5xl xl:text-6xl">
-							      Expect more from your Marketplace!
-							</h1>
-							<p className="mb-8 text-center text-lg dark:text-jacarta-200 md:text-left">
-								{"Sycotic 💢 Society has dedicated ourselves to providing you with useful features and web3 solutions,that enhance your end user experience.💯"} 
-							</p>
 							
 						</div>
 
@@ -59,7 +60,7 @@ const Hero_5 = () => {
 							/>
 							<div className="md:flex md:space-x-6 xl:space-x-12">
 								{hero_5_data.map((item, index) => {
-									const { id, img, title, authorImage, authorName, subItem } = item;
+									const { id, img, title, authorImage, authorName, link, subItem } = item;
 									const itemLink = img
 										.split('/')
 										.slice(-1)
@@ -78,7 +79,7 @@ const Hero_5 = () => {
 											<article>
 												<div className="block overflow-hidden rounded-2.5xl bg-white shadow-md transition-shadow hover:shadow-lg dark:bg-jacarta-700">
 													<figure className="relative">
-														<Link href={`/item/${itemLink}`}>
+														<Link href={link}>
 															<a>
 																<img
 																	src={img}
