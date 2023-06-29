@@ -59,7 +59,7 @@ export const coverflow_data = [
 
 export const hero_5_data = [
   {
-    img: "/images/products/item_16_2lg.jpg",
+    img: "/images/products/item_12_2lg.jpg",
     title: "Etherium NFT Launching Lab",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
     authorName: "051_Hart",
@@ -67,7 +67,7 @@ export const hero_5_data = [
     link:"marketplace/arbitrum"
   },
   {
-    img: "/images/products/item_16_2lg.jpg",
+    img: "/images/products/item_13lg.jpg",
     title: "Etherium NFT Launching Lab",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
     authorName: "051_Hart",
