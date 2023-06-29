@@ -42,7 +42,7 @@ const FilterCategoryItem = ({marketplace,artistChainId}) => {
     },[filter,listings])
   if(!listings) return <h2 className="font-display text-jacarta-700 py-16 text-center text-2xl font-medium dark:text-white">Loading Assets ...</h2>
   return (
-    <div>
+    <div className="container">
       {!artistChainId &&  <Collection_category_filter filter={filter} setFilter={setFilter}/>}
       <CategoryItem listings={arrangeListings} contract={contract} address={address}/>
       <div className="mt-10 text-center">
