@@ -10,7 +10,6 @@ import UserContext from "../components/UserContext";
 import ChainContext from "../components/chainContext";
 import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
-import { CronosBeta } from "@thirdweb-dev/chains";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -46,6 +45,8 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider enableSystem={true} attribute="class">
           <ChainContext.Provider value={{ selectedChain, setSelectedChain , selectedMarketplace, setSelectedMarketplace}}>
               <ThirdwebProvider desiredChainId={selectedChain}>
+                <MetaMaskProvider>
+                
                   <UserContext.Provider value={{ scrollRef: scrollRef }}>
                     {pid === "/login" ? (
                       <Component {...pageProps} />
@@ -55,6 +56,7 @@ function MyApp({ Component, pageProps }) {
                       </Layout>
                     )}
                   </UserContext.Provider>
+                  </MetaMaskProvider>
               </ThirdwebProvider>
           </ChainContext.Provider>
         </ThemeProvider>
