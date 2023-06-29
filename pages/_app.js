@@ -10,6 +10,14 @@ import UserContext from "../components/UserContext";
 import ChainContext from "../components/chainContext";
 import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
+import { CronosBeta } from "@thirdweb-dev/chains";
+import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
+
+
+
+function Component() {
+  const { contract, isLoading } = useContract("0xE7F3c7C6611357313B5C2734341fe9cBad1D9f59");
+}
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -47,6 +55,8 @@ function MyApp({ Component, pageProps }) {
           <ChainContext.Provider value={{ selectedChain, setSelectedChain , selectedMarketplace, setSelectedMarketplace}}>
               <ThirdwebProvider desiredChainId={selectedChain}>
                 <MetaMaskProvider>
+                 <ThirdwebProvider activeChain={ CronosBeta }>
+                  <Component />
                   <UserContext.Provider value={{ scrollRef: scrollRef }}>
                     {pid === "/login" ? (
                       <Component {...pageProps} />
