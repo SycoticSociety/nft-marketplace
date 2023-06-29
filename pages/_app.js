@@ -11,13 +11,6 @@ import ChainContext from "../components/chainContext";
 import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
 import { CronosBeta } from "@thirdweb-dev/chains";
-import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
-
-
-
-function Component() {
-  const { contract, isLoading } = useContract("0xE7F3c7C6611357313B5C2734341fe9cBad1D9f59");
-}
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -26,10 +19,8 @@ function MyApp({ Component, pageProps }) {
     scrollPos: 0,
   });
   const [selectedChain, setSelectedChain] = useState(ChainId.Fantom);
-  const [selectedMarketplace, setSelectedMarketplace] = useState(
-    "0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171"
-  );
-  console.log(router.pathname)
+  const [selectedMarketplace, setSelectedMarketplace] = useState("0x7780Afb7243Fb6d706eBA2a99EEaF492bc94F171");
+
   useEffect(()=>{
     if(router.pathname){
       if(router.pathname?.includes('fantom')){
@@ -47,6 +38,7 @@ function MyApp({ Component, pageProps }) {
   },[
     router.pathname
   ])
+
   return (
     <>
       <Meta title="Sycotic Society | NFT Marketplace" />
@@ -54,9 +46,6 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider enableSystem={true} attribute="class">
           <ChainContext.Provider value={{ selectedChain, setSelectedChain , selectedMarketplace, setSelectedMarketplace}}>
               <ThirdwebProvider desiredChainId={selectedChain}>
-                <MetaMaskProvider>
-                 <ThirdwebProvider activeChain={ CronosBeta }>
-                  <Component />
                   <UserContext.Provider value={{ scrollRef: scrollRef }}>
                     {pid === "/login" ? (
                       <Component {...pageProps} />
@@ -66,7 +55,6 @@ function MyApp({ Component, pageProps }) {
                       </Layout>
                     )}
                   </UserContext.Provider>
-                </MetaMaskProvider>
               </ThirdwebProvider>
           </ChainContext.Provider>
         </ThemeProvider>
