@@ -59,27 +59,27 @@ export const coverflow_data = [
 
 export const hero_5_data = [
   {
+    img: "/images/products/item_16_2lg.jpg",
+    title: "Fantom",
+    authorImage: "/images/avatars/avatar_22_rounded.jpg",
+    authorName: "MadeByM1KE",
+    id: "1Oceania \\\\ OVERSEER 017",
+    link:"marketplace/fantom",
+  },
+  {
     img: "/images/products/item_12_2lg.jpg",
-    title: "Etherium NFT Launching Lab",
+    title: "Arbitrum",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
     authorName: "051_Hart",
     id: "0Etherium NFT Launching Lab",
     link:"marketplace/arbitrum"
   },
   {
-    img: "/images/products/item_13lg.jpg",
-    title: "Etherium NFT Launching Lab",
+    img: "/images/products/item_13_lg.jpg",
+    title: "Polygon",
     authorImage: "/images/avatars/avatar_18_rounded.gif",
     authorName: "051_Hart",
     id: "0Etherium NFT Launching Lab",
     link:"marketplace/polygon"
-  },
-  {
-    img: "/images/products/item_12_2lg.jpg",
-    title: "Oceania \\\\ OVERSEER 017",
-    authorImage: "/images/avatars/avatar_22_rounded.jpg",
-    authorName: "MadeByM1KE",
-    id: "1Oceania \\\\ OVERSEER 017",
-    link:"marketplace/fantom",
   },
 ];
