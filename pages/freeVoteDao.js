@@ -1,28 +1,24 @@
-import React, { useEffect, useState } from "react";
-import Benifits from "../components/dao/Benifits";
-import Intro from "../components/dao/Intro";
-import Participate from "../components/dao/Participate";
+import React, { useContext, useEffect } from "react";
+import UserContext from "../components/UserContext";
+import Home_9 from "./home/home_9";
 
-import Hero_9 from "../components/hero/hero_9";
-import Meta from "../components/Meta";
-import TrustedPartner from "../components/dao/TrustedPartner";
+export default function freeVoteDao() {
+  const { scrollRef } = useContext(UserContext);
 
-const Home_9 = () => {
   useEffect(() => {
-    const header = document.querySelector("header");
-    header.classList.add("bg-white/[.15]");
-  }, []);
- 
+    window.scrollTo(0, scrollRef.current.scrollPos);
+    const handleScrollPos = () => {
+      scrollRef.current.scrollPos = window.scrollY;
+    };
+    window.addEventListener("scroll", handleScrollPos);
+    return () => {
+      window.removeEventListener("scroll", handleScrollPos);
+    };
+  });
+
   return (
     <>
-      <Meta title="Home 9 || Xhibiter | NFT Marketplace Next.js Template" />
-      <Hero_9 />
-      <Intro />
-      <Benifits />
-      <Participate />
-      <TrustedPartner />
+      <Home_9/>
     </>
   );
-};
-
-export default Home_9;
+}
