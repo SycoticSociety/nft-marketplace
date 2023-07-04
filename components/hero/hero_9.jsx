@@ -45,7 +45,7 @@ const Hero_9 = () => {
             <div className="col-span-5 flex h-full flex-col items-center justify-center py-10 md:items-start lg:py-20 relative">
               <h1 className="mb-6 text-center font-display text-5xl text-white md:text-left lg:text-6xl">
                 FREE VOTE DAO.  Powered by
-               <span className="animate-gradient">FREE🪙COIN!</span>
+               <span className="animate-gradient">FREE COIN!</span>
               </h1>
               <p className="mb-8 max-w-md text-center text-lg text-white md:text-left">
                 
