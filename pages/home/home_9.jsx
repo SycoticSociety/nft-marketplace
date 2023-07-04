@@ -20,7 +20,7 @@ const Home_9 = () => {
       <Meta title="Home 9 || Xhibiter | NFT Marketplace Next.js Template" />
       <Hero_9 />
       <Hero_11 />
-      
+      <CryptoPrice />
       <Participate />
   
     </>
