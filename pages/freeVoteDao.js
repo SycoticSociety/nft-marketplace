@@ -12,7 +12,7 @@ const Home_9 = () => {
     const header = document.querySelector("header");
     header.classList.add("bg-white/[.15]");
   }, []);
-
+ 
   return (
     <>
       <Meta title="Home 9 || Xhibiter | NFT Marketplace Next.js Template" />
