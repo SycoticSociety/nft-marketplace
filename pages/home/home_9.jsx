@@ -23,7 +23,7 @@ const Home_9 = () => {
       <Hero_9 />
       
       <CryptoPrice />
-      <Browse_category />
+  
   
   
     </>
