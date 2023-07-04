@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import UserContext from "../components/UserContext";
 import Home_9 from "./home/home_9";
 
-export default function freeVoteDao() {
+export default function FreeVoteDao() {
   const { scrollRef } = useContext(UserContext);
 
   useEffect(() => {
