@@ -6,6 +6,7 @@ import NewseLatter2 from "../../components/dao/newseLatter2";
 import { Partners } from "../../components/component";
 import Hero_9 from "../../components/hero/hero_9";
 import Meta from "../../components/Meta";
+import CryptoPrice from "../../components/cryto-trading/price";
 import Hero_11 from "../../components/hero/hero_11";
 import TrustedPartner from "../../components/dao/TrustedPartner";
 
