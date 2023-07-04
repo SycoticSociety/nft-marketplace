@@ -42,7 +42,7 @@ const hero = () => {
               </Link>
               <Link href="/freeVoteDao">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                FREE COIN FREE VOTE DAO</a>
+                FREE COIN VOTE DAO</a>
               </Link>
           
 
