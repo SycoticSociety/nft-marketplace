@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import Benifits from "../../components/dao/Benifits";
 import Intro from "../../components/dao/Intro";
 import Participate from "../../components/dao/Participate";
