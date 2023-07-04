@@ -45,12 +45,7 @@ const hero = () => {
                 Tools, Utilities & More!
                 </a>
               </Link>
-              <Link href="/marketplace">
-                <a className="text-white shadow-white-volume hover:bg-orange hover:shadow-accent-volume w-fit-content rounded-full bg-blue py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                Explore our NFT Market!
-                </a>
-              </Link>
-
+          
 
               
             </div>
