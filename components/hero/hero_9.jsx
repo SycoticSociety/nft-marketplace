@@ -32,12 +32,26 @@ const Hero_9 = () => {
     <>
       {/* <!-- Hero --> */}
       <section className="relative h-screen">
-        <Image
+      <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
+          <figure className="h-[630px] w-full">
+            <Image src="/images/gradient.jpg" alt="gradient" layout="fill" />
+          </figure>
+        </picture>
+        <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block">
+          <figure className="h-[630px] w-full">
+            <Image
+              src="/images/gradient_dark.jpg"
+              alt="gradient dark"
+              layout="fill"
+            />
+          </figure>
+        </picture>
+        {/* <Image
           src="/images/hero/hero_dao.jpg"
           alt="gradient"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
           layout="fill"
-        />
+        /> */}
         {/* hero img */}
 
         <div className="ml-auto mr-auto h-full max-w-[91rem] px-4">
