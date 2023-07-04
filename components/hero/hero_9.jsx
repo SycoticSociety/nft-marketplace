@@ -44,7 +44,7 @@ const Hero_9 = () => {
           <div className="grid h-full items-center gap-4 md:grid-cols-12">
             <div className="col-span-5 flex h-full flex-col items-center justify-center py-10 md:items-start lg:py-20 relative">
               <h1 className="mb-6 text-center font-display text-5xl text-white md:text-left lg:text-6xl">
-                FREE VOTE DAO.  Your voice and ideas amplified simply by holding FREE🪙COIN!
+                FREE VOTE DAO.  Your voice, and ideas amplified! Powered by FREE🪙COIN!
               </h1>
               <p className="mb-8 max-w-md text-center text-lg text-white md:text-left">
                 
