@@ -42,7 +42,7 @@ const hero = () => {
               </Link>
               <Link href="/ToolUtilities">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                Tools, Utilities & More!
+                Free Vote Dao! It's True
                 </a>
               </Link>
           
