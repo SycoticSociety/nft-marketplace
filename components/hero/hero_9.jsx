@@ -31,7 +31,9 @@ const Hero_9 = () => {
   return (
     <>
       {/* <!-- Hero --> */}
-      <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 block dark:hidden h-full">
+      
+      <section className="relative h-screen">
+        <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 block dark:hidden h-full">
         <img
           src="/images/gradient.jpg"
           alt="gradient"
@@ -45,7 +47,6 @@ const Hero_9 = () => {
           className="h-full w-full"
         />
       </picture>
-      <section className="relative h-screen">
         <Image
           src="/images/hero/hero_dao.jpg"
           alt="gradient"
