@@ -40,7 +40,7 @@ const hero = () => {
                 Explore our NFT Market!
                 </a>
               </Link>
-              <Link href="/ToolUtilities">
+              <Link href="/freeVoteDao">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
                 Free Vote Dao! It's True
                 </a>
