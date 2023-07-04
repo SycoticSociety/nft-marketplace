@@ -44,16 +44,15 @@ const Hero_9 = () => {
           <div className="grid h-full items-center gap-4 md:grid-cols-12">
             <div className="col-span-5 flex h-full flex-col items-center justify-center py-10 md:items-start lg:py-20 relative">
               <h1 className="mb-6 text-center font-display text-5xl text-white md:text-left lg:text-6xl">
-                DAO-enabled NFT platforms or the NFT marketplaces
+                FREE VOTE DAO.  Your voice and ideas amplified simply by holding FREE🪙COIN!
               </h1>
               <p className="mb-8 max-w-md text-center text-lg text-white md:text-left">
-                Every digital creation available through MakersPlace is an
-                authentic and truly unique.
+                
               </p>
               <div className="flex space-x-4">
                 <Link href="/collection/explore_collection">
                   <a className="rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-                    Get Started
+                    Get started
                   </a>
                 </Link>
                 <Link href="/collection/explore_collection">
