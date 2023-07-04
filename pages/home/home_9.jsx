@@ -21,8 +21,7 @@ const Home_9 = () => {
 
       <Benifits />
       <Participate />
-      <TrustedPartner />
-      <NewseLatter2 bgWhite={false} />
+  
     </>
   );
 };
