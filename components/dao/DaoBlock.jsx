@@ -4,7 +4,7 @@ const DaoBlock = () => {
       <div className="mb-12 lg:w-1/2">
         <div className="rounded-2.5xl bg-white p-12 dark:bg-jacarta-700">
           <h2 className="mb-5 font-display text-3xl text-jacarta-700 dark:text-white">
-            FREE COIN community DAO.
+            FREE COIN  🪙  community DAO.
           </h2>
           <p className="mb-8 text-lg leading-normal dark:text-jacarta-300">
             We support the advancement of DAOs and decentralized governance.
