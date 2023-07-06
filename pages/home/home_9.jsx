@@ -19,7 +19,7 @@ const Home_9 = () => {
 
   return (
     <>
-      <Meta title="Home 9 || Xhibiter | NFT Marketplace Next.js Template" />
+      <Meta title="Home 9 | FREE COIN VOTE | Decentralized Org" />
       <Hero_9 />
       <NewseLatter2 />
       
