@@ -68,18 +68,18 @@ const DaoBlock = () => {
       <div className="mb-12 lg:w-1/2">
         <div className="h-full rounded-2.5xl bg-white p-12 dark:bg-jacarta-700">
           <h2 className="mb-5 font-display text-3xl text-jacarta-700 dark:text-white">
-            MultiSender Airdrop claim button below!
+            MultiSender classic Airdrop tool below!
             <br />
-            Let’s chat.
+      
           </h2>
           <p className="mb-8 text-lg leading-normal dark:text-jacarta-300">
-           Your FREE COIN rewards are waiting!
+           Send your Tokens to multiple recipients anywhere, anytime.!
           </p>
           <a
-            href="https://massdrop.multisender.app/"
+            href="https://classic.multisender.app/"
             className="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
           >
-            Claim Airdrops
+            Batch send Tokens
           </a>
         </div>
       </div>
