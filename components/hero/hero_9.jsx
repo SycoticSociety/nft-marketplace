@@ -60,7 +60,7 @@ const Hero_9 = () => {
             <div className="col-span-5 flex h-full flex-col items-center justify-center py-10 md:items-start lg:py-20 relative">
               <h1 className="mb-6 text-center font-display text-5xl text-white md:text-left lg:text-6xl">
               
-               <span className="animate-gradient">FREE COIN VOTE!</span>
+               <span className="animate-gradient">FREE COIN 🪙 VOTE!</span>
               </h1>
               <p className="mb-8 max-w-md text-center text-lg text-white md:text-left">
                 
@@ -68,12 +68,12 @@ const Hero_9 = () => {
               <div className="flex space-x-4">
                 <Link href="/freeVoteDao">
                   <a className="rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-                    Get started
+                    CAST YOUR VOTE
                   </a>
                 </Link>
                 <Link href="/freeVoteDao">
                   <a className="rounded-full bg-white py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
-                    Learn More
+                    WRITE PROPOSAL 
                   </a>
                 </Link>
               </div>
