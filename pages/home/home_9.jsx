@@ -19,7 +19,7 @@ const Home_9 = () => {
 
   return (
     <>
-      <Meta title="Home 9 | FREE COIN VOTE | Decentralized Org" />
+      <Meta title="|Sycotic Society| FREE COIN VOTE |" />
       <Hero_9 />
       <NewseLatter2 />
       
