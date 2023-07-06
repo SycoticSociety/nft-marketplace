@@ -31,47 +31,35 @@ const Hero_9 = () => {
   return (
     <>
       {/* <!-- Hero --> */}
+      
       <section className="relative h-screen">
-      <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 dark:hidden">
-          <figure className="h-[630px] w-full">
-            <Image src="/images/gradient.jpg" alt="gradient" layout="fill" />
-          </figure>
-        </picture>
-        <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 hidden dark:block">
-          <figure className="h-[630px] w-full">
-            <Image
-              src="/images/gradient_dark.jpg"
-              alt="gradient dark"
-              layout="fill"
-            />
-          </figure>
-        </picture>
-        {/* <Image
+        <Image
           src="/images/hero/hero_dao.jpg"
           alt="gradient"
           className="absolute inset-0 -z-10 h-full w-full object-cover"
           layout="fill"
-        /> */}
+        /> 
         {/* hero img */}
 
         <div className="ml-auto mr-auto h-full max-w-[91rem] px-4">
           <div className="grid h-full items-center gap-4 md:grid-cols-12">
             <div className="col-span-5 flex h-full flex-col items-center justify-center py-10 md:items-start lg:py-20 relative">
               <h1 className="mb-6 text-center font-display text-5xl text-white md:text-left lg:text-6xl">
-                FREE VOTE DAO.  Your voice and ideas amplified simply by holding FREE🪙COIN!
+              
+               <span className="animate-gradient"><br></br>FREE COIN VOTE!</span>
               </h1>
               <p className="mb-8 max-w-md text-center text-lg text-white md:text-left">
                 
               </p>
               <div className="flex space-x-4">
-                <Link href="/collection/explore_collection">
+                <Link href="/freeVoteDao">
                   <a className="rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-                    Get started
+                    CAST YOUR VOTE
                   </a>
                 </Link>
-                <Link href="/collection/explore_collection">
+                <Link href="/freeVoteDao">
                   <a className="rounded-full bg-white py-3 px-8 text-center font-semibold text-accent shadow-white-volume transition-all hover:bg-accent-dark hover:text-white hover:shadow-accent-volume">
-                    Learn More
+                    WRITE PROPOSAL 
                   </a>
                 </Link>
               </div>

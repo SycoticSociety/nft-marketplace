@@ -32,13 +32,12 @@ const NewseLatter2 = () => {
         {/* start call to action weekly digest */}
         <div className="rounded-2.5xl bg-white px-12 py-20 text-center dark:bg-jacarta-700">
           <HeadLine
-            text=" Weekly Digest"
+            text=" Sycotic Society updates"
             classes="mb-5 font-display text-3xl text-jacarta-700 dark:text-white"
           />
 
           <p className="mx-auto max-w-2xl text-center text-lg text-jacarta-700 dark:text-white">
-            Join our mailing list to stay in the loop with our newest feature
-            releases, NFT drops, and tips and tricks for navigating Xhibiter
+            Join our mailing list to keep up to date with everything Sycotic Society
           </p>
 
           <div className="mx-auto mt-7 max-w-md text-center">

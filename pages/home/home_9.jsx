@@ -6,6 +6,9 @@ import NewseLatter2 from "../../components/dao/newseLatter2";
 import { Partners } from "../../components/component";
 import Hero_9 from "../../components/hero/hero_9";
 import Meta from "../../components/Meta";
+import Browse_category from '../../components/component';
+import CryptoPrice from "../../components/cryto-trading/price";
+import Hero_11 from "../../components/hero/hero_11";
 import TrustedPartner from "../../components/dao/TrustedPartner";
 
 const Home_9 = () => {
@@ -16,14 +19,14 @@ const Home_9 = () => {
 
   return (
     <>
-      <Meta title="Home 9 || Xhibiter | NFT Marketplace Next.js Template" />
+      <Meta title="|Sycotic Society| FREE COIN VOTE |" />
       <Hero_9 />
-      <Partners />
-      <Intro />
-      <Benifits />
-      <Participate />
-      <TrustedPartner />
-      <NewseLatter2 bgWhite={false} />
+      <NewseLatter2 />
+      
+      <CryptoPrice />
+  
+  
+  
     </>
   );
 };

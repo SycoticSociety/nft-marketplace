@@ -37,13 +37,12 @@ const hero = () => {
               </Link>
               <Link href="/marketplace">
                 <a className="text-white shadow-white-volume hover:bg-orange hover:shadow-accent-volume w-fit-content rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                Explore our NFT Market!
+                Explore NFT Markets!
                 </a>
               </Link>
               <Link href="/freeVoteDao">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                Free Vote Dao! It&apos;s True
-                </a>
+                FREE COIN 🪙 VOTE</a>
               </Link>
           
 
