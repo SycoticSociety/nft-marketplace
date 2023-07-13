@@ -30,29 +30,7 @@ const NewseLatter2 = () => {
         {/* End global distribute and dao idea */}
 
         {/* start call to action weekly digest */}
-        <div className="rounded-2.5xl bg-white px-12 py-20 text-center dark:bg-jacarta-700">
-          <HeadLine
-            text=" Sycotic Society updates"
-            classes="mb-5 font-display text-3xl text-jacarta-700 dark:text-white"
-          />
-
-          <p className="mx-auto max-w-2xl text-center text-lg text-jacarta-700 dark:text-white">
-            Join our mailing list to keep up to date with everything Sycotic Society
-          </p>
-
-          <div className="mx-auto mt-7 max-w-md text-center">
-            <form className="relative" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Email address"
-                className="dark:bg-jacarta-700 dark:border-jacarta-600 focus:ring-accent border-jacarta-100 w-full rounded-full border py-3 px-4 dark:text-white dark:placeholder-white"
-              />
-              <button className="hover:bg-accent-dark font-display bg-accent absolute top-2 right-2 rounded-full px-6 py-2 text-sm text-white">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
+        
         {/* end call to action weekly digest */}
       </div>
     </section>
