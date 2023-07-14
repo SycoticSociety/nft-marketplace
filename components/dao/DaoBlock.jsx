@@ -89,18 +89,18 @@ const DaoBlock = () => {
 <div className="mb-12 lg:w-1/2">
         <div className="h-full rounded-2.5xl bg-white p-12 dark:bg-jacarta-700">
           <h2 className="mb-5 font-display text-3xl text-jacarta-700 dark:text-white">
-            Code Translator!
+            AI Multiple Code Translator!
             <br />
       
           </h2>
           <p className="mb-8 text-lg leading-normal dark:text-jacarta-300">
-            Code Translator!
+            Finally, a tool worthy of the gods! ⚡
           </p>
           <a
             href="https://ai-code-translator-chi-five.vercel.app/"
             className="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark"
           >
-            Button 
+            Seeing is believing 
           </a>
         </div>
       </div>
