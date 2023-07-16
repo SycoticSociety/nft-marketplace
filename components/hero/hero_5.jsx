@@ -27,7 +27,7 @@ const Hero_5 = () => {
 							<div className="mb-10 w-full sm:flex sm:space-x-4">
 								
 					                 <div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-  <a href="link1" className="block font-display text-3xl text-[#737EF2]">NFT Lottery!</a>
+  <a href="https://raffle-app-run-back.vercel.app/" className="block font-display text-3xl text-[#737EF2]">NFT Lottery!</a>
   <span className="block font-display text-sm text-jacarta-500 dark:text-white">
     
   </span>
