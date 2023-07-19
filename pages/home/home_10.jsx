@@ -14,7 +14,7 @@ import Calculator from "../../components/Calculator";
 const Home_1 = () => {
   return (
     <main>
-      <Meta title="Home 10 || Sycotic Society | NFT Marketplace" />
+      <Meta title="| Sycotic Society | NFT Marketplace" />
       <Hero_10 />
      
       <Calculator/>
