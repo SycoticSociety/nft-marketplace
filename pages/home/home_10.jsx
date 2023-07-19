@@ -9,7 +9,7 @@ import Meta from "../../components/Meta";
 import Testimonial from "../../components/testimonial/Testimonial";
 import Calculator from "../../components/Calculator";
 import React from 'react';
-import OpenWindowButton from './components/OpenWindowButton';
+import OpenWindowButton from '../../components/OpenWindowButton';
 
 
 const Home_1 = () => {
