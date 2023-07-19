@@ -23,7 +23,7 @@ const hero = () => {
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
             <span className="animate-gradient">
-             <a href="https://www.example.com/sycotic-society">SYCOTIC 💢 SOCIETY</a>
+             <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">SYCOTIC 💢 SOCIETY</a>
              </span>
              {" "}
              The official Home of  
