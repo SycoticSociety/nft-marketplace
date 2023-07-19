@@ -23,7 +23,7 @@ const hero = () => {
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
             {"  "}
-             <span className="animate-gradient">Sycotic 💢 Society: Official Home of FREE🪙COIN!</span>
+             <span className="animate-gradient">Sycotic 💢 Society: Home of FREE 🪙 COIN</span>
             </h1>
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
               Sycotic💢Society: Focused on delivering Dynamic Web3 solutions for a changing landscape.  
