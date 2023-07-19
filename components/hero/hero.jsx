@@ -22,11 +22,16 @@ const hero = () => {
         <div className="grid h-full items-center gap-4 md:grid-cols-12">
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
-            {"  "}
-             <span className="animate-gradient">Sycotic 💢 Society: </span>
-               The official Home of  
-              <span className="animate-gradient"> FREE 🪙 COIN</span>
-            </h1>
+            <span className="animate-gradient">
+             <a href="https://www.example.com/sycotic-society">SYCOTIC 💢 SOCIETY</a>
+             </span>
+             {" "}
+             The official Home of  
+            <span className="animate-gradient">
+           <a href="https://www.example.com/free-coin">FREE 🪙 COIN</a>
+          </span>
+         </h1>
+            
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
               Sycotic💢Society: Focused on delivering Dynamic Web3 solutions for a changing landscape.  
             </p>
