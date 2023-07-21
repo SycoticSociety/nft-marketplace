@@ -26,7 +26,7 @@ const hero = () => {
              <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">SYCOTIC💢SOCIETY</a>
              </span>
              {" "}
-             The official Home of  
+             Official Home of  
             <span className="animate-gradient">
            <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> FREE🪙COIN</a>
           </span>
