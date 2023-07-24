@@ -34,7 +34,7 @@ const Hero_5 = () => {
 </div>
 
 <div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-  <a href="7nftMintPage" className="block font-display text-3xl text-[#F35BC7]">Virtual Wallet!</a>
+  <a href="nftMintPage" className="block font-display text-3xl text-[#F35BC7]">Virtual Wallet!</a>
   <span className="block font-display text-sm text-jacarta-500 dark:text-white">
     
   </span>
