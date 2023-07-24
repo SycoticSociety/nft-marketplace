@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import UserContext from "../components/UserContext";
 import Home_11 from './home/home_11'
 
-export default function ToolUtilities() {
+export default function nftMintPage() {
   const { scrollRef } = useContext(UserContext);
 
   useEffect(() => {
