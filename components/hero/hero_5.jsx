@@ -27,7 +27,7 @@ const Hero_5 = () => {
 							<div className="mb-10 w-full sm:flex sm:space-x-4">
 								
 					                 <div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-  <a href="https://raffle-app-run-back.vercel.app/" className="block font-display text-3xl text-[#737EF2]">NFT LOTTERY!</a>
+  <a href="https://raffle-app-run-back.vercel.app/" className="block font-display text-3xl text-[#737EF2]">NFT🎟️LOTTERY!</a>
   <span className="block font-display text-sm text-jacarta-500 dark:text-white">
     
   </span>
@@ -35,14 +35,14 @@ const Hero_5 = () => {
 
 <div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
   <a href="https://nextjs-boilerplate-mint-freecoin.vercel.app/
- " className="block font-display text-3xl text-[#F35BC7]">FREE COIN MINT</a>
+ " className="block font-display text-3xl text-[#F35BC7]">FREE🪙COIN MINT</a>
   <span className="block font-display text-sm text-jacarta-500 dark:text-white">
     
   </span>
 </div>
 
 <div className="mb-4 flex-1 rounded-2lg bg-white p-4 text-center dark:bg-white/[.15]">
-  <a href="link3" className="block font-display text-3xl text-[#8DD059]">TRANSFER NFTs</a>
+  <a href="link3" className="block font-display text-3xl text-[#8DD059]">TRANSFER📃NFTs</a>
   <span className="block font-display text-sm text-jacarta-500 dark:text-white">
     
   </span>
