@@ -24,7 +24,7 @@ const hero = () => {
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
               Welcome to,
             <span className="animate-gradient">
-             <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> SYCOTIC SOCIETY </a>
+             <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society </a>
              </span>Home of,
              {" "}
               
