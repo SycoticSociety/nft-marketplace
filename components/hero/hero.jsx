@@ -1,6 +1,13 @@
+import React from "react";
 import Link from "next/link";
 
 const hero = () => {
+  const handleImageClick = () => {
+    // Your click event logic goes here
+    // For example, you can display an alert when the image is clicked
+    alert('Image clicked!');
+  };
+
   return (
     <section className="relative pb-10 pt-20 md:pt-32 h-1527">
       <picture className="pointer-events-none absolute inset-x-0 top-0 -z-10 block dark:hidden h-full">
@@ -22,49 +29,46 @@ const hero = () => {
         <div className="grid h-full items-center gap-4 md:grid-cols-12">
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
-              Welcome to,
-            <span className="animate-gradient">
-             <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society </a>
-             </span>Home of,
-             {" "}
-              
-            <span className="animate-gradient">
-           <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> FREE COIN</a> 
-          </span>
-             
-         </h1>
-            
+              Welcome to,{" "}
+              <span className="animate-gradient">
+                <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society </a>
+              </span>
+              Home of,{" "}
+              <span className="animate-gradient">
+                <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> FREE COIN</a>
+              </span>
+            </h1>
+
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-              Sycotic💢Society: Focused on delivering Dynamic Web3 solutions for a changing landscape.  
+              Sycotic💢Society: Focused on delivering Dynamic Web3 solutions for a changing landscape.
             </p>
             <div className="flex space-x-4">
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
                 <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-fit-content rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                Swap Sycotic Now!
+                  Swap Sycotic Now!
                 </a>
               </Link>
               <Link href="/marketplace">
                 <a className="text-white shadow-white-volume hover:bg-orange hover:shadow-accent-volume w-fit-content rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                Explore NFT Markets!
+                  Explore NFT Markets!
                 </a>
               </Link>
               <Link href="/freeVoteDao">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                FREE COIN 🪙 VOTE</a>
+                  FREE COIN 🪙 VOTE
+                </a>
               </Link>
-          
-
-              
             </div>
           </div>
 
-          {/* <!-- Hero image --> */}
+          {/* Hero image */}
           <div className="col-span-6 xl:col-span-8">
             <div className="relative text-center md:pl-8 md:text-right">
               <img
                 src="/images/hero/hero.jpg"
                 alt=""
                 className="hero-img mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] xl:w-[35rem]"
+                onClick={handleImageClick} // Add the onClick event here
               />
               <img
                 src="/images/hero/3D_elements.png"
