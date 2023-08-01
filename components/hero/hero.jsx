@@ -28,52 +28,25 @@ const hero = () => {
       <div className="container h-full mx-auto">
         <div className="grid h-full items-center gap-4 md:grid-cols-12">
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
-            <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
-              Welcome to,{" "}
-              <span className="animate-gradient">
-                <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society </a>
-              </span>
-              Home of,{" "}
-              <span className="animate-gradient">
-                <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> FREE COIN</a>
-              </span>
-            </h1>
-
-            <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-              Sycotic💢Society: Focused on delivering Dynamic Web3 solutions for a changing landscape.
-            </p>
-            <div className="flex space-x-4">
-              <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
-                <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-fit-content rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                  Swap Sycotic Now!
-                </a>
-              </Link>
-              <Link href="/marketplace">
-                <a className="text-white shadow-white-volume hover:bg-orange hover:shadow-accent-volume w-fit-content rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Explore NFT Markets!
-                </a>
-              </Link>
-              <Link href="/freeVoteDao">
-                <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  FREE COIN 🪙 VOTE
-                </a>
-              </Link>
-            </div>
+            {/* Your content here */}
           </div>
 
-          {/* Hero image */}
+          {/* Hero images */}
           <div className="col-span-6 xl:col-span-8">
             <div className="relative text-center md:pl-8 md:text-right">
+              {/* Base image */}
               <img
                 src="/images/hero/hero.jpg"
                 alt=""
                 className="hero-img mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] xl:w-[35rem]"
-                onClick={handleImageClick} // Add the onClick event here
+                onClick={handleImageClick}
               />
+              {/* 3D Hero element */}
               <img
                 src="/images/hero/3D_elements.png"
                 alt=""
                 className="animate-fly absolute top-0 md:-right-[10%]"
+                onClick={handleImageClick}
               />
             </div>
           </div>
