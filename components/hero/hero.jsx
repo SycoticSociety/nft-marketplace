@@ -25,7 +25,7 @@ const hero = () => {
               Welcome to,
             <span className="animate-gradient">
              <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> SYCOTIC SOCIETY </a>
-             </span> 💢  Home of,
+             </span>Home of,
              {" "}
               
             <span className="animate-gradient">
