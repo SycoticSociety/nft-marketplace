@@ -127,3 +127,15 @@
     filter: invert(1);
   }
 }
+
+/* EmbeddedPage.css */
+.embedded-page-container {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.embedded-image {
+  width: 100%;
+  cursor: pointer;
+}
