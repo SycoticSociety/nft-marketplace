@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import EmbeddedPage from '../EmbeddedPage'; // Adjust the path
+import EmbeddedPage from '../../components/EmbeddedPage'; // Adjust the path accordingly
 import {
 	Hero,
 	NewseLatter,
