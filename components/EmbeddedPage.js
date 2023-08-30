@@ -8,7 +8,7 @@ const EmbeddedPage = () => {
 
   const imageStyles = {
     width: '100%',
-    maxWidth: '600px', // Adjust as needed
+    maxWidth: '800px', // Adjust as needed
     margin: '0 auto',
     cursor: 'pointer',
   };
