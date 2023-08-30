@@ -16,7 +16,7 @@ const EmbeddedPage = () => {
   return (
     <div className="embedded-page-container">
       <img
-        src="/path/to/your/image-placeholder.png" // Update the path to your image
+        src="/images/image-placeholder.png" // Update the path to your image
         alt="Embedded AI Town"
         style={imageStyles}
         onClick={openExternalSite}
