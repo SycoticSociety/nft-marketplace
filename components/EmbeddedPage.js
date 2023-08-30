@@ -1,22 +1,24 @@
 import React from 'react';
-import imagePlaceholder from '/images/image-placeholder.png'; // Replace with your image URL
-import './EmbeddedPage.css'; // You can define your CSS classes here
 
 const EmbeddedPage = () => {
   const openExternalSite = () => {
-    // Replace this with the URL you want to open
     const externalUrl = 'https://www.convex.dev/ai-town';
-    
-    // Open the URL in a new window or tab
     window.open(externalUrl, '_blank');
+  };
+
+  const imageStyles = {
+    width: '100%',
+    maxWidth: '600px', // Adjust as needed
+    margin: '0 auto',
+    cursor: 'pointer',
   };
 
   return (
     <div className="embedded-page-container">
       <img
-        src={imagePlaceholder}
+        src="/path/to/your/image-placeholder.png" // Update the path to your image
         alt="Embedded AI Town"
-        className="embedded-image"
+        style={imageStyles}
         onClick={openExternalSite}
       />
     </div>
