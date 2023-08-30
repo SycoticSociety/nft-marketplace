@@ -1,5 +1,5 @@
 import React from 'react';
-import imagePlaceholder from '../image-placeholder.png'; // Replace with your image URL
+import imagePlaceholder from './image-placeholder.png'; // Replace with your image URL
 import './EmbeddedPage.css'; // You can define your CSS classes here
 
 const EmbeddedPage = () => {
