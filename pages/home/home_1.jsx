@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
-import EmbeddedPage from '../../components/EmbeddedPage'; // Adjust the path accordingly
+
+import Hero_2 from '../../components/hero/hero_2';
 import {
 	Hero,
 	NewseLatter,
@@ -22,7 +23,7 @@ const Home_1 = () => {
 			<Meta title="| Sycotic Society | NFT Marketplace" />
 			<Hero />
 			<Browse_category/>
-	                <EmbeddedPage />
+	                <Hero_2 />
 			<NewseLatter />
 			<TrustedPartner />
 		</main>
