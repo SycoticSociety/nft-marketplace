@@ -42,8 +42,8 @@ const Statistic_promo_carousel = () => {
 							<img
 								src={img}
 								alt=""
-								width="398"
-								height="571"
+								width="400"
+								height="600"
 								className="swiper-lazy inline-block border-0"
 							/>
 							{/* <div className="swiper-lazy-preloader"></div> */}
@@ -52,10 +52,10 @@ const Statistic_promo_carousel = () => {
 				})}
 			</Swiper>
 			{/* <!-- Slider Navigation --> */}
-			<div className="group bids-swiper-button-prev swiper-button-prev shadow-white-volume absolute !top-1/2 !-left-4 z-10 -mt-6 flex !h-12 !w-12 cursor-pointer items-center justify-center rounded-full bg-white p-3 text-jacarta-700 text-xl sm:!-left-6 after:hidden">
+			<div className="group bids-swiper-button-prev swiper-button-prev shadow-red-volume absolute !top-1/2 !-left-4 z-10 -mt-6 flex !h-12 !w-12 cursor-pointer items-center justify-center rounded-full bg-white p-3 text-jacarta-700 text-xl sm:!-left-6 after:hidden">
 				<MdKeyboardArrowLeft />
 			</div>
-			<div className="group bids-swiper-button-next swiper-button-next shadow-white-volume absolute !top-1/2 !-right-4 z-10 -mt-6 flex !h-12 !w-12 cursor-pointer items-center justify-center rounded-full bg-white p-3 text-jacarta-700 text-xl sm:!-right-6 after:hidden">
+			<div className="group bids-swiper-button-next swiper-button-next shadow-red-volume absolute !top-1/2 !-right-4 z-10 -mt-6 flex !h-12 !w-12 cursor-pointer items-center justify-center rounded-full bg-white p-3 text-jacarta-700 text-xl sm:!-right-6 after:hidden">
 				<MdKeyboardArrowRight />
 			</div>
 		</>
