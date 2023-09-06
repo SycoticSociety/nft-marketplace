@@ -12,10 +12,11 @@ const Statistic_promo_2 = () => {
 					<div className="items-center justify-between lg:flex">
 						<div className="mb-12 lg:w-[45%] lg:pr-16">
 							<h2 className="mb-6 font-display text-2xl text-white">
-								Find rare Creatures and Collect Stunning Pieces.
+								Sycotic Society. Utilizing extremely powerful A.I components to accelerate our development process.
 							</h2>
 							<p className="mb-8 text-lg leading-normal text-jacarta-200">
-						
+						          Although we are currently in the early phases of development, we have achieved many great feats to date. Looking forward
+								to 2024, I see exponential growth and mass adoption on the horizion.  We will be ready.
 							</p>
 							<p className="mb-12 text-jacarta-200">
 						
