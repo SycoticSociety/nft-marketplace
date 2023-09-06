@@ -1,8 +1,7 @@
-import React,{useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 import Hero_2 from '../../components/hero/hero_2';
-import Hero_8 from "../../components/hero/hero_8";
-import Statistic_promo_carousel from '../carousel/statistic_promo_2_carousel';
+import Statistic_promo_2 from "../../components/promo/statistic_promo_2"; // Import Statistic_promo_2
 import {
 	Hero,
 	NewseLatter,
@@ -17,16 +16,17 @@ import { useTheme } from "next-themes";
 const Home_1 = () => {
 	const { theme, setTheme } = useTheme();
 
-  useEffect(() => {
-    setTheme("dark");
-  }, [setTheme]);
+	// Add useEffect to set the theme
+	useEffect(() => {
+		setTheme("dark");
+	}, [setTheme]);
+
 	return (
 		<main>
 			<Meta title="| Sycotic Society | NFT Marketplace" />
 			<Hero />						
 			<NewseLatter />	
-		         <Statistic_promo_2 />
-
+		    <Statistic_promo_2 /> {/* Render Statistic_promo_2 */}
 			<Browse_category/>		
 			<TrustedPartner />
 		</main>
