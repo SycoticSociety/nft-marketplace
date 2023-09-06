@@ -21,9 +21,9 @@ const Statistic_promo_2 = () => {
 							<p className="mb-12 text-jacarta-200">
 						
 							</p>
-							<Link href="/collection/explore_collection">
+							<Link href="https://www.convex.dev/ai-town">
 								<a className="inline-block rounded-full bg-accent py-3 px-8 text-center font-semibold text-white shadow-accent-volume transition-all hover:bg-accent-dark">
-									Create Avatar
+									Visit A.I Town
 								</a>
 							</Link>
 						</div>
