@@ -24,7 +24,7 @@ const Home_1 = () => {
 			<Hero />						
 			<NewseLatter />			
 			<Browse_category/>
-			 <Hero_2 />
+			
 			<TrustedPartner />
 		</main>
 	);
