@@ -310,7 +310,7 @@ const Create = () => {
                 onChange={e=>setCollection(e.target.value)}
                 placeholder="Provide a detailed description of your item."
               >
-                <option value='Arbitrum'>Arbitrum</option>
+               
                 <option value='Polygon'>Polygon</option>
               </select>
             </div>
