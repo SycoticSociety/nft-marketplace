@@ -2,6 +2,7 @@ import React,{useEffect} from 'react';
 
 import Hero_2 from '../../components/hero/hero_2';
 import Hero_8 from "../../components/hero/hero_8";
+import Statistic_promo_carousel from '../carousel/statistic_promo_2_carousel';
 import {
 	Hero,
 	NewseLatter,
