@@ -16,13 +16,14 @@ const newseLatterData = [
 	{
 		id: '3',
 		icon: { parentBg: '#cddffb', childBg: 'rgb(66 138 248)', svg: 'icon-gallery' },
-		link:'/create#nfts',
+		link:'/create/BatchMint',
 		title: [' Batch ', ' Mint ', ' NFTs '],
 		text: 'Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties, stats.',
 	},
 	{
 		id: '4',
 		icon: { parentBg: '#ffd0d0', childBg: 'rgb(239 68 68)', svg: 'icon-list' },
+		
 		title: [' List ', ' Them ', ' For ', ' Sale '],
 		text: 'Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want to sell your NFTs!',
 	},
