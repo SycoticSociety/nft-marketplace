@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 
 import Hero_2 from '../../components/hero/hero_2';
+import Hero_8 from "../../components/hero/hero_8";
 import {
 	Hero,
 	NewseLatter,
