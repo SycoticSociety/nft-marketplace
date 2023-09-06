@@ -31,16 +31,8 @@ const Hero_2 = () => {
              
             </p>
             <div className="inline-flex space-x-4">
-              <Link href="/create">
-                <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                
-                </a>
-              </Link>
-              <Link href="/collection/explore_collection">
-                <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-36 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                 
-                </a>
-              </Link>
+            
+            
             </div>
           </div>
 
