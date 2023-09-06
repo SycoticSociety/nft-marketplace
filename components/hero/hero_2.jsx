@@ -25,20 +25,20 @@ const Hero_2 = () => {
         <div className="container">
           <div className="py-24 text-center">
             <h1 className="text-jacarta-700 font-display mb-6 text-5xl dark:text-white lg:text-6xl xl:text-7xl">
-              Collect Digital Art.
+             
             </h1>
             <p className="dark:text-jacarta-200 mb-8 text-lg">
-              Buy and sell NFTs from the worlds top artists
+             
             </p>
             <div className="inline-flex space-x-4">
               <Link href="/create">
                 <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-36 rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                  Create
+                
                 </a>
               </Link>
               <Link href="/collection/explore_collection">
                 <a className="text-accent shadow-white-volume hover:bg-accent-dark hover:shadow-accent-volume w-36 rounded-full bg-white py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Explore
+                 
                 </a>
               </Link>
             </div>
