@@ -17,7 +17,7 @@ const newseLatterData = [
 		id: '3',
 		icon: { parentBg: '#cddffb', childBg: 'rgb(66 138 248)', svg: 'icon-gallery' },
 		link:'/create#nfts',
-		title: [' Add ', ' Your ', ' NFTs '],
+		title: [' Batch ', ' Mint ', ' NFTs '],
 		text: 'Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties, stats.',
 	},
 	{
