@@ -2,7 +2,7 @@ export const statistic_promo_2_data = [
 	{
 		id: '1',
 		img: '/images/nft-game/robot_large_1.png',
-		href: 'https://example.com/link1', // Add the URL you want to open for this image
+		href: 'https://www.convex.dev/ai-town/link1', // Add the URL you want to open for this image
 	},
 	{
 		id: '2',
