@@ -6,18 +6,26 @@ import { Provider } from "react-redux";
 import { store } from "../redux/store";
 import { useRouter } from "next/router";
 import Meta from "../components/Meta";
-import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 import UserContext from "../components/UserContext";
 import ChainContext from "../components/chainContext";
 import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
+import { ThirdwebProvider, ConnectWallet, metamaskWallet, ChainId } from "@thirdweb-dev/react";
 
+export default function App() {
+return (
+    <ThirdwebProvider
+      clientId="c6283d4d5955100fffcdd22978b8190a"
+      supportedWallets={[ metamaskWallet() ]}
+    >
+      <ConnectWallet />
+    </ThirdwebProvider>
+  );
+}
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const pid = router.asPath;
-  const THIRDWEB_CLIENT_ID = "c6283d4d5955100fffcdd22978b8190a";
-
   const scrollRef = useRef({
     scrollPos: 0,
   });
