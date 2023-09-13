@@ -12,9 +12,12 @@ import ChainContext from "../components/chainContext";
 import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
 
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const pid = router.asPath;
+  const THIRDWEB_CLIENT_ID = "c6283d4d5955100fffcdd22978b8190a";
+
   const scrollRef = useRef({
     scrollPos: 0,
   });
