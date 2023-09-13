@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import {  Web3Button , useAddress , useStorageUpload, useMetamask , useOwnedNFTs, useContract } from "@thirdweb-dev/react";
+import {
+  Web3Button,
+  useAddress,
+  useStorageUpload,
+  useMetamask,
+  useOwnedNFTs,
+  useContract,
+} from "@thirdweb-dev/react";
 import "tippy.js/dist/tippy.css"; // optional
 import Collection_dropdown2 from "../../components/dropdown/collection_dropdown2";
 import {
@@ -16,7 +23,7 @@ import { useRouter } from "next/router";
 import Tippy from "@tippyjs/react";
 
 const Create = () => {
-  const address = useAddress();
+  const address = "YourManuallyInsertedAddressHere"; // Replace with the desired address
   const connectWithMetamask = useMetamask();
   const fileTypes = [
     "JPG",
@@ -31,129 +38,107 @@ const Create = () => {
     "GLB",
     "GLTF",
   ];
-  const [file, setFile] = useState(null);
-  const [name,setName]=useState("")
-  const [desc,setDesc]=useState("")
-  const [url,setUrl]=useState('')
-  const [collection,setCollection]=useState('Polygon')
-  const [loading,setLoading]=useState(false)
-  const Router=useRouter()
 
-  const { contract, isLoading } = useContract("0xf59d868542F170DD9cDbc3D267dABB3D4A80a991");
+  const [file, setFile] = useState(null);
+  const [name, setName] = useState("");
+  const [desc, setDesc] = useState("");
+  const [url, setUrl] = useState("");
+  const [collection, setCollection] = useState("Polygon");
+  const [loading, setLoading] = useState(false);
+  const Router = useRouter();
+
+  const { contract, isLoading } = useContract(
+    "0xf59d868542F170DD9cDbc3D267dABB3D4A80a991"
+  );
   const { mutateAsync: upload } = useStorageUpload();
   const { data: ownedNFTs, loadingNfts, error } = useOwnedNFTs(contract, address);
 
-
   async function imageSize(url) {
     const img = document.createElement("img");
-  
+
     const promise = new Promise((resolve, reject) => {
       img.onload = () => {
-        // Natural size is the actual image size regardless of rendering.
-        // The 'normal' `width`/`height` are for the **rendered** size.
         const width = img.naturalWidth;
         const height = img.naturalHeight;
-  
-        // Resolve promise with the width and height
+
         resolve({ width, height });
       };
-  
-      // Reject promise on error
+
       img.onerror = reject;
     });
-  
-    // Setting the source makes it start downloading and eventually call `onload`
+
     img.src = url;
-  
-    return promise
+
+    return promise;
   }
-  
 
   const handleChange = (file) => {
     setFile(file);
-    setUrl(URL.createObjectURL(file))
+    setUrl(URL.createObjectURL(file));
   };
-
-  const popupItemData = [
-    {
-      id: 1,
-      name: "proparties",
-      text: "Textual traits that show up as rectangles.",
-      icon: "proparties-icon",
-    },
-    {
-      id: 2,
-      name: "levels",
-      text: "Numerical traits that show as a progress bar.",
-      icon: "level-icon",
-    },
-    {
-      id: 3,
-      name: "stats",
-      text: "Numerical traits that just show as numbers.",
-      icon: "stats-icon",
-    },
-  ];
 
   const mintWithSignature = async () => {
     try {
-      setLoading(true)
-      //Check the file is square
+      setLoading(true);
       const { width, height } = await imageSize(url);
       if (height !== width) {
-         Router.reload()
-         return alert('The image must be a square.')
+        Router.reload();
+        return alert("The image must be a square.");
       }
-       const uploadUrl = await upload({
-         data: [file],
-         options: { uploadWithGatewayUrl: true, uploadWithoutDirectory: true },
-       });
-      // Make a request to /api/server
-      if(address){
-        if (collection=='Polygon') {
+      const uploadUrl = await upload({
+        data: [file],
+        options: { uploadWithGatewayUrl: true, uploadWithoutDirectory: true },
+      });
+      if (address) {
+        if (collection === "Polygon") {
           fetch(`/api/mintNft`, {
             method: "POST",
             body: JSON.stringify({
               authorAddress: address,
               nftName: name || "",
-              nftDesc:desc || "",
+              nftDesc: desc || "",
               nftImage: uploadUrl?.[0] || "",
             }),
-          }).then((response)=>{
-            if(response.status==500){
-              throw error;
-            }else{
-              setLoading(false)
-              Router.reload()
-              alert('The nft was minted successfully!')
-            }
-          }).catch((error)=>{
-            alert(`There was an error minting NFT. + ${error.msg}`,error)
-            Router.reload()
           })
+            .then((response) => {
+              if (response.status === 500) {
+                throw error;
+              } else {
+                setLoading(false);
+                Router.reload();
+                alert("The nft was minted successfully!");
+              }
+            })
+            .catch((error) => {
+              alert(`There was an error minting NFT. + ${error.msg}`, error);
+              Router.reload();
+            });
         } else {
           fetch(`/api/mintNftArbitrum`, {
             method: "POST",
             body: JSON.stringify({
               authorAddress: address,
               nftName: name || "",
-              nftDesc:desc || "",
+              nftDesc: desc || "",
               nftImage: uploadUrl?.[0] || "",
-            }).then((response)=>{
-              if(response.status==500){
-                throw error;
-              }else{
-                setLoading(false)
-                Router.reload()
-                alert('The nft was minted successfully!')
-              }
-            }).catch((error)=>{
-              alert(`There was an error minting NFT. + ${error.msg}`,error)
-              Router.reload()
-            })
+            }),
           })
-        }}else{
-        alert('Please connect your wallet!')
+            .then((response) => {
+              if (response.status === 500) {
+                throw error;
+              } else {
+                setLoading(false);
+                Router.reload();
+                alert("The nft was minted successfully!");
+              }
+            })
+            .catch((error) => {
+              alert(`There was an error minting NFT. + ${error.msg}`, error);
+              Router.reload();
+            });
+        }
+      } else {
+        alert("Please connect your wallet!");
       }
     } catch (e) {
       console.error("An error occurred trying to mint the NFT:", e);
