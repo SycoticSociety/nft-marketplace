@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
       <Provider store={store}>
         <ThemeProvider enableSystem={true} attribute="class">
           <ChainContext.Provider value={{ selectedChain, setSelectedChain , selectedMarketplace, setSelectedMarketplace}}>
-              <ThirdwebProvider desiredChainId={selectedChain}>
+              <ThirdwebProvider  clientId="c6283d4d5955100fffcdd22978b8190a" desiredChainId={selectedChain}>
                 <MetaMaskProvider>
 
                   <UserContext.Provider value={{ scrollRef: scrollRef }}>
