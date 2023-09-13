@@ -1,5 +1,5 @@
 import Meta from "../components/Meta";
-import Layout from './components/Layout'; // Adjust the import path accordingly
+import Layout from '../../components/Layout'; // Adjust the import path accordingly
 import { ThemeProvider } from 'styled-components';
 import UserContext from "../components/UserContext";
 import ChainContext from "../components/chainContext";
