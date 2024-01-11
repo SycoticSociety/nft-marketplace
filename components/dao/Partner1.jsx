@@ -8,8 +8,7 @@ const Partner1 = () => {
    
     {link:'https://www.cameltoecan.com/',image:'partner_dao_1'},
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_2'},
-    {link:'https://phenix.finance/',image:'partner_dao_3'},
-
+    
   ];
   return (
     <>
