@@ -8,7 +8,7 @@ const Partner2 = () => {
     {link:'https://www.geckoterminal.com/',image:'partner_dao_10'},
     {link:'https://www.cameltoecan.com/',image:'partner_dao_2'},
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_12'},
-    {link:'https://phenix.finance/',image:'partner_dao_13'},
+   
   ];
   return (
     <>
