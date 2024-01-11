@@ -37,6 +37,10 @@ const hero = () => {
               <span className="animate-gradient">
                 <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> FREE COIN</a>
               </span>
+              and
+                <span className="animate-gradient">
+                <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> BrokeASF</a>
+              </span>
             </h1>
 
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
