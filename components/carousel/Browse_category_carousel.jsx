@@ -47,24 +47,25 @@ const Browse_category_carousel = () => {
 					return (
 
 						<SwiperSlide key={id}>
-							<article>
-								<Link href={href}>
-									<a className="dark:bg-jacarta-700 dark:border-jacarta-700 !border-opacity-40 border-jacarta-100 rounded-2xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg">
-										<figure
-											style={{ backgroundColor: bgColor }}
-											className={` rounded-t-[0.625rem] w-full rounded-[0.625rem]`}
-										>
-											<img src={image} alt="item 1" className="w-full" />
-										</figure>
-										<div className="mt-4 text-center">
-											<span className="font-display text-jacarta-700 text-md dark:text-white">
-												{title}
-											</span>
-										</div>
-									</a>
-								</Link>
-							</article>
-						</SwiperSlide> 
+  <article style={{ marginTop: '30px' }}>
+    <Link href={href}>
+      <a className="dark:bg-jacarta-700 dark:border-jacarta-700 !border-opacity-40 border-jacarta-100 rounded-2xl block border bg-white p-[1.1875rem] transition-shadow hover:shadow-lg">
+        <figure
+          style={{ backgroundColor: bgColor }}
+          className={` rounded-t-[0.625rem] w-full rounded-[0.625rem]`}
+        >
+          <img src={image} alt="item 1" className="w-full" />
+        </figure>
+        <div className="mt-4 text-center">
+          <span className="font-display text-jacarta-700 text-md dark:text-white">
+            {title}
+          </span>
+        </div>
+      </a>
+    </Link>
+  </article>
+</SwiperSlide>
+
 
 
 
