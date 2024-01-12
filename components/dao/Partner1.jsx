@@ -5,7 +5,7 @@ const Partner1 = () => {
    
     {link:'https://www.cameltoecan.com/',image:'partner_dao_1'},
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_2'},
-   
+    {link:'https://www.geckoterminal.com/',image:'partner_dao_10'},
     {link:'https://www.cameltoecan.com/',image:'partner_dao_1'},
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_2'},
     {link:'https://www.spatial.io/s/Sycotic-Society-Token-NFT-Gallery-6313041cebd6c80001d718ea?share=5572695680266736611/',image:'partner_dao_4'},
