@@ -44,7 +44,7 @@ const hero = () => {
             </h1>
 
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
-              Sycotic💢Society: Focused on delivering Dynamic Web3 solutions for a changing landscape.
+             
             </p>
             <div className="flex space-x-4">
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
