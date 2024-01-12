@@ -60,9 +60,7 @@ const hero = () => {
               </Link>
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Broke ASF  CC
-
-🐒
+                  Broke ASF   CC🐒
                 </a>
               </Link>
             </div>
