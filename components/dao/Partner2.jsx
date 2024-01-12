@@ -8,6 +8,7 @@ const Partner2 = () => {
     {link:'https://www.geckoterminal.com/',image:'partner_dao_10'},
     {link:'https://www.cameltoecan.com/',image:'partner_dao_2'},
     {link:'https://swap.crodex.app/#/swap',image:'partner_dao_12'},
+     {link:'https://coinmarketcap.com/dexscan/cronos/0x172ef983f851bcdbf2a26a14756955a9c5954b7d/',image:'partner_dao_5'},
    
   ];
   return (
