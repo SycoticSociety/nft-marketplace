@@ -49,19 +49,19 @@ const hero = () => {
             <div className="flex space-x-4">
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d">
                   <a className="text-white shadow-white-volume hover:bg-orange hover:shadow-accent-volume w-fit-content rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Free Coin 🪙 3% Fee
+                  Free Coin 🪙 3%
                 </a>
               </Link>
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
                  <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-fit-content rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
                   Sycotic Society 
                     💢 
-3% Fee
+3%
                 </a>
               </Link>
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Broke ASF ...🐒 3% Fee
+                  Broke ASF ...🐒 3%
                 </a>
               </Link>
             </div>
