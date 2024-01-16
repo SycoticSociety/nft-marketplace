@@ -29,11 +29,11 @@ const hero = () => {
         <div className="grid h-full items-center gap-4 md:grid-cols-12">
           <div className="col-span-6 flex h-full flex-col items-center justify-center py-10 md:items-start md:py-20 xl:col-span-4">
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
-              Welcome to,{" "}
+              Now Trade,{" "}
               <span className="animate-gradient">
                 <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society </a>
               </span>
-              Home of,{" "}
+              {" "}
               <span className="animate-gradient">
                 <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> Free Coin </a>
               </span>
@@ -41,6 +41,8 @@ const hero = () => {
                 <span className="animate-gradient">
                 <a href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713"> BrokeASF </a>
               </span>
+For only three percent flat fees!
+
             </h1>
 
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
