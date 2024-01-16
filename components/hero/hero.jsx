@@ -31,17 +31,17 @@ const hero = () => {
             <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-5xl dark:text-white md:text-left lg:text-6xl xl:text-7xl">
               Now Trade,{" "}
               <span className="animate-gradient">
-                <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society </a>
+                <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society, </a>
               </span>
               {" "}
               <span className="animate-gradient">
-                <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> Free Coin </a>
+                <a href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d"> Free Coin, </a>
               </span>
               and
                 <span className="animate-gradient">
                 <a href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713"> BrokeASF </a>
               </span>
-For only three percent flat fees!
+For only three percent!
 
             </h1>
 
@@ -51,19 +51,18 @@ For only three percent flat fees!
             <div className="flex space-x-4">
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d">
                   <a className="text-white shadow-white-volume hover:bg-orange hover:shadow-accent-volume w-fit-content rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Free Coin 🪙 3%
+                  Free Coin 🪙
                 </a>
               </Link>
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
                  <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-fit-content rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
                   Sycotic Society 
                     💢 
-3%
                 </a>
               </Link>
               <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
                 <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Broke ASF ...🐒 3%
+                  Broke ASF ...🐒
                 </a>
               </Link>
             </div>
