@@ -11,6 +11,8 @@ const Partner2 = () => {
    
    
   ];
+
+
   return (
     <>
       {partnerItem.map((item, i) => (
@@ -22,6 +24,7 @@ const Partner2 = () => {
           <img src={`/images/dao/${item.image}.jpg`} alt="partner item" />
         </a>
       ))}
+      <p style={{ fontSize: '24px' }}>Thank you for Visiting</p>
     </>
   );
 };
