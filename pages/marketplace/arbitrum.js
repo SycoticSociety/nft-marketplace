@@ -12,7 +12,7 @@ export default function Arbitrum() {
   const { selectedChain, setSelectedChain, selectedMarketplace, setSelectedMarketplace } = useContext(ChainContext);
 
   // Define your API key (replace 'YOUR_API_KEY' with your actual key)
-  const apiKey = "c6283d4d5955100fffcdd22978b8190a";
+  const apiKey = "7976449a6362f89d61ead11d0753cfd8";
 
   useEffect(() => {
     setSelectedChain(ChainId.Arbitrum);
