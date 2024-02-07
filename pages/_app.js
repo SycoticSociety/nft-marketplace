@@ -6,11 +6,21 @@ import { Provider } from "react-redux";
 import { store } from "../redux/store";
 import { useRouter } from "next/router";
 import Meta from "../components/Meta";
-import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
+import { ChainId } from "@thirdweb-dev/react";
 import UserContext from "../components/UserContext";
 import ChainContext from "../components/chainContext";
 import { useEffect, useRef, useState } from "react";
 import { MetaMaskProvider } from "metamask-react";
+import {
+  ThirdwebProvider,
+  ConnectWallet,
+  metamaskWallet,
+  coinbaseWallet,
+  walletConnect,
+  localWallet,
+  embeddedWallet,
+  trustWallet,
+} from "@thirdweb-dev/react";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
