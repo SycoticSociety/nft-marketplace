@@ -52,7 +52,7 @@ For only three percent!
 <div className="flex space-x-4">
   <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d">
     <a className="text-white w-fit-content">
-      <img src="your_free_coin_image_url" alt="Free Coin Image" />
+      <img src="public/images/freeCoinTokenSwap.png" alt="Free Coin Image" />
       <p className="font-semibold hover:text-white">Free Coin 🪙</p>
     </a>
   </Link>
