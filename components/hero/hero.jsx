@@ -41,7 +41,7 @@ const hero = () => {
                 <span className="animate-gradient">
                 <a href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713"> BrokeASF </a>
               </span>
-For only three percent!
+For only .03 percent!
 
             </h1>
 
