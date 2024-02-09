@@ -64,7 +64,7 @@ For only three percent!
   </Link>
   <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
     <a className="text-white">
-      <img src="your_broke_asf_image_url" alt="Broke ASF Image" />
+      <img src="https:/images/brokeAsfTokenSwap.png" alt="Broke ASF Image" />
       <p className="font-semibold hover:text-white">Broke ASF ...🐒</p>
     </a>
   </Link>
