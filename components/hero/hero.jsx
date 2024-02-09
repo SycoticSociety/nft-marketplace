@@ -48,24 +48,28 @@ For only three percent!
             <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
              
             </p>
-            <div className="flex space-x-4">
-              <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d">
-                  <a className="text-white shadow-white-volume hover:bg-orange hover:shadow-accent-volume w-fit-content rounded-full bg-orange py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Free Coin 🪙
-                </a>
-              </Link>
-              <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
-                 <a className="bg-accent shadow-accent-volume hover:bg-accent-dark w-fit-content rounded-full py-3 px-8 text-center font-semibold text-white transition-all">
-                  Sycotic Society 
-                    💢 
-                </a>
-              </Link>
-              <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
-                <a className="text-white shadow-white-volume hover:bg-gray hover:shadow-accent-volume w-fit-content rounded-full bg-gray py-3 px-8 text-center font-semibold transition-all hover:text-white">
-                  Broke ASF ...🐒
-                </a>
-              </Link>
-            </div>
+           
+<div className="flex space-x-4">
+  <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d">
+    <a className="text-white w-fit-content">
+      <img src="your_free_coin_image_url" alt="Free Coin Image" />
+      <p className="font-semibold hover:text-white">Free Coin 🪙</p>
+    </a>
+  </Link>
+  <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
+    <a className="text-white">
+      <img src="your_sycotic_society_image_url" alt="Sycotic Society Image" />
+      <p className="font-semibold hover:text-white">Sycotic Society 💢</p>
+    </a>
+  </Link>
+  <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
+    <a className="text-white">
+      <img src="your_broke_asf_image_url" alt="Broke ASF Image" />
+      <p className="font-semibold hover:text-white">Broke ASF ...🐒</p>
+    </a>
+  </Link>
+</div>
+
           </div>
 
           {/* Hero images */}
