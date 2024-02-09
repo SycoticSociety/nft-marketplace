@@ -59,7 +59,7 @@ For only three percent!
   <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
     <a className="text-white">
       <img src="/images/sycoticTokenSwap.png" alt="Sycotic Society Image" width="75%" height="75%" />
-      <p className="font-semibold hover:text-white">Sycotic 💢</p>
+      <p className="font-semibold hover:text-white">💢 Sycotic 💢</p>
     </a>
   </Link>
   <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
