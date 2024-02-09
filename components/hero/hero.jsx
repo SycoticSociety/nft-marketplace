@@ -52,23 +52,26 @@ For only three percent!
 <div className="flex space-x-4">
   <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x4E2E7700C8f8A414b4AF8828f54330a304B6625d">
     <a className="text-white w-fit-content">
-      <img src="public/images/freeCoinTokenSwap.png" alt="Free Coin Image" />
+      <img src="freeCoinTokenSwap.png" alt="Free Coin Image" width="75%" height="75%" />
       <p className="font-semibold hover:text-white">Free Coin 🪙</p>
     </a>
   </Link>
   <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
     <a className="text-white">
-      <img src="/public/images/sycoticTokenSwap.png" alt="Sycotic Society Image" />
+      <img src="/images/sycoticSocietyTokenSwap.png" alt="Sycotic Society Image" width="75%" height="75%" />
       <p className="font-semibold hover:text-white">Sycotic Society 💢</p>
     </a>
   </Link>
   <Link href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713">
     <a className="text-white">
-      <img src="https:/images/brokeAsfTokenSwap.png" alt="Broke ASF Image" />
+      <img src="/images/brokeAsfTokenSwap.png" alt="Broke ASF Image" width="75%" height="75%" />
       <p className="font-semibold hover:text-white">Broke ASF ...🐒</p>
     </a>
   </Link>
 </div>
+
+
+
 
           </div>
 
