@@ -29,7 +29,7 @@ const hero = () => {
         <div className="grid h-full items-center justify-center gap-4 md:grid-cols-12">
           <div className="col-span-12 md:col-span-6 xl:col-span-4">
             <div className="flex flex-col items-center justify-center py-10 xl:py-20">
-              <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-4xl dark:text-white ">
+              <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-4xl ">
                 Now Trade,{" "}
                 <span className="animate-gradient">
                   <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society, </a>
