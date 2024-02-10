@@ -82,7 +82,7 @@ For only .03 percent!
               <img
                 src="/images/hero/hero.jpg"
                 alt=""
-                className="hero-img mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] lg:w-[28rem]"
+                className="hero-img mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] lg:w-[24rem]"
                 onClick={handleImageClick}
               />
               {/* 3D Hero element */}
