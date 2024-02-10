@@ -87,13 +87,7 @@ For only .03 percent!
       style={{ zIndex: 1 }} // Set a higher z-index for the base image
     />
     {/* 3D Hero element */}
-    <img
-      src="/images/hero/3D_elements.png"
-      alt=""
-      className="animate-fly mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem] lg:w-[24rem]"
-      onClick={handleImageClick}
-      style={{ zIndex: 2, position: 'absolute', top: 0, left: 0 }} // Set a higher z-index and absolute positioning for the second image
-    />
+   
   </div>
 </div>
 
