@@ -42,7 +42,7 @@ const hero = () => {
                 <span className="animate-gradient">
                   <a href="https://swap.crodex.app/#/swap?outputCurrency=0x3E68eA1588E32e51D98dBda6Ea05128513ECC713"> BrokeASF </a>
                 </span>
-                For only .03 percent!
+                For only 1% percent 😎
               </h1>
 
               <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
