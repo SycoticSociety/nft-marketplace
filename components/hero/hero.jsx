@@ -55,20 +55,22 @@ const hero = () => {
             </div>
           </div>
 
-          {/* Hero images */}
+         {/* Hero images */}
           <div className="col-span-12 md:col-span-6 xl:col-span-8 relative">
             <div className="text-center md:pl-8 md:text-right">
               {/* Base image */}
-              <img
-                src="/images/hero/hero.jpg"
-                alt=""
-                className="hero-img mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem]"
-                onClick={handleImageClick}
-                style={{ zIndex: 1 }} // Set a higher z-index for the base image
-              />
+              <a href="https://sycotic-comicshop.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <img
+                  src="/images/hero/hero.jpg"
+                  alt="Hero Image"
+                  className="hero-img mt-8 inline-block w-72 rotate-[8deg] sm:w-full lg:w-[24rem]"
+                  style={{ zIndex: 1 }} // Set a higher z-index for the base image
+                />
+              </a>
               {/* 3D Hero element */}
             </div>
           </div>
+
         </div>
       </div>
     </section>
