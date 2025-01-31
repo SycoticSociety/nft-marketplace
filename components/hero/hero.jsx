@@ -32,10 +32,10 @@ const hero = () => {
               <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-4xl dark:text-white mb:text-center lg:text-5xl lg:text-5xl">
               {" "}
                 <span className="animate-gradient">
-                  <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society, </a>
+                  <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society Token 🔥🔥🔥 🚒 </a>
                 </span>
                 {" "}
-                Token 🔥🔥🔥 🚒
+            
               </h1>
 
               <p className="dark:text-jacarta-200 mb-8 text-center text-lg md:text-left">
