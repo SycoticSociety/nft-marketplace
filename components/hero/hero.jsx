@@ -32,7 +32,7 @@ const hero = () => {
               <h1 className="text-jacarta-700 font-bold font-display mb-6 text-center text-4xl dark:text-white mb:text-center lg:text-5xl lg:text-5xl">
               {" "}
                 <span className="animate-gradient">
-                  <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society Token 🔥🔥🔥 🚒 </a>
+                  <a href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59"> Sycotic Society Cronos </a>
                 </span>
                 {" "}
             
@@ -46,7 +46,7 @@ const hero = () => {
                
                 <Link href="https://swap.crodex.app/#/swap?outputCurrency=0xe7f3c7c6611357313b5c2734341fe9cbad1d9f59">
                   <a className="text-white">
-                    <img src="/images/sycoticTokenSwap.png" alt="Sycotic Society Image" width="300px" height="300px" />
+                    <img src="/images/sycoticTokenSwap.png" alt="Sycotic Society Image" width="325px" height="325px" />
                     <p className="font-semibold hover:text-white"></p>
                   </a>
                 </Link>
